@@ -11,6 +11,8 @@
 
 **Небольшое приложение для системного трея Windows, которое включает профиль защиты аккумулятора HONOR в зависимости от того, где вы находитесь, и не спорит с PC Manager постоянно.**
 
+[Сайт](https://honor-battery-saver.onrender.com/ru/) · [GitHub](https://github.com/vyach-vasiliev/honor-battery-saver) · [Сообщить о проблеме](https://github.com/vyach-vasiliev/honor-battery-saver/issues) · [Идеи и отзывы](https://thebestofflineapp.canny.io/honor-battery-saver-feedback)
+
 </div>
 
 > [!IMPORTANT]
@@ -190,6 +192,16 @@ SSID сравниваются точно: подстановочные знак�
 10. Результат проверяется по ответу WMI, реестру и HONOR PC Manager.
 
 </details>
+
+## Вопросы и обратная связь
+
+Описание и загрузки доступны на [сайте проекта](https://honor-battery-saver.onrender.com/ru/), исходный код — в [репозитории GitHub](https://github.com/vyach-vasiliev/honor-battery-saver).
+
+- Вопросы, ошибки и проблемы совместимости можно сообщать в [GitHub Issues](https://github.com/vyach-vasiliev/honor-battery-saver/issues).
+- Идеи, отзывы и запросы новых функций — в [Canny](https://thebestofflineapp.canny.io/honor-battery-saver-feedback).
+- Об уязвимостях сообщайте приватно согласно [SECURITY.md](./SECURITY.md), а не в публичных каналах обратной связи.
+
+Эти же ссылки и строка копирайта MIT доступны слева внизу окна настроек. Ссылки открываются в браузере по умолчанию только по нажатию; настройки и диагностика к ним не прикрепляются. Не включайте SSID и другие персональные данные в публичные сообщения.
 
 ## Приватность и безопасность
 

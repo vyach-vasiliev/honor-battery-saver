@@ -34,12 +34,24 @@ User settings are deliberately retained for reinstall or upgrade. Delete the
 
 ## Third-party software and downloads
 
-The application does not make network requests. Links in the installer or
-documentation, such as the Microsoft .NET Desktop Runtime download page, open
-in the user's browser and are then governed by the third party's privacy
-policy.
+The application does not make network requests. Links in the application,
+installer, or documentation open in the user's default browser only when
+clicked. These include the project website hosted on Render, the GitHub
+repository and issue tracker, the Canny feedback board, and the Microsoft
+.NET Desktop Runtime download page. No settings, SSIDs, logs, or diagnostics
+are attached to these links.
+
+Visiting these pages or submitting feedback is governed by the respective
+providers' privacy policies: [Render](https://render.com/privacy),
+[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement),
+[Canny](https://canny.io/privacy), and
+[Microsoft](https://privacy.microsoft.com/privacystatement). Public issues and
+feedback may be visible to anyone; do not include personal data or sensitive
+diagnostics in them.
 
 ## Contact
 
 For a security-sensitive concern, use the private reporting process in
-[SECURITY.md](./SECURITY.md). For other privacy questions, open a GitHub issue.
+[SECURITY.md](./SECURITY.md). For other questions, use
+[GitHub Issues](https://github.com/vyach-vasiliev/honor-battery-saver/issues) or
+[Canny](https://thebestofflineapp.canny.io/honor-battery-saver-feedback).

@@ -8,6 +8,36 @@
         Background="{DynamicResource CanvasBrush}"
         FontFamily="Segoe UI Variable Text, Segoe UI" UseLayoutRounding="True">
     <Window.Resources>
+        <Style x:Key="FooterLink" TargetType="Button">
+            <Setter Property="MinHeight" Value="40" />
+            <Setter Property="MinWidth" Value="40" />
+            <Setter Property="Padding" Value="8,6" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="LinkSurface" Background="Transparent" BorderBrush="Transparent"
+                                BorderThickness="1" CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="LinkSurface" Property="Background" Value="{DynamicResource ControlHoverBrush}" />
+                                <Setter Property="Foreground" Value="{DynamicResource AccentHoverBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="LinkSurface" Property="BorderBrush" Value="{DynamicResource AccentBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="LinkSurface" Property="Background" Value="{DynamicResource SelectionBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style x:Key="SectionTitle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="17" />
             <Setter Property="FontWeight" Value="SemiBold" />
@@ -409,13 +439,47 @@
 
         <Border Grid.Row="2" Padding="18,12" Background="{DynamicResource SurfaceBrush}"
                 BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,1,0,0">
-            <DockPanel LastChildFill="False">
-                <TextBlock x:Name="SaveHint" DockPanel.Dock="Left" VerticalAlignment="Center"
-                           Foreground="{DynamicResource MutedTextBrush}" />
-                <Button DockPanel.Dock="Right" Margin="8,0,0,0" Style="{StaticResource PrimaryButton}"
-                        Click="Save_Click" Content="{i18n:Localized Common_Save}" />
-                <Button DockPanel.Dock="Right" Click="Cancel_Click" Content="{i18n:Localized Common_Cancel}" />
-            </DockPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="0,0,16,0" VerticalAlignment="Center">
+                    <WrapPanel>
+                        <Button x:Name="WebsiteLink" Style="{StaticResource FooterLink}" Click="OpenWebsite_Click"
+                                Content="{i18n:Localized Project_Website}" />
+                        <Button Style="{StaticResource FooterLink}" Click="OpenProjectLink_Click"
+                                Tag="{x:Static core:ProjectInfo.RepositoryUrl}" ToolTip="{x:Static core:ProjectInfo.RepositoryUrl}"
+                                Content="GitHub" />
+                        <Button Style="{StaticResource FooterLink}" Click="OpenProjectLink_Click"
+                                Tag="{x:Static core:ProjectInfo.IssuesUrl}" ToolTip="{x:Static core:ProjectInfo.IssuesUrl}"
+                                Content="{i18n:Localized Project_Issues}" />
+                        <Button Style="{StaticResource FooterLink}" Click="OpenProjectLink_Click"
+                                Tag="{x:Static core:ProjectInfo.FeedbackUrl}" ToolTip="{x:Static core:ProjectInfo.FeedbackUrl}"
+                                Content="{i18n:Localized Project_Feedback}" />
+                    </WrapPanel>
+                    <TextBlock Margin="8,0,0,0" FontSize="12" TextWrapping="Wrap"
+                               Foreground="{DynamicResource MutedTextBrush}"
+                               Text="{x:Static core:ProjectInfo.CopyrightNotice}" />
+                    <TextBlock x:Name="SaveHint" Margin="8,4,0,0" TextWrapping="Wrap"
+                               Foreground="{DynamicResource MutedTextBrush}">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <Trigger Property="Text" Value="">
+                                        <Setter Property="Visibility" Value="Collapsed" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Button Click="Cancel_Click" Content="{i18n:Localized Common_Cancel}" />
+                    <Button Margin="8,0,0,0" Style="{StaticResource PrimaryButton}"
+                            Click="Save_Click" Content="{i18n:Localized Common_Save}" />
+                </StackPanel>
+            </Grid>
         </Border>
     </Grid>
 </Window>

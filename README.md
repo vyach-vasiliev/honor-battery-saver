@@ -11,6 +11,8 @@
 
 **A small Windows tray app that applies HONOR's battery-protection profile for the place where you are — without continuously fighting PC Manager.**
 
+[Website](https://honor-battery-saver.onrender.com/en/) · [GitHub](https://github.com/vyach-vasiliev/honor-battery-saver) · [Report an issue](https://github.com/vyach-vasiliev/honor-battery-saver/issues) · [Ideas & feedback](https://thebestofflineapp.canny.io/honor-battery-saver-feedback)
+
 </div>
 
 > [!IMPORTANT]
@@ -190,6 +192,16 @@ The service log rotates at 1 MB and keeps up to three archives.
 10. Hardware results are verified against the WMI response, registry, and HONOR PC Manager.
 
 </details>
+
+## Questions and feedback
+
+Visit the [project website](https://honor-battery-saver.onrender.com/en/) for an overview and downloads, or the [GitHub repository](https://github.com/vyach-vasiliev/honor-battery-saver) for source code.
+
+- Use [GitHub Issues](https://github.com/vyach-vasiliev/honor-battery-saver/issues) for questions, bug reports, and compatibility problems.
+- Use [Canny](https://thebestofflineapp.canny.io/honor-battery-saver-feedback) for ideas, feedback, and feature requests.
+- Report security vulnerabilities privately as described in [SECURITY.md](./SECURITY.md), not in public feedback channels.
+
+The same links and the MIT copyright notice are available at the bottom left of the settings window. Links open in your default browser only when clicked; no settings or diagnostics are attached. Avoid including SSIDs or other personal data in public reports.
 
 ## Privacy and safety
 

@@ -266,6 +266,30 @@ public partial class SettingsWindow : Window
         Process.Start(new ProcessStartInfo("ms-settings:privacy-location") { UseShellExecute = true });
     }
 
+    private void OpenWebsite_Click(object sender, RoutedEventArgs e) =>
+        OpenProjectLink(ProjectInfo.GetWebsiteUrl(Strings.CurrentCulture));
+
+    private void OpenProjectLink_Click(object sender, RoutedEventArgs e)
+    {
+        if (sender is System.Windows.Controls.Button { Tag: string url })
+        {
+            OpenProjectLink(url);
+        }
+    }
+
+    private void OpenProjectLink(string url)
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+        }
+        catch (Exception exception) when (exception is Win32Exception or InvalidOperationException)
+        {
+            MessageBox.Show(this, Strings.Format("Project_OpenFailed", url),
+                Strings.Get("App_Name"), MessageBoxButton.OK, MessageBoxImage.Warning);
+        }
+    }
+
     private void RunHardwareDiagnostic_Click(object sender, RoutedEventArgs e)
     {
         if (HardwareModeComboBox.SelectedValue is not BatteryMode mode)
@@ -319,6 +343,7 @@ public partial class SettingsWindow : Window
 
     private void RefreshLocalizedChoices()
     {
+        WebsiteLink.ToolTip = ProjectInfo.GetWebsiteUrl(Strings.CurrentCulture);
         var selectedHardwareMode = HardwareModeComboBox.SelectedValue;
         var selectedLanguage = LanguageComboBox.SelectedValue;
         HardwareModeComboBox.ItemsSource = GetModeChoices();

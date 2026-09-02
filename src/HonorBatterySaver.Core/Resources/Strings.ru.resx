@@ -7,6 +7,10 @@
   <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
   <data name="App_Tagline" xml:space="preserve"><value>Бережная зарядка дома, в офисе и в дороге</value></data>
   <data name="App_CheckingStatus" xml:space="preserve"><value>Проверка состояния…</value></data>
+  <data name="Project_Website" xml:space="preserve"><value>Сайт</value></data>
+  <data name="Project_Issues" xml:space="preserve"><value>Проблемы</value></data>
+  <data name="Project_Feedback" xml:space="preserve"><value>Идеи и отзывы</value></data>
+  <data name="Project_OpenFailed" xml:space="preserve"><value>Не удалось открыть браузер. Откройте этот адрес вручную:&#xA;&#xA;{0}</value></data>
   <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>Важный отказ от ответственности</value></data>
   <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver — независимый неофициальный проект, не связанный с HONOR и не одобренный компанией.&#xA;&#xA;Приложение использует недокументированный OEM WMI-интерфейс для изменения порогов зарядки аккумулятора. Совместимость не гарантируется, а обновления BIOS, прошивки, драйверов, Windows или HONOR PC Manager могут изменить поведение. Использование может привести к неожиданной работе зарядки, сокращению срока службы аккумулятора, потере доступности, данных или повреждению оборудования.&#xA;&#xA;Программа предоставляется «как есть», без гарантий. Вы самостоятельно решаете, подходит ли она вашему устройству, обеспечиваете резервные копии и способ восстановления, проверяете диагностику и контролируете результат.&#xA;&#xA;Нажмите «Да», только если понимаете и принимаете эти риски.</value></data>
   <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>Неофициальная интеграция с оборудованием</value></data>

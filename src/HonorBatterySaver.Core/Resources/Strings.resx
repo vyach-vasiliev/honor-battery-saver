@@ -7,6 +7,10 @@
   <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
   <data name="App_Tagline" xml:space="preserve"><value>Battery-friendly charging at home, at the office, and on the go</value></data>
   <data name="App_CheckingStatus" xml:space="preserve"><value>Checking status…</value></data>
+  <data name="Project_Website" xml:space="preserve"><value>Website</value></data>
+  <data name="Project_Issues" xml:space="preserve"><value>Issues</value></data>
+  <data name="Project_Feedback" xml:space="preserve"><value>Ideas &amp; feedback</value></data>
+  <data name="Project_OpenFailed" xml:space="preserve"><value>Could not open your browser. Open this address manually:&#xA;&#xA;{0}</value></data>
   <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>Important hardware-control disclaimer</value></data>
   <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver is an independent, unofficial project and is not affiliated with or endorsed by HONOR.&#xA;&#xA;It uses an undocumented OEM WMI interface to change battery charging thresholds. Compatibility is not guaranteed, and BIOS, firmware, driver, Windows, or HONOR PC Manager updates may change the behavior. Use may result in unexpected charging behavior, reduced battery life, loss of availability, data loss, or hardware damage.&#xA;&#xA;The software is provided “as is”, without warranty. You are responsible for deciding whether it is suitable for your device, keeping backups and a recovery method, checking diagnostics, and monitoring the result.&#xA;&#xA;Select Yes only if you understand and accept these risks.</value></data>
   <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>Unofficial hardware integration</value></data>
