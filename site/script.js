@@ -37,7 +37,7 @@ function detectInitialLanguage() {
 
 let language = detectInitialLanguage();
 let activeProfile = "home";
-let profileAutoplayTimer;
+let profileAutoplayAnimation;
 let pointerActivatedProfileControl = false;
 
 const PROFILE_AUTOPLAY_DELAY = 6000;
@@ -47,6 +47,7 @@ const autoplayPauseReasons = new Set();
 const header = document.querySelector(".site-header");
 const languageToggle = document.querySelector("[data-language-toggle]");
 const profileButtons = [...document.querySelectorAll("[data-profile]")];
+const profileSwitcher = document.querySelector(".profile-switcher");
 const metaDescription = document.querySelector('meta[name="description"]');
 const ogDescription = document.querySelector('meta[property="og:description"]');
 const profileTitle = document.querySelector("[data-profile-title]");
@@ -58,20 +59,46 @@ const batteryChart = document.querySelector("[data-battery-chart]");
 const productVisual = document.querySelector(".product-visual");
 
 function stopProfileAutoplay() {
-  window.clearTimeout(profileAutoplayTimer);
-  profileAutoplayTimer = undefined;
+  if (!profileAutoplayAnimation) return;
+  profileAutoplayAnimation.onfinish = null;
+  profileAutoplayAnimation.cancel();
+  profileAutoplayAnimation = undefined;
 }
 
-function scheduleProfileAutoplay() {
-  stopProfileAutoplay();
-  if (document.hidden || reducedMotionQuery.matches || autoplayPauseReasons.size > 0) return;
+function scheduleProfileAutoplay(restart = false) {
+  if (restart) stopProfileAutoplay();
+  if (reducedMotionQuery.matches || profileButtons.length < 2) {
+    stopProfileAutoplay();
+    profileSwitcher.dataset.autoplayState = "disabled";
+    return;
+  }
 
-  profileAutoplayTimer = window.setTimeout(() => {
-    const currentIndex = profileButtons.findIndex((button) => button.dataset.profile === activeProfile);
-    const nextButton = profileButtons[(currentIndex + 1) % profileButtons.length];
-    renderProfile(nextButton.dataset.profile);
-    scheduleProfileAutoplay();
-  }, PROFILE_AUTOPLAY_DELAY);
+  if (!profileAutoplayAnimation) {
+    const activeButton = profileButtons.find((button) => button.dataset.profile === activeProfile);
+    const progress = activeButton.querySelector(".profile-progress-fill");
+    if (!progress || typeof progress.animate !== "function") {
+      profileSwitcher.dataset.autoplayState = "disabled";
+      return;
+    }
+
+    // The bar is also the clock, so pausing it preserves the remaining time.
+    profileAutoplayAnimation = progress.animate(
+      [{ transform: "scaleX(0)" }, { transform: "scaleX(1)" }],
+      { duration: PROFILE_AUTOPLAY_DELAY, easing: "linear", fill: "forwards" }
+    );
+    profileAutoplayAnimation.pause();
+    profileAutoplayAnimation.onfinish = () => {
+      const currentIndex = profileButtons.findIndex((button) => button.dataset.profile === activeProfile);
+      const nextButton = profileButtons[(currentIndex + 1) % profileButtons.length];
+      renderProfile(nextButton.dataset.profile);
+      scheduleProfileAutoplay(true);
+    };
+  }
+
+  const paused = document.hidden || autoplayPauseReasons.size > 0;
+  profileSwitcher.dataset.autoplayState = paused ? "paused" : "running";
+  if (paused) profileAutoplayAnimation.pause();
+  else profileAutoplayAnimation.play();
 }
 
 function setAutoplayPaused(reason, paused) {
@@ -142,7 +169,7 @@ profileButtons.forEach((button, index) => {
   button.addEventListener("pointercancel", releasePointerControl);
   button.addEventListener("click", () => {
     renderProfile(button.dataset.profile);
-    scheduleProfileAutoplay();
+    scheduleProfileAutoplay(true);
   });
   button.addEventListener("keydown", (event) => {
     if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
@@ -151,7 +178,7 @@ profileButtons.forEach((button, index) => {
     const nextIndex = (index + direction + profileButtons.length) % profileButtons.length;
     profileButtons[nextIndex].focus();
     renderProfile(profileButtons[nextIndex].dataset.profile);
-    scheduleProfileAutoplay();
+    scheduleProfileAutoplay(true);
   });
 });
 
@@ -166,8 +193,8 @@ productVisual.addEventListener("focusout", () => {
   });
 });
 
-document.addEventListener("visibilitychange", scheduleProfileAutoplay);
-reducedMotionQuery.addEventListener("change", scheduleProfileAutoplay);
+document.addEventListener("visibilitychange", () => scheduleProfileAutoplay());
+reducedMotionQuery.addEventListener("change", () => scheduleProfileAutoplay());
 
 function updateHeader() {
   header.classList.toggle("scrolled", window.scrollY > 16);
