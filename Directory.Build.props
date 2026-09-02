@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <Version Condition="'$(Version)' == ''">0.1.0</Version>
+    <Authors>Honor Battery Saver contributors</Authors>
+    <Company>Honor Battery Saver contributors</Company>
+    <Product>Honor Battery Saver</Product>
+    <Copyright>Copyright © 2026 Honor Battery Saver contributors</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/vyach-vasiliev/honor-battery-saver</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+</Project>

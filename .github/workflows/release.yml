@@ -1,0 +1,106 @@
+name: Release unsigned installer
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  build-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out tagged source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up .NET 10 SDK
+        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Install verified Inno Setup
+        id: inno
+        shell: pwsh
+        run: |
+          $downloadUrl = "https://github.com/jrsoftware/issrc/releases/download/is-6_7_3/innosetup-6.7.3.exe"
+          $expectedHash = "9c73c3bae7ed48d44112a0f48e66742c00090bdb5bef71d9d3c056c66e97b732"
+          $downloadPath = Join-Path $env:RUNNER_TEMP "innosetup-6.7.3.exe"
+          $installDirectory = Join-Path $env:RUNNER_TEMP "inno-setup"
+
+          Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
+          $actualHash = (Get-FileHash -LiteralPath $downloadPath -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actualHash -ne $expectedHash) {
+            throw "Inno Setup checksum mismatch. Expected $expectedHash, got $actualHash."
+          }
+
+          Start-Process -FilePath $downloadPath -ArgumentList @(
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/DIR=$installDirectory"
+          ) -WindowStyle Hidden -Wait
+
+          $compiler = Join-Path $installDirectory "ISCC.exe"
+          if (-not (Test-Path -LiteralPath $compiler -PathType Leaf)) {
+            throw "Inno Setup compiler was not installed at $compiler."
+          }
+
+          "compiler=$compiler" >> $env:GITHUB_OUTPUT
+
+      - name: Build and test installer
+        shell: pwsh
+        run: |
+          $tag = "${{ github.ref_name }}"
+          if ($tag -notmatch '^v(?<version>\d+\.\d+\.\d+(?:\.\d+)?)$') {
+            throw "Release tag must have the form v1.2.3 or v1.2.3.4; got $tag."
+          }
+
+          .\tools\Build-Installer.ps1 `
+            -Configuration Release `
+            -Version $Matches.version `
+            -InnoSetupCompiler "${{ steps.inno.outputs.compiler }}"
+
+      - name: Create SHA-256 checksum
+        shell: pwsh
+        run: |
+          $installer = "artifacts\installer\HonorBatterySaverSetup.exe"
+          $hash = (Get-FileHash -LiteralPath $installer -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  HonorBatterySaverSetup.exe" |
+            Set-Content -LiteralPath "$installer.sha256" -Encoding ascii
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: HonorBatterySaver-${{ github.ref_name }}-unsigned
+          path: |
+            artifacts/installer/HonorBatterySaverSetup.exe
+            artifacts/installer/HonorBatterySaverSetup.exe.sha256
+          if-no-files-found: error
+
+      - name: Publish unsigned pre-release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          @"
+          This is the first unsigned pre-release of Honor Battery Saver.
+
+          The project is applying for free open-source code signing. Until signing is integrated, Windows will show an unknown publisher warning. Verify the installer with the attached SHA-256 checksum before running it.
+
+          See CODE_SIGNING_POLICY.md, PRIVACY.md, and SECURITY.md in the tagged source for details.
+          "@ | Set-Content -LiteralPath release-notes.md -Encoding utf8
+
+          gh release create "${{ github.ref_name }}" `
+            artifacts/installer/HonorBatterySaverSetup.exe `
+            artifacts/installer/HonorBatterySaverSetup.exe.sha256 `
+            --verify-tag `
+            --prerelease `
+            --title "Honor Battery Saver ${{ github.ref_name }}" `
+            --notes-file release-notes.md

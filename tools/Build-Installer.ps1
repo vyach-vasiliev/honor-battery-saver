@@ -107,7 +107,12 @@ Assert-PathWithinProject -Path $OutputDirectory
 New-Item -ItemType Directory -Path $OutputDirectory -Force | Out-Null
 
 Invoke-DotNet -Arguments @('restore', $solutionPath)
-Invoke-DotNet -Arguments @('build', $solutionPath, '-c', $Configuration, '--no-restore')
+Invoke-DotNet -Arguments @(
+    'build', $solutionPath,
+    '-c', $Configuration,
+    '--no-restore',
+    "-p:Version=$Version"
+)
 if (-not $SkipTests) {
     Invoke-DotNet -Arguments @('test', $solutionPath, '-c', $Configuration, '--no-build', '--no-restore')
 }
@@ -118,6 +123,7 @@ Invoke-DotNet -Arguments @(
     '-r', 'win-x64',
     '--self-contained', 'false',
     '--no-restore',
+    "-p:Version=$Version",
     '-o', $trayPublishDirectory
 )
 Invoke-DotNet -Arguments @(
@@ -126,6 +132,7 @@ Invoke-DotNet -Arguments @(
     '-r', 'win-x64',
     '--self-contained', 'false',
     '--no-restore',
+    "-p:Version=$Version",
     '-o', $servicePublishDirectory
 )
 

@@ -194,6 +194,16 @@ Honor Battery Saver sends no network telemetry and stores no passwords, BSSIDs, 
 
 Changing the registry alone does **not** prove that the battery controller accepted a threshold. Success requires a positive OEM WMI result followed by registry synchronization. HONOR PC Manager can still change a profile manually; this app does not poll or continuously overwrite that choice.
 
+For the complete local-data description, see the [privacy policy](./PRIVACY.md). Security issues should be reported privately according to the [security policy](./SECURITY.md).
+
+## License and code signing
+
+Honor Battery Saver is open-source software released under the [MIT License](./LICENSE).
+
+The first pre-release is intentionally unsigned while the project applies to the SignPath Foundation open-source program. Verify the SHA-256 checksum attached to the GitHub release before running the installer. See the [code signing policy](./CODE_SIGNING_POLICY.md) for build provenance, project roles, and the planned signed-artifact scope.
+
+Free code signing provided by SignPath.io, certificate by SignPath Foundation.
+
 ---
 
 <div align="center">
