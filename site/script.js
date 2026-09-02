@@ -8,7 +8,7 @@ const languageContent = {
   ru: {
     title: "Honor Battery Saver — помогите HONOR сохранить батарею",
     description: "Сокращайте ненужное время на 100%: Honor Battery Saver автоматически выбирает лимиты 70%, 90% или 100% для ноутбука HONOR. Открытый код, без телеметрии.",
-    ogDescription: "Меньше ненужного времени на 100% — больше заботы о ресурсе аккумулятора HONOR.",
+    ogDescription: "Бережная зарядка для ноутбуков HONOR с авто-переключением профилей.",
     languageLabel: "Switch to English",
     navigationLabel: "Основная навигация",
     visualLabel: "Демонстрация переключения профилей зарядки",
@@ -20,7 +20,7 @@ const languageContent = {
   en: {
     title: "Honor Battery Saver — help your HONOR battery last longer",
     description: "Reduce unnecessary time at 100% with automatic 70%, 90%, and 100% charging profiles for compatible HONOR laptops. Open source, with no telemetry.",
-    ogDescription: "Less unnecessary time at 100% — more care for your HONOR battery.",
+    ogDescription: "Gentle charging for HONOR laptops with automatic profile switching.",
     languageLabel: "Переключить на русский",
     navigationLabel: "Main navigation",
     visualLabel: "Charging profile switching demo",
@@ -31,18 +31,8 @@ const languageContent = {
   }
 };
 
-const LANGUAGE_STORAGE_KEY = "honor-battery-saver-language";
-
 function detectInitialLanguage() {
-  try {
-    const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    if (savedLanguage === "en" || savedLanguage === "ru") return savedLanguage;
-  } catch {
-    // Language detection still works when browser storage is unavailable.
-  }
-
-  const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language];
-  return browserLanguages.some((value) => value?.toLowerCase().startsWith("ru")) ? "ru" : "en";
+  return document.documentElement.lang.toLowerCase().startsWith("en") ? "en" : "ru";
 }
 
 let language = detectInitialLanguage();
@@ -109,7 +99,7 @@ function renderProfile(name) {
   });
 }
 
-function setLanguage(nextLanguage, persist = false) {
+function setLanguage(nextLanguage) {
   language = nextLanguage;
   const content = languageContent[language];
   document.documentElement.lang = language;
@@ -132,18 +122,12 @@ function setLanguage(nextLanguage, persist = false) {
   document.querySelector(".charge-comparison").setAttribute("aria-label", content.comparisonLabel);
   document.querySelector(".brand").setAttribute("aria-label", content.brandLabel);
 
-  if (persist) {
-    try {
-      localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
-    } catch {
-      // The selected language remains active for this page when storage is unavailable.
-    }
-  }
-
   renderProfile(activeProfile);
 }
 
-languageToggle.addEventListener("click", () => setLanguage(language === "ru" ? "en" : "ru", true));
+languageToggle.addEventListener("click", () => {
+  window.location.href = language === "ru" ? "/en/" : "/ru/";
+});
 
 profileButtons.forEach((button, index) => {
   button.addEventListener("pointerdown", () => {
