@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.22000.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyName>Honor Battery Saver</AssemblyName>
+    <AssemblyTitle>Honor Battery Saver</AssemblyTitle>
+    <Product>Honor Battery Saver</Product>
+    <Description>Automatic HONOR battery protection profile management</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <ApplicationIcon>Assets\HonorBatterySaver.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HonorBatterySaver.Core\HonorBatterySaver.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Tray\tray-*.ico">
+      <LogicalName>HonorBatterySaver.Tray.Assets.Tray.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>Бережная зарядка дома, в офисе и в дороге</value></data>
+  <data name="App_CheckingStatus" xml:space="preserve"><value>Проверка состояния…</value></data>
+  <data name="Common_Enable" xml:space="preserve"><value>Включить</value></data>
+  <data name="Common_Enabled" xml:space="preserve"><value>Включено</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Сохранить</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Изменить</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Удалить</value></data>
+  <data name="Common_Available" xml:space="preserve"><value>доступен</value></data>
+  <data name="Common_Unavailable" xml:space="preserve"><value>недоступен</value></data>
+  <data name="Common_UnknownType" xml:space="preserve"><value>тип неизвестен</value></data>
+  <data name="Settings_Tab" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Settings_StartWithWindows" xml:space="preserve"><value>Запуск вместе с Windows</value></data>
+  <data name="Settings_StartWithWindowsDescription" xml:space="preserve"><value>Приложение появится в трее после входа в вашу учётную запись.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Язык интерфейса</value></data>
+  <data name="Settings_LanguageDescription" xml:space="preserve"><value>Выберите язык вручную или используйте язык интерфейса Windows.</value></data>
+  <data name="Language_System" xml:space="preserve"><value>Как в Windows</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский</value></data>
+  <data name="Language_English" xml:space="preserve"><value>Английский</value></data>
+  <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>Автоматическое переключение</value></data>
+  <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>При подключённой зарядке профиль выбирается по Wi-Fi. На батарее аппаратные настройки не меняются.</value></data>
+  <data name="Settings_WifiRules" xml:space="preserve"><value>Правила Wi-Fi</value></data>
+  <data name="Settings_WifiRulesDescription" xml:space="preserve"><value>Первое совпавшее активное правило имеет приоритет.</value></data>
+  <data name="Settings_AddRule" xml:space="preserve"><value>＋  Добавить правило</value></data>
+  <data name="Settings_EnabledColumn" xml:space="preserve"><value>Вкл.</value></data>
+  <data name="Settings_WifiNetworkColumn" xml:space="preserve"><value>Сеть Wi-Fi</value></data>
+  <data name="Settings_ExactSsidMatch" xml:space="preserve"><value>Точное совпадение SSID</value></data>
+  <data name="Settings_ChargingProfileColumn" xml:space="preserve"><value>Профиль зарядки</value></data>
+  <data name="Settings_NoRules" xml:space="preserve"><value>Правил пока нет</value></data>
+  <data name="Settings_NoRulesDescription" xml:space="preserve"><value>Добавьте сеть и выберите профиль зарядки</value></data>
+  <data name="Settings_HigherRuleFirst" xml:space="preserve"><value>Более высокое правило проверяется первым</value></data>
+  <data name="Settings_MoveUp" xml:space="preserve"><value>↑ Выше</value></data>
+  <data name="Settings_MoveDown" xml:space="preserve"><value>↓ Ниже</value></data>
+  <data name="Settings_Saved" xml:space="preserve"><value>Настройки сохранены</value></data>
+  <data name="Settings_SsidEmpty" xml:space="preserve"><value>SSID не может быть пустым.</value></data>
+  <data name="Settings_SaveFailed" xml:space="preserve"><value>Не удалось сохранить настройки.&#xA;&#xA;{0}</value></data>
+  <data name="Settings_CorruptRecovered" xml:space="preserve"><value>Файл настроек был повреждён. Восстановлены безопасные значения по умолчанию.</value></data>
+  <data name="Diagnostics_Tab" xml:space="preserve"><value>Диагностика</value></data>
+  <data name="Diagnostics_SystemStatus" xml:space="preserve"><value>Состояние системы</value></data>
+  <data name="Diagnostics_WifiAccess" xml:space="preserve"><value>Доступ к Wi-Fi</value></data>
+  <data name="Diagnostics_Power" xml:space="preserve"><value>Питание</value></data>
+  <data name="Diagnostics_SelectedMode" xml:space="preserve"><value>Выбранный режим</value></data>
+  <data name="Diagnostics_AppliedMode" xml:space="preserve"><value>Применённый режим</value></data>
+  <data name="Diagnostics_ServiceAndWmi" xml:space="preserve"><value>Служба и WMI</value></data>
+  <data name="Diagnostics_OemRegistry" xml:space="preserve"><value>OEM-реестр</value></data>
+  <data name="Diagnostics_LastAttempt" xml:space="preserve"><value>Последняя попытка</value></data>
+  <data name="Diagnostics_ChargingModesTitle" xml:space="preserve"><value>Как работают режимы зарядки</value></data>
+  <data name="Diagnostics_ChargingModesDescription" xml:space="preserve"><value>Первое число — уровень, ниже которого зарядка возобновится. Второе — уровень, на котором зарядка остановится.</value></data>
+  <data name="Diagnostics_HomeDescription" xml:space="preserve"><value>Начать ниже 40%, остановить на 70%. Максимальная забота о ресурсе батареи.</value></data>
+  <data name="Diagnostics_OfficeDescription" xml:space="preserve"><value>Начать ниже 70%, остановить на 90%. Баланс автономности и износа.</value></data>
+  <data name="Diagnostics_TravelDescription" xml:space="preserve"><value>Начать ниже 95%, остановить на 100%. Максимальная автономность.</value></data>
+  <data name="Diagnostics_OpenSettings" xml:space="preserve"><value>Открыть параметры</value></data>
+  <data name="Diagnostics_WifiRestricted" xml:space="preserve"><value>Windows ограничила доступ к Wi-Fi</value></data>
+  <data name="Diagnostics_LocationDescription" xml:space="preserve"><value>Разрешение геолокации используется только для определения имени сети.</value></data>
+  <data name="Diagnostics_HardwareCheck" xml:space="preserve"><value>Аппаратная проверка</value></data>
+  <data name="Diagnostics_HardwareCheckDescription" xml:space="preserve"><value>Показывает OEM payload и требует подтверждения перед реальным изменением порогов.</value></data>
+  <data name="Diagnostics_Run" xml:space="preserve"><value>Запустить…</value></data>
+  <data name="Diagnostics_UnknownNetwork" xml:space="preserve"><value>Неизвестная сеть</value></data>
+  <data name="Diagnostics_NetworkName" xml:space="preserve"><value>«{0}»</value></data>
+  <data name="Diagnostics_AcPower" xml:space="preserve"><value>Питание от сети (AC)</value></data>
+  <data name="Diagnostics_BatteryPower" xml:space="preserve"><value>Работа от батареи</value></data>
+  <data name="Diagnostics_UnknownPower" xml:space="preserve"><value>Источник неизвестен</value></data>
+  <data name="Diagnostics_NoSuccessfulApply" xml:space="preserve"><value>Нет успешного применения в этом сеансе</value></data>
+  <data name="Diagnostics_ServiceUnavailable" xml:space="preserve"><value>Служба недоступна</value></data>
+  <data name="Diagnostics_ServiceReady" xml:space="preserve"><value>Служба: доступна. OEM WMI: доступен.</value></data>
+  <data name="Diagnostics_ServiceProblem" xml:space="preserve"><value>Служба: доступна. OEM WMI: недоступен.&#xA;{0}</value></data>
+  <data name="Diagnostics_RegistryValues" xml:space="preserve"><value>PowerSafeManagerStatus={0} ({1}); PowerSafeManagerMode={2} ({3})</value></data>
+  <data name="Diagnostics_RegistryUnavailable" xml:space="preserve"><value>OEM-раздел не найден или служба недоступна</value></data>
+  <data name="Diagnostics_HeaderMode" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="Diagnostics_HeaderAc" xml:space="preserve"><value>питание от сети</value></data>
+  <data name="Diagnostics_HeaderBattery" xml:space="preserve"><value>батарея</value></data>
+  <data name="Diagnostics_HeaderNoChange" xml:space="preserve"><value>Батарея · профиль не изменяется</value></data>
+  <data name="Mode_Home" xml:space="preserve"><value>Дом</value></data>
+  <data name="Mode_Office" xml:space="preserve"><value>Офис</value></data>
+  <data name="Mode_Travel" xml:space="preserve"><value>Путешествия</value></data>
+  <data name="Mode_HomeRange" xml:space="preserve"><value>Дом · 40–70%</value></data>
+  <data name="Mode_OfficeRange" xml:space="preserve"><value>Офис · 70–90%</value></data>
+  <data name="Mode_TravelRange" xml:space="preserve"><value>Путешествия · 95–100%</value></data>
+  <data name="Mode_HomeDetailed" xml:space="preserve"><value>Дом · 40–70% — зарядка возобновится ниже 40% и остановится на 70%</value></data>
+  <data name="Mode_OfficeDetailed" xml:space="preserve"><value>Офис · 70–90% — зарядка возобновится ниже 70% и остановится на 90%</value></data>
+  <data name="Mode_TravelDetailed" xml:space="preserve"><value>Путешествия · 95–100% — зарядка возобновится ниже 95% и остановится на 100%</value></data>
+  <data name="WifiRule_Title" xml:space="preserve"><value>Правило Wi-Fi</value></data>
+  <data name="WifiRule_AddTitle" xml:space="preserve"><value>Добавить правило</value></data>
+  <data name="WifiRule_EditTitle" xml:space="preserve"><value>Изменить правило</value></data>
+  <data name="WifiRule_Description" xml:space="preserve"><value>Выберите сеть из списка или введите точное имя SSID вручную.</value></data>
+  <data name="WifiRule_Network" xml:space="preserve"><value>Сеть Wi-Fi</value></data>
+  <data name="WifiRule_Profile" xml:space="preserve"><value>Профиль зарядки</value></data>
+  <data name="WifiRule_AcOnly" xml:space="preserve"><value>Правило сработает только при питании ноутбука от сети.</value></data>
+  <data name="WifiRule_Save" xml:space="preserve"><value>Сохранить правило</value></data>
+  <data name="WifiRule_ListDenied" xml:space="preserve"><value>Список недоступен: Windows запретила доступ к Wi-Fi. SSID всё ещё можно ввести вручную.</value></data>
+  <data name="WifiRule_ListEmpty" xml:space="preserve"><value>Список сетей пуст. Введите SSID вручную.</value></data>
+  <data name="WifiRule_ListOrder" xml:space="preserve"><value>Сначала показаны подключённая и доступные сети, затем сохранённые в Windows.</value></data>
+  <data name="WifiRule_SelectNetwork" xml:space="preserve"><value>Выберите сеть или введите точное имя SSID.</value></data>
+  <data name="WifiRule_Connected" xml:space="preserve"><value>Подключена сейчас</value></data>
+  <data name="WifiRule_AvailableKnown" xml:space="preserve"><value>Доступна · сохранена</value></data>
+  <data name="WifiRule_Available" xml:space="preserve"><value>Доступна сейчас</value></data>
+  <data name="WifiRule_Known" xml:space="preserve"><value>Сохранена в Windows</value></data>
+  <data name="Decision_Manual" xml:space="preserve"><value>Выбран ручной режим</value></data>
+  <data name="Decision_OnBattery" xml:space="preserve"><value>Работа от батареи — аппаратный профиль не изменяется</value></data>
+  <data name="Decision_UnknownPower" xml:space="preserve"><value>Источник питания неизвестен — аппаратный профиль не изменяется</value></data>
+  <data name="Decision_RuleMatched" xml:space="preserve"><value>Совпало правило Wi-Fi «{0}»</value></data>
+  <data name="Decision_NoWifi" xml:space="preserve"><value>Wi-Fi отключён или сеть недоступна</value></data>
+  <data name="Decision_NoRule" xml:space="preserve"><value>Для текущей сети нет правила</value></data>
+  <data name="Ipc_EmptyRequest" xml:space="preserve"><value>Пустой IPC-запрос.</value></data>
+  <data name="Ipc_UnknownOperation" xml:space="preserve"><value>Неизвестная IPC-операция.</value></data>
+  <data name="Ipc_InvalidBatteryMode" xml:space="preserve"><value>Недопустимый режим батареи.</value></data>
+  <data name="Ipc_ModeParametersOnlyApply" xml:space="preserve"><value>Параметры режима разрешены только для ApplyMode.</value></data>
+  <data name="Ipc_InvalidRequest" xml:space="preserve"><value>Некорректный IPC-запрос.</value></data>
+  <data name="Wifi_NoCatalogNetworks" xml:space="preserve"><value>Windows не вернула доступных или сохранённых Wi-Fi-сетей.</value></data>
+  <data name="Wifi_CatalogCount" xml:space="preserve"><value>Найдено сетей: {0}.</value></data>
+  <data name="Wifi_CatalogFailed" xml:space="preserve"><value>Не удалось получить список Wi-Fi: {0}.</value></data>
+  <data name="Wifi_NotConnected" xml:space="preserve"><value>Подключённая Wi-Fi-сеть не найдена.</value></data>
+  <data name="Wifi_AccessAllowed" xml:space="preserve"><value>Доступ к Wi-Fi разрешён.</value></data>
+  <data name="Wifi_DetectFailed" xml:space="preserve"><value>Не удалось определить Wi-Fi: {0}.</value></data>
+  <data name="Wifi_NameAccessDenied" xml:space="preserve"><value>Windows запретила доступ к имени Wi-Fi-сети. Разрешите геолокацию для приложения.</value></data>
+  <data name="Wifi_DetectWindowsError" xml:space="preserve"><value>Не удалось определить Wi-Fi: код Windows {0}.</value></data>
+  <data name="Wifi_ListAccessDenied" xml:space="preserve"><value>Windows запретила доступ к списку Wi-Fi-сетей. Разрешите геолокацию для приложения.</value></data>
+  <data name="Wifi_ListWindowsError" xml:space="preserve"><value>Не удалось получить список Wi-Fi: код Windows {0}.</value></data>
+  <data name="Tray_AutoEnabled" xml:space="preserve"><value>Авто: включено</value></data>
+  <data name="Tray_StatusWaiting" xml:space="preserve"><value>Сейчас: ожидание</value></data>
+  <data name="Tray_Reapply" xml:space="preserve"><value>Синхронизировать режим сейчас</value></data>
+  <data name="Tray_ReapplyHint" xml:space="preserve"><value>Повторно применить выбранный профиль, например после изменения в HONOR PC Manager</value></data>
+  <data name="Tray_ReapplyPlugInHint" xml:space="preserve"><value>Подключите зарядку: на батарее автоматический профиль не применяется</value></data>
+  <data name="Tray_Diagnostics" xml:space="preserve"><value>Настройки и диагностика</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Выход</value></data>
+  <data name="Tray_AutoState" xml:space="preserve"><value>Авто: {0}</value></data>
+  <data name="Tray_On" xml:space="preserve"><value>включено</value></data>
+  <data name="Tray_Off" xml:space="preserve"><value>выключено</value></data>
+  <data name="Tray_NoProfile" xml:space="preserve"><value>профиль не выбран</value></data>
+  <data name="Tray_Battery" xml:space="preserve"><value>батарея</value></data>
+  <data name="Tray_UnknownPower" xml:space="preserve"><value>питание неизвестно</value></data>
+  <data name="Tray_UnknownNetwork" xml:space="preserve"><value>неизвестная сеть</value></data>
+  <data name="Tray_StatusApplied" xml:space="preserve"><value>Сейчас: {0} · до {1}% · {2} · {3}</value></data>
+  <data name="Tray_StatusPending" xml:space="preserve"><value>Сейчас: ожидается {0} · {1} · {2}</value></data>
+  <data name="Tray_StatusNoChange" xml:space="preserve"><value>Сейчас: профиль не меняется · {0} · {1}</value></data>
+  <data name="Tray_TooltipError" xml:space="preserve"><value>Honor Battery Saver · ошибка · {0}</value></data>
+  <data name="Tray_TooltipApplied" xml:space="preserve"><value>Honor Battery Saver · {0} · зарядка до {1}%</value></data>
+  <data name="Tray_TooltipPending" xml:space="preserve"><value>Honor Battery Saver · ожидание применения</value></data>
+  <data name="Tray_TooltipBattery" xml:space="preserve"><value>Honor Battery Saver · батарея · профиль не меняется</value></data>
+  <data name="Tray_ApplyFailedTitle" xml:space="preserve"><value>Не удалось применить профиль</value></data>
+  <data name="Tray_ProfileChangedTitle" xml:space="preserve"><value>Профиль зарядки изменён</value></data>
+  <data name="Tray_ProfileChangedMessage" xml:space="preserve"><value>Режим «{0}» включён. Зарядка: ниже {1}% → до {2}%.</value></data>
+  <data name="Tray_SettingsRestoredTitle" xml:space="preserve"><value>Настройки восстановлены</value></data>
+  <data name="Tray_ServiceNotRunningTitle" xml:space="preserve"><value>Служба не запущена</value></data>
+  <data name="Tray_NoApplyAttempts" xml:space="preserve"><value>Попыток применения в этом сеансе не было</value></data>
+  <data name="Tray_AutostartFailed" xml:space="preserve"><value>Не удалось изменить автозапуск Windows.</value></data>
+  <data name="ServiceClient_Timeout" xml:space="preserve"><value>Служба не ответила за отведённое время.</value></data>
+  <data name="ServiceClient_Unavailable" xml:space="preserve"><value>Служба Honor Battery Saver недоступна.</value></data>
+  <data name="App_ServiceStartCheckFailed" xml:space="preserve"><value>Не удалось проверить или запустить службу: {0}</value></data>
+  <data name="App_StartFailed" xml:space="preserve"><value>Не удалось запустить Honor Battery Saver.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ElevationCancelled" xml:space="preserve"><value>Запрос прав администратора отменён.</value></data>
+  <data name="Hardware_OpenFailed" xml:space="preserve"><value>Windows не удалось открыть аппаратную проверку. Повторите попытку и подтвердите запрос прав администратора.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ProcessNotCreated" xml:space="preserve"><value>Windows не создала процесс аппаратной проверки.</value></data>
+  <data name="Hardware_InvalidMode" xml:space="preserve"><value>Указан недопустимый режим.</value></data>
+  <data name="Hardware_AdminOnly" xml:space="preserve"><value>Аппаратная проверка доступна только администратору.</value></data>
+  <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>Не удалось запустить службу Honor Battery Saver.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM-раздел реестра недоступен</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>Выбранный режим: {0}&#xA;Точный OEM payload: {1}&#xA;&#xA;Команда будет передана в подтверждённом 64-байтном OEM-буфере.&#xA;&#xA;Прежние значения реестра:&#xA;{2}&#xA;&#xA;Внимание: проверка реально изменит пороги зарядки батареи. Продолжить?</value></data>
+  <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Аппаратная проверка Honor Battery Saver</value></data>
+  <data name="Hardware_ResultTitle" xml:space="preserve"><value>Результат аппаратной проверки</value></data>
+  <data name="Reason_ConditionsChanged" xml:space="preserve"><value>Изменение условий</value></data>
+  <data name="Reason_WifiChanged" xml:space="preserve"><value>Изменение Wi-Fi</value></data>
+  <data name="Reason_PowerChanged" xml:space="preserve"><value>Изменение источника питания</value></data>
+  <data name="Reason_Resumed" xml:space="preserve"><value>Возобновление после сна</value></data>
+  <data name="Reason_AppStarted" xml:space="preserve"><value>Запуск приложения</value></data>
+  <data name="Reason_ManualSync" xml:space="preserve"><value>Ручная синхронизация режима</value></data>
+  <data name="Reason_AutomaticEnabled" xml:space="preserve"><value>Автоматический режим включён</value></data>
+  <data name="Reason_ManualSelection" xml:space="preserve"><value>Ручной выбор</value></data>
+  <data name="Reason_SettingsChanged" xml:space="preserve"><value>Настройки изменены</value></data>
+  <data name="Wifi_NotChecked" xml:space="preserve"><value>Состояние Wi-Fi ещё не проверено.</value></data>
+  <data name="Decision_WaitingFirstCheck" xml:space="preserve"><value>Ожидание первой проверки</value></data>
+  <data name="Recovery_AlreadyRunning" xml:space="preserve"><value>Служба уже запущена.</value></data>
+  <data name="Recovery_FinishedStarting" xml:space="preserve"><value>Служба завершила запуск.</value></data>
+  <data name="Recovery_ProcessPipeUnavailable" xml:space="preserve"><value>Процесс службы запущен, но канал управления недоступен. Завершите зависший процесс и повторите запуск.</value></data>
+  <data name="Recovery_ExecutableNotFoundNearby" xml:space="preserve"><value>Служба не зарегистрирована, а HonorBatterySaver.Service.exe не найден рядом с приложением.</value></data>
+  <data name="Recovery_EnableAutostartFailed" xml:space="preserve"><value>Не удалось включить автоматический запуск службы. {0}</value></data>
+  <data name="Recovery_StartFailed" xml:space="preserve"><value>Не удалось запустить службу. {0}</value></data>
+  <data name="Recovery_WindowsServiceStarted" xml:space="preserve"><value>Служба Windows включена и запущена.</value></data>
+  <data name="Recovery_PipeDidNotAppear" xml:space="preserve"><value>Служба запущена, но канал управления не появился.</value></data>
+  <data name="Recovery_ExecutableNotFound" xml:space="preserve"><value>Служба не зарегистрирована, а HonorBatterySaver.Service.exe не найден.</value></data>
+  <data name="Recovery_ProcessStartedElevated" xml:space="preserve"><value>Служебный процесс запущен с правами администратора.</value></data>
+  <data name="Recovery_ProcessPipeDidNotAppear" xml:space="preserve"><value>Служебный процесс запущен, но канал управления не появился.</value></data>
+  <data name="Recovery_AppPathUnknown" xml:space="preserve"><value>Не удалось определить путь к приложению.</value></data>
+  <data name="Recovery_ProcessNotCreated" xml:space="preserve"><value>Windows не создала процесс восстановления службы.</value></data>
+  <data name="Recovery_WindowsStartFailed" xml:space="preserve"><value>Windows не удалось включить или запустить службу.</value></data>
+  <data name="Recovery_ElevationFailed" xml:space="preserve"><value>Не удалось запросить права администратора: {0}</value></data>
+  <data name="Recovery_ProcessStartFailed" xml:space="preserve"><value>Не удалось запустить служебный процесс: {0}</value></data>
+  <data name="Recovery_ServiceProcessNotCreated" xml:space="preserve"><value>Windows не создала процесс службы.</value></data>
+  <data name="Recovery_ServiceManagerNotStarted" xml:space="preserve"><value>Windows не запустила диспетчер служб.</value></data>
+  <data name="Recovery_ErrorCode" xml:space="preserve"><value>Код ошибки: {0}.</value></data>
+  <data name="Service_Available" xml:space="preserve"><value>Служба доступна.</value></data>
+  <data name="Service_ModeAlreadyApplied" xml:space="preserve"><value>Режим уже применён; повторная OEM-команда не требуется.</value></data>
+  <data name="Service_RegistryKeyMissing" xml:space="preserve"><value>Раздел реестра HONOR PC Manager не найден.</value></data>
+  <data name="Service_ProbeFailed" xml:space="preserve"><value>Проверка устройства завершилась ошибкой: {0}.</value></data>
+  <data name="Service_DeviceUnsupported" xml:space="preserve"><value>Устройство не поддерживается: раздел реестра HONOR PC Manager не найден.</value></data>
+  <data name="Service_CommandRejected" xml:space="preserve"><value>OEM WMI-провайдер отклонил команду.</value></data>
+  <data name="Service_ModeApplied" xml:space="preserve"><value>Режим «{0}» применён.</value></data>
+  <data name="Service_RegistrySyncFailed" xml:space="preserve"><value>OEM-команда применена, но синхронизировать реестр не удалось.</value></data>
+  <data name="Service_ApplyFailed" xml:space="preserve"><value>Не удалось применить режим: {0}.</value></data>
+  <data name="Wmi_MethodMissing" xml:space="preserve"><value>OEM WMI-метод отсутствует или имеет несовместимую сигнатуру.</value></data>
+  <data name="Wmi_InstanceMissing" xml:space="preserve"><value>Экземпляр OEM WMI-провайдера не найден.</value></data>
+  <data name="Wmi_ActiveInstanceMissing" xml:space="preserve"><value>Активный экземпляр OEM WMI-провайдера не найден.</value></data>
+  <data name="Wmi_HwmiInstanceMissing" xml:space="preserve"><value>Экземпляр OEM WMI-провайдера HWMI_0 не найден или неоднозначен.</value></data>
+  <data name="Wmi_Available" xml:space="preserve"><value>OEM WMI доступен.</value></data>
+  <data name="Wmi_AccessDenied" xml:space="preserve"><value>Нет доступа к OEM WMI-провайдеру.</value></data>
+  <data name="Wmi_RunServiceAsAdmin" xml:space="preserve"><value>Нет доступа к OEM WMI-провайдеру. Запустите службу с правами администратора.</value></data>
+  <data name="Wmi_ClassMissing" xml:space="preserve"><value>OEM WMI-класс не найден.</value></data>
+  <data name="Wmi_NamespaceUnavailable" xml:space="preserve"><value>OEM WMI-пространство ROOT\WMI недоступно.</value></data>
+  <data name="Wmi_UnavailableError" xml:space="preserve"><value>OEM WMI недоступен: {0}.</value></data>
+  <data name="Wmi_ServiceNeedsElevation" xml:space="preserve"><value>Нет доступа к OEM WMI-провайдеру. Служба должна работать с повышенными правами.</value></data>
+  <data name="Wmi_MethodUnavailable" xml:space="preserve"><value>OEM WMI-метод недоступен в текущей версии BIOS или PC Manager.</value></data>
+  <data name="Wmi_CommandFormatRejected" xml:space="preserve"><value>OEM WMI-провайдер отклонил формат подтверждённой команды.</value></data>
+  <data name="Wmi_CallFailed" xml:space="preserve"><value>OEM WMI-вызов завершился ошибкой {0}.</value></data>
+</root>
