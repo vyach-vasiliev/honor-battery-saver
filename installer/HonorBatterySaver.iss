@@ -40,8 +40,8 @@ ChangesEnvironment=no
 ChangesAssociations=no
 
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"
-Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
+Name: "english"; MessagesFile: "compiler:Default.isl"; InfoBeforeFile: "disclaimer-en.txt"
+Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"; InfoBeforeFile: "disclaimer-ru.txt"
 
 [CustomMessages]
 english.DotNetMissingMessage=Honor Battery Saver requires Microsoft .NET 10 Desktop Runtime x64.%n%nInstall the Desktop Runtime (not the basic .NET Runtime), then run Setup again.%n%nOpen the official Microsoft download page now?
@@ -67,6 +67,10 @@ Name: "desktopicon"; Description: "{cm:DesktopIcon}"; GroupDescription: "{cm:Add
 [Files]
 Source: "{#SourceRoot}\Tray\*"; DestDir: "{app}"; Excludes: "*.pdb"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "{#SourceRoot}\Service\*"; DestDir: "{app}\Service"; Excludes: "*.pdb"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\LICENSE"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\DISCLAIMER.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\DISCLAIMER.ru.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PRIVACY.md"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\Honor Battery Saver"; Filename: "{app}\{#MyAppExeName}"

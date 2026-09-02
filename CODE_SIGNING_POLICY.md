@@ -2,7 +2,7 @@
 
 ## Current status
 
-Release `v0.1.0` is intentionally published as an unsigned pre-release while
+Initial releases are intentionally published as unsigned pre-releases while
 the project applies to the SignPath Foundation open-source program. Until the
 application is accepted and the release workflow is integrated with SignPath,
 users should verify the SHA-256 checksum published with every installer.
@@ -18,6 +18,7 @@ signature.
 - Canonical source: <https://github.com/vyach-vasiliev/honor-battery-saver>
 - License: [MIT](./LICENSE)
 - Privacy policy: [PRIVACY.md](./PRIVACY.md)
+- Disclaimer: [DISCLAIMER.md](./DISCLAIMER.md)
 - Public builds run from committed GitHub Actions workflows on GitHub-hosted
   Windows runners.
 - Release builds are triggered by protected version tags, restore dependencies,

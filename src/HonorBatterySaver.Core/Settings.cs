@@ -20,7 +20,8 @@ public sealed class NetworkRule
 
 public sealed class AppSettings
 {
-    public const int CurrentSchemaVersion = 3;
+    public const int CurrentSchemaVersion = 4;
+    public const int CurrentDisclaimerVersion = 1;
 
     public int SchemaVersion { get; set; } = CurrentSchemaVersion;
     public bool AutomaticMode { get; set; } = true;
@@ -28,6 +29,7 @@ public sealed class AppSettings
     public BatteryMode ManualMode { get; set; } = BatteryMode.Travel;
     public bool StartWithWindows { get; set; } = true;
     public UiLanguage Language { get; set; } = UiLanguage.System;
+    public int DisclaimerAcceptedVersion { get; set; }
     public List<NetworkRule> NetworkRules { get; set; } = [];
 
     public static AppSettings CreateDefault() => new();
@@ -64,6 +66,11 @@ public static class SettingsBehavior
         if (!Enum.IsDefined(settings.Language))
         {
             settings.Language = UiLanguage.System;
+        }
+
+        if (settings.DisclaimerAcceptedVersion < 0)
+        {
+            settings.DisclaimerAcceptedVersion = 0;
         }
 
         settings.NetworkRules ??= [];

@@ -42,6 +42,12 @@ public partial class App : System.Windows.Application
         try
         {
             await _controller.InitializeAsync();
+            if (!await _controller.EnsureDisclaimerAcceptedAsync())
+            {
+                Shutdown();
+                return;
+            }
+
             ServiceRecoveryResult serviceRecovery;
             try
             {

@@ -128,6 +128,18 @@
                 <ScrollViewer Margin="0,10,0,0" VerticalScrollBarVisibility="Auto"
                               HorizontalScrollBarVisibility="Disabled" CanContentScroll="False">
                     <StackPanel>
+                        <Border Margin="0,0,0,12" Padding="18"
+                                Background="{DynamicResource WarningSurfaceBrush}"
+                                BorderBrush="{DynamicResource WarningBorderBrush}" BorderThickness="1"
+                                CornerRadius="14">
+                            <StackPanel>
+                                <TextBlock Text="{i18n:Localized Disclaimer_ShortTitle}"
+                                           FontWeight="SemiBold" Foreground="{DynamicResource TextBrush}" />
+                                <TextBlock Margin="0,4,0,0" Style="{StaticResource BodyMuted}"
+                                           Text="{i18n:Localized Disclaimer_ShortBody}" />
+                            </StackPanel>
+                        </Border>
+
                         <Border Style="{StaticResource Card}">
                             <Grid>
                                 <Grid.ColumnDefinitions>

@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Threading;
 using HonorBatterySaver.Core;
 using Forms = System.Windows.Forms;
+using MessageBox = System.Windows.MessageBox;
 
 namespace HonorBatterySaver.Tray;
 
@@ -90,6 +91,29 @@ public sealed class TrayApplicationController : IDisposable
 
     public void Start() => QueueEvaluation(
         TimeSpan.FromSeconds(3), true, Strings.Get("Reason_AppStarted"));
+
+    public async Task<bool> EnsureDisclaimerAcceptedAsync()
+    {
+        if (_settings.DisclaimerAcceptedVersion >= AppSettings.CurrentDisclaimerVersion)
+        {
+            return true;
+        }
+
+        var result = MessageBox.Show(
+            Strings.Get("Disclaimer_FirstRunBody"),
+            Strings.Get("Disclaimer_FirstRunTitle"),
+            MessageBoxButton.YesNo,
+            MessageBoxImage.Warning,
+            MessageBoxResult.No);
+        if (result != MessageBoxResult.Yes)
+        {
+            return false;
+        }
+
+        _settings.DisclaimerAcceptedVersion = AppSettings.CurrentDisclaimerVersion;
+        await _settingsStore.SaveAsync(_settings, _lifetime.Token);
+        return true;
+    }
 
     public void ShowSettings() => ShowWindow(showDiagnostics: false);
 

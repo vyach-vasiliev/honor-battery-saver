@@ -1,0 +1,12 @@
+IMPORTANT DISCLAIMER
+
+Honor Battery Saver is an independent, unofficial open-source project. It is not affiliated with, authorized by, sponsored by, or endorsed by HONOR or the developers of HONOR PC Manager.
+
+The application uses an undocumented HONOR OEM WMI interface to change battery charging thresholds. Compatibility is not guaranteed. BIOS, firmware, driver, Windows, or HONOR PC Manager updates may change or break this behavior. Even the confirmed commands may fail or behave differently on another laptop model.
+
+The software is provided "as is", without warranty. To the maximum extent permitted by law, its authors and contributors are not liable for losses or damages arising from its use, including unexpected charging behavior, reduced battery life, loss of availability, data loss, or hardware damage.
+
+Continue only if you understand these risks, have reviewed the documentation, and accept responsibility for using the application on your device. Keep backups and a recovery method available, verify the diagnostics before regular use, and stop using the application if behavior is unexpected.
+
+The complete disclaimer is installed with the application and is available at:
+https://github.com/vyach-vasiliev/honor-battery-saver/blob/main/DISCLAIMER.md

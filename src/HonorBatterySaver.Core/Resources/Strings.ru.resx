@@ -7,6 +7,10 @@
   <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
   <data name="App_Tagline" xml:space="preserve"><value>Бережная зарядка дома, в офисе и в дороге</value></data>
   <data name="App_CheckingStatus" xml:space="preserve"><value>Проверка состояния…</value></data>
+  <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>Важный отказ от ответственности</value></data>
+  <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver — независимый неофициальный проект, не связанный с HONOR и не одобренный компанией.&#xA;&#xA;Приложение использует недокументированный OEM WMI-интерфейс для изменения порогов зарядки аккумулятора. Совместимость не гарантируется, а обновления BIOS, прошивки, драйверов, Windows или HONOR PC Manager могут изменить поведение. Использование может привести к неожиданной работе зарядки, сокращению срока службы аккумулятора, потере доступности, данных или повреждению оборудования.&#xA;&#xA;Программа предоставляется «как есть», без гарантий. Вы самостоятельно решаете, подходит ли она вашему устройству, обеспечиваете резервные копии и способ восстановления, проверяете диагностику и контролируете результат.&#xA;&#xA;Нажмите «Да», только если понимаете и принимаете эти риски.</value></data>
+  <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>Неофициальная интеграция с оборудованием</value></data>
+  <data name="Disclaimer_ShortBody" xml:space="preserve"><value>Приложение использует недокументированный интерфейс HONOR и может быть несовместимо с отдельными устройствами или обновлениями. Используйте на свой риск; программа предоставляется без гарантий.</value></data>
   <data name="Common_Enable" xml:space="preserve"><value>Включить</value></data>
   <data name="Common_Enabled" xml:space="preserve"><value>Включено</value></data>
   <data name="Common_Save" xml:space="preserve"><value>Сохранить</value></data>
@@ -162,7 +166,7 @@
   <data name="Hardware_AdminOnly" xml:space="preserve"><value>Аппаратная проверка доступна только администратору.</value></data>
   <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>Не удалось запустить службу Honor Battery Saver.&#xA;&#xA;{0}</value></data>
   <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM-раздел реестра недоступен</value></data>
-  <data name="Hardware_Confirmation" xml:space="preserve"><value>Выбранный режим: {0}&#xA;Точный OEM payload: {1}&#xA;&#xA;Команда будет передана в подтверждённом 64-байтном OEM-буфере.&#xA;&#xA;Прежние значения реестра:&#xA;{2}&#xA;&#xA;Внимание: проверка реально изменит пороги зарядки батареи. Продолжить?</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>Выбранный режим: {0}&#xA;Точный OEM payload: {1}&#xA;&#xA;Команда будет передана в подтверждённом 64-байтном OEM-буфере.&#xA;&#xA;Прежние значения реестра:&#xA;{2}&#xA;&#xA;Внимание: проверка реально изменит пороги зарядки через недокументированный OEM-интерфейс. Совместимость не гарантируется, программа предоставляется без гарантий, а вы принимаете риск неожиданного поведения или ущерба. Продолжить?</value></data>
   <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Аппаратная проверка Honor Battery Saver</value></data>
   <data name="Hardware_ResultTitle" xml:space="preserve"><value>Результат аппаратной проверки</value></data>
   <data name="Reason_ConditionsChanged" xml:space="preserve"><value>Изменение условий</value></data>

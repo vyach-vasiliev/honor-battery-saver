@@ -7,6 +7,10 @@
   <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
   <data name="App_Tagline" xml:space="preserve"><value>Battery-friendly charging at home, at the office, and on the go</value></data>
   <data name="App_CheckingStatus" xml:space="preserve"><value>Checking status…</value></data>
+  <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>Important hardware-control disclaimer</value></data>
+  <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver is an independent, unofficial project and is not affiliated with or endorsed by HONOR.&#xA;&#xA;It uses an undocumented OEM WMI interface to change battery charging thresholds. Compatibility is not guaranteed, and BIOS, firmware, driver, Windows, or HONOR PC Manager updates may change the behavior. Use may result in unexpected charging behavior, reduced battery life, loss of availability, data loss, or hardware damage.&#xA;&#xA;The software is provided “as is”, without warranty. You are responsible for deciding whether it is suitable for your device, keeping backups and a recovery method, checking diagnostics, and monitoring the result.&#xA;&#xA;Select Yes only if you understand and accept these risks.</value></data>
+  <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>Unofficial hardware integration</value></data>
+  <data name="Disclaimer_ShortBody" xml:space="preserve"><value>This app uses an undocumented HONOR interface and may not be compatible with every device or update. Use it at your own risk; the software is provided without warranty.</value></data>
   <data name="Common_Enable" xml:space="preserve"><value>Enable</value></data>
   <data name="Common_Enabled" xml:space="preserve"><value>Enabled</value></data>
   <data name="Common_Save" xml:space="preserve"><value>Save</value></data>
@@ -162,7 +166,7 @@
   <data name="Hardware_AdminOnly" xml:space="preserve"><value>The hardware check is available only to administrators.</value></data>
   <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>Could not start the Honor Battery Saver service.&#xA;&#xA;{0}</value></data>
   <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM registry key unavailable</value></data>
-  <data name="Hardware_Confirmation" xml:space="preserve"><value>Selected mode: {0}&#xA;Exact OEM payload: {1}&#xA;&#xA;The command will be sent in the verified 64-byte OEM buffer.&#xA;&#xA;Previous registry values:&#xA;{2}&#xA;&#xA;Warning: this check will actually change the battery charging thresholds. Continue?</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>Selected mode: {0}&#xA;Exact OEM payload: {1}&#xA;&#xA;The command will be sent in the verified 64-byte OEM buffer.&#xA;&#xA;Previous registry values:&#xA;{2}&#xA;&#xA;Warning: this check will actually change the battery charging thresholds through an undocumented OEM interface. Compatibility is not guaranteed, the software is provided without warranty, and you accept the risk of unexpected behavior or damage. Continue?</value></data>
   <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Honor Battery Saver hardware check</value></data>
   <data name="Hardware_ResultTitle" xml:space="preserve"><value>Hardware check result</value></data>
   <data name="Reason_ConditionsChanged" xml:space="preserve"><value>Conditions changed</value></data>

@@ -16,6 +16,9 @@
 > [!IMPORTANT]
 > The application uses an undocumented HONOR OEM WMI interface and must be verified on the target laptop before regular use.
 
+> [!WARNING]
+> Honor Battery Saver is an independent, unofficial project and is not affiliated with or endorsed by HONOR. Hardware compatibility is not guaranteed. The software is provided as is, without warranty; use it at your own risk. Read the complete [disclaimer](./DISCLAIMER.md) before installation.
+
 ## Why it exists
 
 Keeping a laptop plugged in at 100% all day is convenient, but not ideal for battery longevity. Honor Battery Saver turns the current Wi-Fi network into a simple context signal: at home it can favor longevity, at the office it can keep more runtime available, and while travelling it can allow a full charge.
@@ -195,6 +198,8 @@ Honor Battery Saver sends no network telemetry and stores no passwords, BSSIDs, 
 Changing the registry alone does **not** prove that the battery controller accepted a threshold. Success requires a positive OEM WMI result followed by registry synchronization. HONOR PC Manager can still change a profile manually; this app does not poll or continuously overwrite that choice.
 
 For the complete local-data description, see the [privacy policy](./PRIVACY.md). Security issues should be reported privately according to the [security policy](./SECURITY.md).
+
+Use of the undocumented OEM interface can produce unexpected results on an unverified device or after a firmware, driver, Windows, or PC Manager update. Before enabling automatic changes, read the [disclaimer](./DISCLAIMER.md), keep backups and a recovery method, and verify the hardware diagnostics. The application requires explicit acknowledgement of this warning on first launch.
 
 ## License and code signing
 

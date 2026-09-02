@@ -15,6 +15,7 @@ public sealed class AtomicSettingsStoreTests : IDisposable
         var store = new AtomicSettingsStore(path);
         var settings = AppSettings.CreateDefault();
         settings.Language = UiLanguage.English;
+        settings.DisclaimerAcceptedVersion = AppSettings.CurrentDisclaimerVersion;
         settings.NetworkRules.Add(new NetworkRule { Ssid = " Home ", Mode = BatteryMode.Home });
 
         await store.SaveAsync(settings, cancellationToken);
@@ -22,6 +23,7 @@ public sealed class AtomicSettingsStoreTests : IDisposable
 
         Assert.Equal(" Home ", Assert.Single(loaded.Settings.NetworkRules).Ssid);
         Assert.Equal(UiLanguage.English, loaded.Settings.Language);
+        Assert.Equal(AppSettings.CurrentDisclaimerVersion, loaded.Settings.DisclaimerAcceptedVersion);
         Assert.Null(loaded.Warning);
         Assert.False(File.Exists(path + ".tmp"));
     }
@@ -39,6 +41,7 @@ public sealed class AtomicSettingsStoreTests : IDisposable
         Assert.Equal(AppSettings.CurrentSchemaVersion, result.Settings.SchemaVersion);
         Assert.Equal(BatteryMode.Travel, result.Settings.DefaultMode);
         Assert.Equal(UiLanguage.System, result.Settings.Language);
+        Assert.Equal(0, result.Settings.DisclaimerAcceptedVersion);
     }
 
     [Fact]
