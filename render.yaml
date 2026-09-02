@@ -1,0 +1,26 @@
+services:
+  - type: web
+    runtime: static
+    name: honor-battery-saver
+    buildCommand: echo "Static site ready"
+    staticPublishPath: ./site
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; script-src 'self'; style-src 'self'; connect-src 'none'; upgrade-insecure-requests"
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800
