@@ -14,7 +14,7 @@
 </div>
 
 > [!IMPORTANT]
-> This repository is currently a **developer build**. There is no installer yet. The application uses an undocumented HONOR OEM WMI interface and must be verified on the target laptop before regular use.
+> The application uses an undocumented HONOR OEM WMI interface and must be verified on the target laptop before regular use.
 
 ## Why it exists
 
@@ -91,6 +91,26 @@ dotnet publish src/HonorBatterySaver.Service -c Release -r win-x64 --self-contai
 ```
 
 Automated tests use mock WMI and registry implementations. They never send an OEM command or modify `HKLM\SOFTWARE\PCManager\MBAPowerManager`.
+
+### Build the installer
+
+Inno Setup 6.3 or newer is required in addition to the .NET 10 SDK. The build script restores, builds, tests, publishes both framework-dependent x64 applications, and compiles one installer:
+
+```powershell
+.\tools\Build-Installer.ps1 -Configuration Release -Version 0.1.0
+```
+
+The result is `artifacts\installer\HonorBatterySaverSetup.exe`. If `ISCC.exe` is not in `PATH` or a standard installation directory, pass its full path with `-InnoSetupCompiler`. The script never installs build dependencies automatically.
+
+## Installation and removal
+
+1. Manually install **Microsoft .NET 10 Desktop Runtime x64** from the [official Microsoft download page](https://dotnet.microsoft.com/en-us/download/dotnet/10.0/runtime). The regular .NET Runtime is not sufficient.
+2. Run `HonorBatterySaverSetup.exe` and approve the single administrator prompt.
+3. Setup installs the application under `%ProgramFiles%\Honor Battery Saver`, configures and starts the delayed-auto Windows service, enables tray startup for the current user, and can launch the tray with the original non-elevated user token.
+
+Setup supports only x64 Windows 11 build 22000 or newer. If Desktop Runtime 10 x64 is missing, it offers the official download page and exits without installing anything.
+
+Remove the application from **Settings → Apps → Installed apps**. Uninstall stops and removes the service, removes the current user's startup entry, application files, and service logs. `%LocalAppData%\HonorBatterySaver\settings.json` is deliberately preserved so an upgrade or reinstall keeps the Wi-Fi rules; delete that directory manually only if you also want to erase the settings.
 
 ### Temporary development setup
 
