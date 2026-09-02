@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+  <title id="title">Honor Battery Saver</title>
+  <desc id="desc">Automatic battery protection for compatible HONOR laptops, showing Wi-Fi and AC power selecting the Home 40 to 70 percent charging profile.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171B27"/><stop offset="1" stop-color="#11141D"/></linearGradient>
+    <linearGradient id="charge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#79E6B2"/><stop offset="1" stop-color="#7F96FF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="410" rx="28" fill="#0D1017"/>
+  <path d="M0 320H1200" stroke="#2A3040"/><path d="M706 0V320" stroke="#2A3040"/>
+  <g transform="translate(58 48)">
+    <rect width="56" height="56" rx="14" fill="#4B68E8"/><rect x="8" y="17" width="38" height="26" rx="7" fill="#FFFFFF"/><rect x="45" y="24" width="5" height="12" rx="2" fill="#FFFFFF"/><rect x="13" y="22" width="28" height="16" rx="4" fill="#4B68E8"/><path d="M16 35c4-8 11-11 22-11-2 8-8 13-17 13 3-4 6-7 12-10-7 2-12 4-17 8Z" fill="#79E6B2"/>
+  </g>
+  <g transform="translate(58 126)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="0" y="0" fill="#7F96FF" font-size="17" font-weight="700" letter-spacing="2.4">WINDOWS 11 · HONOR LAPTOPS</text>
+    <text x="0" y="62" fill="#F7F9FC" font-size="54" font-weight="750">Honor Battery Saver</text>
+    <text x="0" y="104" fill="#AAB2C4" font-size="23">Automatic charging limits that follow</text><text x="0" y="137" fill="#AAB2C4" font-size="23">your Wi-Fi network and power source.</text>
+  </g>
+  <g transform="translate(752 42)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <rect width="390" height="236" rx="22" fill="url(#panel)" stroke="#303747"/>
+    <g transform="translate(28 28)"><circle cx="11" cy="11" r="11" fill="#79E6B2" fill-opacity=".14"/><path d="M4 10c4-4 10-4 14 0M7 13c2-2 6-2 8 0M11 17h.01" fill="none" stroke="#79E6B2" stroke-width="2.2" stroke-linecap="round"/><text x="32" y="17" fill="#DDE2ED" font-size="18" font-weight="650">HOME_5G</text><rect x="242" y="0" width="91" height="27" rx="13.5" fill="#222938"/><circle cx="258" cy="13.5" r="4" fill="#79E6B2"/><text x="270" y="19" fill="#B8C0D1" font-size="15" font-weight="650">AC power</text></g>
+    <path d="M50 87H338" stroke="#303747"/><text x="28" y="119" fill="#8F99AD" font-size="16" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">MATCHED RULE</text><text x="28" y="154" fill="#FFFFFF" font-size="24" font-weight="700">Home profile</text>
+    <g transform="translate(259 109)"><rect width="82" height="58" rx="14" fill="#4B68E8"/><text x="41" y="40" text-anchor="middle" fill="#FFFFFF" font-size="31" font-weight="800">70</text></g>
+    <rect x="28" y="190" width="313" height="10" rx="5" fill="#293041"/><rect x="28" y="190" width="219" height="10" rx="5" fill="url(#charge)"/><circle cx="153" cy="195" r="7" fill="#79E6B2" stroke="#171B27" stroke-width="3"/><circle cx="247" cy="195" r="7" fill="#7F96FF" stroke="#171B27" stroke-width="3"/><text x="142" y="224" fill="#AAB2C4" font-size="15">40%</text><text x="236" y="224" fill="#AAB2C4" font-size="15">70%</text>
+  </g>
+  <g transform="translate(58 346)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="0" y="24" fill="#AAB2C4" font-size="18">HOME</text><text x="76" y="24" fill="#F7F9FC" font-size="24" font-weight="750">40 → 70%</text><circle cx="289" cy="16" r="3" fill="#4B68E8"/><text x="322" y="24" fill="#AAB2C4" font-size="18">OFFICE</text><text x="414" y="24" fill="#F7F9FC" font-size="24" font-weight="750">70 → 90%</text><circle cx="630" cy="16" r="3" fill="#4B68E8"/><text x="663" y="24" fill="#AAB2C4" font-size="18">TRAVEL</text><text x="756" y="24" fill="#F7F9FC" font-size="24" font-weight="750">95 → 100%</text><text x="1084" y="22" text-anchor="end" fill="#79E6B2" font-size="16" font-weight="700">NO TELEMETRY</text>
+  </g>
+</svg>
