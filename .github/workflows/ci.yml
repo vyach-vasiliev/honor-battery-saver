@@ -34,3 +34,6 @@ jobs:
 
       - name: Test
         run: dotnet test HonorBatterySaver.sln --configuration Release --no-build --no-restore
+
+      - name: Verify demo screenshot renderer
+        run: dotnet run --project tools/HonorBatterySaver.Screenshots --configuration Release -- "${{ runner.temp }}/honor-battery-saver-screenshots"

@@ -195,6 +195,16 @@ The service log rotates at 1 MB and keeps up to three archives.
 
 </details>
 
+## Website screenshots
+
+The website shows the actual Settings and Diagnostics views in dark mode, in English and Russian. Network names and diagnostic statuses are demo data, not hardware test results. To regenerate all four PNGs on Windows:
+
+```powershell
+dotnet run --project tools/HonorBatterySaver.Screenshots -c Release
+```
+
+The renderer writes to `site/assets/screenshots` (or a directory passed after `--`). It uses in-memory demo settings and callbacks; it does not start the production app or service, query Wi-Fi, save settings, or send hardware commands.
+
 ## Questions and feedback
 
 Visit the [project website](https://honor-battery-saver.onrender.com/en/) for an overview and downloads, or the [GitHub repository](https://github.com/vyach-vasiliev/honor-battery-saver) for source code.

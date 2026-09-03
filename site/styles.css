@@ -217,6 +217,14 @@ p { text-wrap: pretty; }
 .steps h3 { margin: -3px 0 10px; font-size: 23px; letter-spacing: -.025em; }
 .steps p { max-width: 500px; margin-bottom: 0; color: var(--muted); }
 
+.screenshot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 40px; }
+.screenshot-card { min-width: 0; margin: 0; overflow: hidden; border-radius: var(--radius-md); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
+.screenshot-preview { display: block; margin: 12px; border-radius: 12px; outline: 1px solid rgba(255,255,255,.12); outline-offset: -1px; }
+.screenshot-preview img { display: block; width: 100%; height: auto; border-radius: inherit; }
+.screenshot-card figcaption { padding: 12px 26px 22px; }
+.screenshot-card h3 { margin: 0 0 10px; font-size: 23px; letter-spacing: -.025em; }
+.screenshot-card p { margin: 0 0 8px; color: var(--muted); }
+
 .privacy-section { padding-bottom: 70px; }
 .safety-card { display: grid; grid-template-columns: 1fr 1fr; gap: 76px; padding: 58px; border-radius: var(--radius-lg); background: linear-gradient(135deg, rgba(120,228,179,.075), rgba(104,121,242,.05) 45%, rgba(255,255,255,.025)); box-shadow: inset 0 0 0 1px var(--line-strong); }
 .safety-copy h2 { font-size: clamp(36px, 3.8vw, 51px); }
@@ -284,6 +292,8 @@ p { text-wrap: pretty; }
 }
 
 @media (max-width: 760px) {
+  .screenshot-grid { grid-template-columns: 1fr; gap: 24px; margin-top: 30px; }
+  .screenshot-card figcaption { padding: 10px 20px 18px; }
   .container { width: min(calc(100% - 28px), var(--container)); }
   .header-inner { min-height: 68px; }
   .brand span { display: none; }
