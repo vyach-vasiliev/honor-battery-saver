@@ -4,7 +4,7 @@ param(
     [string]$Configuration = 'Release',
 
     [ValidatePattern('^\d+\.\d+\.\d+(?:\.\d+)?$')]
-    [string]$Version = '0.1.0',
+    [string]$Version,
 
     [string]$OutputDirectory,
 
@@ -22,6 +22,15 @@ $publishRoot = Join-Path $projectRoot 'artifacts\publish'
 $trayPublishDirectory = Join-Path $publishRoot 'Tray'
 $servicePublishDirectory = Join-Path $publishRoot 'Service'
 $installerScript = Join-Path $projectRoot 'installer\HonorBatterySaver.iss'
+
+if ([string]::IsNullOrWhiteSpace($Version)) {
+    [xml]$buildProperties = Get-Content -LiteralPath (Join-Path $projectRoot 'Directory.Build.props') -Raw
+    $Version = $buildProperties.SelectSingleNode('/Project/PropertyGroup/Version').InnerText.Trim()
+}
+if ($Version -notmatch '^\d+\.\d+\.\d+(?:\.\d+)?$') {
+    throw "Invalid installer version in Directory.Build.props or -Version: $Version"
+}
+Write-Host "Building Honor Battery Saver $Version"
 
 if ([string]::IsNullOrWhiteSpace($OutputDirectory)) {
     $OutputDirectory = Join-Path $projectRoot 'artifacts\installer'

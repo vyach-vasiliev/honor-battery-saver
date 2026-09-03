@@ -1,5 +1,5 @@
 #ifndef MyAppVersion
-  #define MyAppVersion "0.1.0"
+  #error MyAppVersion is required. Build with tools\Build-Installer.ps1.
 #endif
 
 #ifndef SourceRoot

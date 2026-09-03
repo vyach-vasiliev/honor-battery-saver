@@ -102,10 +102,12 @@ Automated tests use mock WMI and registry implementations. They never send an OE
 Inno Setup 6.3 or newer is required in addition to the .NET 10 SDK. The build script restores, builds, tests, publishes both framework-dependent x64 applications, and compiles one installer:
 
 ```powershell
-.\tools\Build-Installer.ps1 -Configuration Release -Version 0.1.0
+.\tools\Build-Installer.ps1 -Configuration Release
 ```
 
 The result is `artifacts\installer\HonorBatterySaverSetup.exe`. If `ISCC.exe` is not in `PATH` or a standard installation directory, pass its full path with `-InnoSetupCompiler`. The script never installs build dependencies automatically.
+
+The installer version defaults to `Directory.Build.props`; use `-Version` only for an explicit local override. A push to `main` runs CI checks but does **not** replace a released installer. To publish an update, bump the version in `Directory.Build.props`, commit the changes, and push a matching `v<version>` tag. The release workflow builds the tagged source, checks that the versions match, and publishes a new unsigned prerelease. Update the site's version and download links after that release succeeds.
 
 ## Installation and removal
 

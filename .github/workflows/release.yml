@@ -61,10 +61,15 @@ jobs:
           if ($tag -notmatch '^v(?<version>\d+\.\d+\.\d+(?:\.\d+)?)$') {
             throw "Release tag must have the form v1.2.3 or v1.2.3.4; got $tag."
           }
+          $version = $Matches.version
+          [xml]$properties = Get-Content -LiteralPath Directory.Build.props -Raw
+          if ($version -ne $properties.SelectSingleNode('/Project/PropertyGroup/Version').InnerText.Trim()) {
+            throw "Release tag $tag must match the version in Directory.Build.props."
+          }
 
           .\tools\Build-Installer.ps1 `
             -Configuration Release `
-            -Version $Matches.version `
+            -Version $version `
             -InnoSetupCompiler "${{ steps.inno.outputs.compiler }}"
 
       - name: Create SHA-256 checksum

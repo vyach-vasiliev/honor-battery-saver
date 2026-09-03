@@ -102,10 +102,12 @@ dotnet publish src/HonorBatterySaver.Service -c Release -r win-x64 --self-contai
 Кроме .NET 10 SDK потребуется Inno Setup 6.3 или новее. Скрипт восстанавливает зависимости, собирает и тестирует solution, публикует оба framework-dependent приложения для x64 и компилирует единый установщик:
 
 ```powershell
-.\tools\Build-Installer.ps1 -Configuration Release -Version 0.1.0
+.\tools\Build-Installer.ps1 -Configuration Release
 ```
 
 Результат появится в `artifacts\installer\HonorBatterySaverSetup.exe`. Если `ISCC.exe` отсутствует в `PATH` и стандартных каталогах, передайте полный путь параметром `-InnoSetupCompiler`. Скрипт никогда не устанавливает зависимости сборки автоматически.
+
+По умолчанию версия установщика берётся из `Directory.Build.props`; параметр `-Version` нужен только для явного локального переопределения. Push в `main` запускает проверки CI, но **не заменяет** опубликованный установщик. Для выпуска обновления поднимите версию в `Directory.Build.props`, закоммитьте изменения и отправьте соответствующий тег `v<версия>`. Релизный workflow собирает исходники тега, проверяет совпадение версий и публикует новый unsigned prerelease. Обновляйте версию и ссылки загрузки на сайте после успешного выпуска.
 
 ## Установка и удаление
 
