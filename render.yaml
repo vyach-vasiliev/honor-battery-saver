@@ -5,6 +5,25 @@ services:
     buildCommand: echo "Static site ready"
     staticPublishPath: ./site
     pullRequestPreviewsEnabled: true
+    routes:
+      - type: rewrite
+        source: /en/
+        destination: /en/index.html
+      - type: rewrite
+        source: /ru/
+        destination: /ru/index.html
+      - type: rewrite
+        source: /de/
+        destination: /de/index.html
+      - type: rewrite
+        source: /pt/
+        destination: /pt/index.html
+      - type: rewrite
+        source: /ko/
+        destination: /ko/index.html
+      - type: rewrite
+        source: /zh/
+        destination: /zh/index.html
     headers:
       - path: /*
         name: X-Frame-Options
