@@ -351,7 +351,11 @@ public partial class SettingsWindow : Window
         [
             new LanguageChoice(UiLanguage.System, Strings.Get("Language_System")),
             new LanguageChoice(UiLanguage.Russian, Strings.Get("Language_Russian")),
-            new LanguageChoice(UiLanguage.English, Strings.Get("Language_English"))
+            new LanguageChoice(UiLanguage.English, Strings.Get("Language_English")),
+            new LanguageChoice(UiLanguage.German, Strings.Get("Language_German")),
+            new LanguageChoice(UiLanguage.Portuguese, Strings.Get("Language_Portuguese")),
+            new LanguageChoice(UiLanguage.Korean, Strings.Get("Language_Korean")),
+            new LanguageChoice(UiLanguage.Chinese, Strings.Get("Language_Chinese"))
         ];
         LanguageComboBox.ItemsSource = languageChoices;
         HardwareModeComboBox.SelectedValue = selectedHardwareMode ?? BatteryMode.Travel;

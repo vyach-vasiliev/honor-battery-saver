@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>집에서도, 사무실에서도, 이동 중에도 배터리를 아끼는 충전</value></data>
+  <data name="App_CheckingStatus" xml:space="preserve"><value>상태 확인 중…</value></data>
+  <data name="Project_Website" xml:space="preserve"><value>웹사이트</value></data>
+  <data name="Project_Issues" xml:space="preserve"><value>문제</value></data>
+  <data name="Project_Feedback" xml:space="preserve"><value>아이디어 및 피드백</value></data>
+  <data name="Project_OpenFailed" xml:space="preserve"><value>브라우저를 열 수 없습니다. 다음 주소를 직접 여세요:&#xA;&#xA;{0}</value></data>
+  <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>중요 하드웨어 제어 고지</value></data>
+  <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver는 독립적인 비공식 프로젝트이며 HONOR와 제휴하거나 HONOR의 승인을 받지 않았습니다.&#xA;&#xA;이 앱은 문서화되지 않은 OEM WMI 인터페이스를 사용하여 배터리 충전 기준값을 변경합니다. 호환성은 보장되지 않으며 BIOS, 펌웨어, 드라이버, Windows 또는 HONOR PC Manager 업데이트로 동작이 바뀔 수 있습니다. 사용 시 예기치 않은 충전 동작, 배터리 수명 단축, 사용 불가, 데이터 손실 또는 하드웨어 손상이 발생할 수 있습니다.&#xA;&#xA;소프트웨어는 보증 없이 “있는 그대로” 제공됩니다. 장치에 적합한지 판단하고, 백업과 복구 방법을 준비하며, 진단을 확인하고 결과를 모니터링할 책임은 사용자에게 있습니다.&#xA;&#xA;이러한 위험을 이해하고 동의하는 경우에만 예를 선택하세요.</value></data>
+  <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>비공식 하드웨어 통합</value></data>
+  <data name="Disclaimer_ShortBody" xml:space="preserve"><value>이 앱은 문서화되지 않은 HONOR 인터페이스를 사용하므로 모든 장치나 업데이트와 호환되지 않을 수 있습니다. 사용에 따른 책임은 사용자에게 있으며 소프트웨어는 보증 없이 제공됩니다.</value></data>
+  <data name="Common_Enable" xml:space="preserve"><value>사용</value></data>
+  <data name="Common_Enabled" xml:space="preserve"><value>사용</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>저장</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>취소</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>편집</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>삭제</value></data>
+  <data name="Common_Available" xml:space="preserve"><value>사용 가능</value></data>
+  <data name="Common_Unavailable" xml:space="preserve"><value>사용 불가</value></data>
+  <data name="Common_UnknownType" xml:space="preserve"><value>알 수 없는 형식</value></data>
+  <data name="Settings_Tab" xml:space="preserve"><value>설정</value></data>
+  <data name="Settings_StartWithWindows" xml:space="preserve"><value>Windows 시작 시 실행</value></data>
+  <data name="Settings_StartWithWindowsDescription" xml:space="preserve"><value>로그인하면 앱이 시스템 트레이에 표시됩니다.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>인터페이스 언어</value></data>
+  <data name="Settings_LanguageDescription" xml:space="preserve"><value>언어를 직접 선택하거나 Windows 표시 언어를 사용하세요.</value></data>
+  <data name="Language_System" xml:space="preserve"><value>Windows 언어 사용</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский (Russian)</value></data>
+  <data name="Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Language_German" xml:space="preserve"><value>Deutsch (German)</value></data>
+  <data name="Language_Portuguese" xml:space="preserve"><value>Português (Portuguese)</value></data>
+  <data name="Language_Korean" xml:space="preserve"><value>한국어 (Korean)</value></data>
+  <data name="Language_Chinese" xml:space="preserve"><value>简体中文 (Simplified Chinese)</value></data>
+  <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>자동 전환</value></data>
+  <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>충전기가 연결되면 Wi-Fi에 따라 프로필을 선택합니다. 배터리 사용 중에는 하드웨어 설정을 변경하지 않습니다.</value></data>
+  <data name="Settings_WifiRules" xml:space="preserve"><value>Wi-Fi 규칙</value></data>
+  <data name="Settings_WifiRulesDescription" xml:space="preserve"><value>사용 중인 규칙 중 현재 네트워크와 일치하는 첫 번째 규칙을 적용합니다.</value></data>
+  <data name="Settings_AddRule" xml:space="preserve"><value>＋  규칙 추가</value></data>
+  <data name="Settings_EnabledColumn" xml:space="preserve"><value>켜짐</value></data>
+  <data name="Settings_WifiNetworkColumn" xml:space="preserve"><value>Wi-Fi 네트워크</value></data>
+  <data name="Settings_ExactSsidMatch" xml:space="preserve"><value>SSID 정확히 일치</value></data>
+  <data name="Settings_ChargingProfileColumn" xml:space="preserve"><value>충전 프로필</value></data>
+  <data name="Settings_NoRules" xml:space="preserve"><value>아직 규칙이 없습니다</value></data>
+  <data name="Settings_NoRulesDescription" xml:space="preserve"><value>네트워크를 추가하고 충전 프로필을 선택하세요</value></data>
+  <data name="Settings_HigherRuleFirst" xml:space="preserve"><value>목록의 위쪽 규칙부터 확인합니다</value></data>
+  <data name="Settings_MoveUp" xml:space="preserve"><value>↑ 위로</value></data>
+  <data name="Settings_MoveDown" xml:space="preserve"><value>↓ 아래로</value></data>
+  <data name="Settings_Saved" xml:space="preserve"><value>설정이 저장되었습니다</value></data>
+  <data name="Settings_SsidEmpty" xml:space="preserve"><value>SSID는 비워 둘 수 없습니다.</value></data>
+  <data name="Settings_SaveFailed" xml:space="preserve"><value>설정을 저장할 수 없습니다.&#xA;&#xA;{0}</value></data>
+  <data name="Settings_CorruptRecovered" xml:space="preserve"><value>설정 파일이 손상되어 안전한 기본값으로 복원했습니다.</value></data>
+  <data name="Diagnostics_Tab" xml:space="preserve"><value>진단</value></data>
+  <data name="Diagnostics_SystemStatus" xml:space="preserve"><value>시스템 상태</value></data>
+  <data name="Diagnostics_WifiAccess" xml:space="preserve"><value>Wi-Fi 접근</value></data>
+  <data name="Diagnostics_Power" xml:space="preserve"><value>전원 공급</value></data>
+  <data name="Diagnostics_SelectedMode" xml:space="preserve"><value>선택한 모드</value></data>
+  <data name="Diagnostics_AppliedMode" xml:space="preserve"><value>적용된 모드</value></data>
+  <data name="Diagnostics_ServiceAndWmi" xml:space="preserve"><value>서비스 및 WMI</value></data>
+  <data name="Diagnostics_OemRegistry" xml:space="preserve"><value>OEM 레지스트리</value></data>
+  <data name="Diagnostics_LastAttempt" xml:space="preserve"><value>마지막 시도</value></data>
+  <data name="Diagnostics_ChargingModesTitle" xml:space="preserve"><value>충전 모드 작동 방식</value></data>
+  <data name="Diagnostics_ChargingModesDescription" xml:space="preserve"><value>배터리 잔량이 첫 번째 값보다 낮아지면 충전을 다시 시작하고, 두 번째 값에 도달하면 충전을 멈춥니다.</value></data>
+  <data name="Diagnostics_HomeDescription" xml:space="preserve"><value>40% 미만에서 충전을 시작하고 70%에서 멈춥니다. 배터리 수명을 우선합니다.</value></data>
+  <data name="Diagnostics_OfficeDescription" xml:space="preserve"><value>70% 미만에서 충전을 시작하고 90%에서 멈춥니다. 사용 시간과 배터리 수명의 균형을 맞춥니다.</value></data>
+  <data name="Diagnostics_TravelDescription" xml:space="preserve"><value>95% 미만에서 충전을 시작하고 100%에서 멈춥니다. 한 번 충전으로 오래 사용할 수 있습니다.</value></data>
+  <data name="Diagnostics_OpenSettings" xml:space="preserve"><value>설정 열기</value></data>
+  <data name="Diagnostics_WifiRestricted" xml:space="preserve"><value>Windows가 Wi-Fi 접근을 제한했습니다</value></data>
+  <data name="Diagnostics_LocationDescription" xml:space="preserve"><value>위치 권한은 Wi-Fi 네트워크 이름을 확인하는 데만 사용합니다.</value></data>
+  <data name="Diagnostics_HardwareCheck" xml:space="preserve"><value>하드웨어 검사</value></data>
+  <data name="Diagnostics_HardwareCheckDescription" xml:space="preserve"><value>OEM 명령 데이터를 표시하고 충전 기준값을 변경하기 전에 확인을 요청합니다.</value></data>
+  <data name="Diagnostics_Run" xml:space="preserve"><value>실행…</value></data>
+  <data name="Diagnostics_UnknownNetwork" xml:space="preserve"><value>알 수 없는 네트워크</value></data>
+  <data name="Diagnostics_NetworkName" xml:space="preserve"><value>“{0}”</value></data>
+  <data name="Diagnostics_AcPower" xml:space="preserve"><value>전원 연결됨(AC)</value></data>
+  <data name="Diagnostics_BatteryPower" xml:space="preserve"><value>배터리 사용 중</value></data>
+  <data name="Diagnostics_UnknownPower" xml:space="preserve"><value>전원 공급 상태를 알 수 없음</value></data>
+  <data name="Diagnostics_NoSuccessfulApply" xml:space="preserve"><value>이번 실행에서 프로필을 적용한 성공 기록이 없습니다</value></data>
+  <data name="Diagnostics_ServiceUnavailable" xml:space="preserve"><value>서비스를 사용할 수 없음</value></data>
+  <data name="Diagnostics_ServiceReady" xml:space="preserve"><value>서비스: 사용 가능. OEM WMI: 사용 가능.</value></data>
+  <data name="Diagnostics_ServiceProblem" xml:space="preserve"><value>서비스: 사용 가능. OEM WMI: 사용 불가.&#xA;{0}</value></data>
+  <data name="Diagnostics_RegistryValues" xml:space="preserve"><value>PowerSafeManagerStatus={0} ({1}); PowerSafeManagerMode={2} ({3})</value></data>
+  <data name="Diagnostics_RegistryUnavailable" xml:space="preserve"><value>OEM 레지스트리 키를 찾을 수 없거나 서비스를 사용할 수 없음</value></data>
+  <data name="Diagnostics_HeaderMode" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="Diagnostics_HeaderAc" xml:space="preserve"><value>전원 연결됨</value></data>
+  <data name="Diagnostics_HeaderBattery" xml:space="preserve"><value>배터리</value></data>
+  <data name="Diagnostics_HeaderNoChange" xml:space="preserve"><value>배터리 사용 중 · 프로필 유지</value></data>
+  <data name="Mode_Home" xml:space="preserve"><value>집</value></data>
+  <data name="Mode_Office" xml:space="preserve"><value>사무실</value></data>
+  <data name="Mode_Travel" xml:space="preserve"><value>여행</value></data>
+  <data name="Mode_HomeRange" xml:space="preserve"><value>집 · 40–70%</value></data>
+  <data name="Mode_OfficeRange" xml:space="preserve"><value>사무실 · 70–90%</value></data>
+  <data name="Mode_TravelRange" xml:space="preserve"><value>여행 · 95–100%</value></data>
+  <data name="Mode_HomeDetailed" xml:space="preserve"><value>집 · 40–70% — 40% 미만에서 충전을 시작하고 70%에서 중지</value></data>
+  <data name="Mode_OfficeDetailed" xml:space="preserve"><value>사무실 · 70–90% — 70% 미만에서 충전을 시작하고 90%에서 중지</value></data>
+  <data name="Mode_TravelDetailed" xml:space="preserve"><value>여행 · 95–100% — 95% 미만에서 충전을 시작하고 100%에서 중지</value></data>
+  <data name="WifiRule_Title" xml:space="preserve"><value>Wi-Fi 규칙</value></data>
+  <data name="WifiRule_AddTitle" xml:space="preserve"><value>규칙 추가</value></data>
+  <data name="WifiRule_EditTitle" xml:space="preserve"><value>규칙 편집</value></data>
+  <data name="WifiRule_Description" xml:space="preserve"><value>목록에서 네트워크를 선택하거나 정확한 SSID를 직접 입력하세요.</value></data>
+  <data name="WifiRule_Network" xml:space="preserve"><value>Wi-Fi 네트워크</value></data>
+  <data name="WifiRule_Profile" xml:space="preserve"><value>충전 프로필</value></data>
+  <data name="WifiRule_AcOnly" xml:space="preserve"><value>노트북이 전원에 연결된 동안에만 규칙이 적용됩니다.</value></data>
+  <data name="WifiRule_Save" xml:space="preserve"><value>규칙 저장</value></data>
+  <data name="WifiRule_ListDenied" xml:space="preserve"><value>Windows에서 Wi-Fi 접근을 허용하지 않아 목록을 불러올 수 없습니다. SSID를 직접 입력할 수 있습니다.</value></data>
+  <data name="WifiRule_ListEmpty" xml:space="preserve"><value>네트워크를 찾지 못했습니다. SSID를 직접 입력하세요.</value></data>
+  <data name="WifiRule_ListOrder" xml:space="preserve"><value>연결된 네트워크와 사용 가능한 네트워크를 먼저 표시한 다음 Windows에 저장된 네트워크를 표시합니다.</value></data>
+  <data name="WifiRule_SelectNetwork" xml:space="preserve"><value>네트워크를 선택하거나 정확한 SSID를 입력하세요.</value></data>
+  <data name="WifiRule_Connected" xml:space="preserve"><value>현재 연결됨</value></data>
+  <data name="WifiRule_AvailableKnown" xml:space="preserve"><value>사용 가능 · 저장됨</value></data>
+  <data name="WifiRule_Available" xml:space="preserve"><value>현재 사용 가능</value></data>
+  <data name="WifiRule_Known" xml:space="preserve"><value>Windows에 저장됨</value></data>
+  <data name="Decision_Manual" xml:space="preserve"><value>수동 모드 선택됨</value></data>
+  <data name="Decision_OnBattery" xml:space="preserve"><value>배터리 사용 중 — 하드웨어 프로필을 변경하지 않음</value></data>
+  <data name="Decision_UnknownPower" xml:space="preserve"><value>전원 상태 알 수 없음 — 하드웨어 프로필을 변경하지 않음</value></data>
+  <data name="Decision_RuleMatched" xml:space="preserve"><value>Wi-Fi 규칙 “{0}” 일치</value></data>
+  <data name="Decision_NoWifi" xml:space="preserve"><value>Wi-Fi가 꺼져 있거나 네트워크를 사용할 수 없음</value></data>
+  <data name="Decision_NoRule" xml:space="preserve"><value>현재 네트워크에 대한 규칙 없음</value></data>
+  <data name="Ipc_EmptyRequest" xml:space="preserve"><value>빈 IPC 요청입니다.</value></data>
+  <data name="Ipc_UnknownOperation" xml:space="preserve"><value>알 수 없는 IPC 작업입니다.</value></data>
+  <data name="Ipc_InvalidBatteryMode" xml:space="preserve"><value>잘못된 배터리 모드입니다.</value></data>
+  <data name="Ipc_ModeParametersOnlyApply" xml:space="preserve"><value>모드 매개 변수는 ApplyMode에서만 허용됩니다.</value></data>
+  <data name="Ipc_InvalidRequest" xml:space="preserve"><value>잘못된 IPC 요청입니다.</value></data>
+  <data name="Wifi_NoCatalogNetworks" xml:space="preserve"><value>Windows에서 사용 가능한 Wi-Fi 네트워크나 저장된 네트워크를 찾지 못했습니다.</value></data>
+  <data name="Wifi_CatalogCount" xml:space="preserve"><value>찾은 네트워크: {0}개.</value></data>
+  <data name="Wifi_CatalogFailed" xml:space="preserve"><value>Wi-Fi 네트워크 목록을 가져올 수 없습니다: {0}.</value></data>
+  <data name="Wifi_NotConnected" xml:space="preserve"><value>연결된 Wi-Fi 네트워크를 찾지 못했습니다.</value></data>
+  <data name="Wifi_AccessAllowed" xml:space="preserve"><value>Wi-Fi 접근이 허용되었습니다.</value></data>
+  <data name="Wifi_DetectFailed" xml:space="preserve"><value>Wi-Fi를 감지할 수 없습니다: {0}.</value></data>
+  <data name="Wifi_NameAccessDenied" xml:space="preserve"><value>Windows가 Wi-Fi 네트워크 이름에 대한 접근을 거부했습니다. 앱의 위치 접근을 허용하세요.</value></data>
+  <data name="Wifi_DetectWindowsError" xml:space="preserve"><value>Wi-Fi를 감지할 수 없습니다: Windows 오류 {0}.</value></data>
+  <data name="Wifi_ListAccessDenied" xml:space="preserve"><value>Windows가 Wi-Fi 네트워크 목록에 대한 접근을 거부했습니다. 앱의 위치 접근을 허용하세요.</value></data>
+  <data name="Wifi_ListWindowsError" xml:space="preserve"><value>Wi-Fi 네트워크 목록을 가져올 수 없습니다: Windows 오류 {0}.</value></data>
+  <data name="Tray_AutoEnabled" xml:space="preserve"><value>자동: 켜짐</value></data>
+  <data name="Tray_StatusWaiting" xml:space="preserve"><value>현재: 대기 중</value></data>
+  <data name="Tray_Reapply" xml:space="preserve"><value>지금 모드 동기화</value></data>
+  <data name="Tray_ReapplyHint" xml:space="preserve"><value>HONOR PC Manager에서 설정을 변경한 경우 등에 선택한 프로필을 다시 적용합니다</value></data>
+  <data name="Tray_ReapplyPlugInHint" xml:space="preserve"><value>충전기를 연결하세요. 배터리 사용 중에는 자동 프로필이 적용되지 않습니다</value></data>
+  <data name="Tray_Diagnostics" xml:space="preserve"><value>설정 및 진단</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>종료</value></data>
+  <data name="Tray_AutoState" xml:space="preserve"><value>자동: {0}</value></data>
+  <data name="Tray_On" xml:space="preserve"><value>켜짐</value></data>
+  <data name="Tray_Off" xml:space="preserve"><value>꺼짐</value></data>
+  <data name="Tray_NoProfile" xml:space="preserve"><value>선택된 프로필 없음</value></data>
+  <data name="Tray_Battery" xml:space="preserve"><value>배터리</value></data>
+  <data name="Tray_UnknownPower" xml:space="preserve"><value>전원 공급 상태 알 수 없음</value></data>
+  <data name="Tray_UnknownNetwork" xml:space="preserve"><value>알 수 없는 네트워크</value></data>
+  <data name="Tray_StatusApplied" xml:space="preserve"><value>현재: {0} · 최대 {1}% · {2} · {3}</value></data>
+  <data name="Tray_StatusPending" xml:space="preserve"><value>현재: {0} 적용 대기 중 · {1} · {2}</value></data>
+  <data name="Tray_StatusNoChange" xml:space="preserve"><value>현재: 프로필 변경 없음 · {0} · {1}</value></data>
+  <data name="Tray_TooltipError" xml:space="preserve"><value>Honor Battery Saver · 오류 · {0}</value></data>
+  <data name="Tray_TooltipApplied" xml:space="preserve"><value>Honor Battery Saver · {0} · {1}%까지 충전</value></data>
+  <data name="Tray_TooltipPending" xml:space="preserve"><value>Honor Battery Saver · 적용 대기 중</value></data>
+  <data name="Tray_TooltipBattery" xml:space="preserve"><value>Honor Battery Saver · 배터리 · 프로필 변경 없음</value></data>
+  <data name="Tray_ApplyFailedTitle" xml:space="preserve"><value>프로필을 적용할 수 없음</value></data>
+  <data name="Tray_ProfileChangedTitle" xml:space="preserve"><value>충전 프로필 변경됨</value></data>
+  <data name="Tray_ProfileChangedMessage" xml:space="preserve"><value>“{0}” 모드가 설정되었습니다. 배터리가 {1}% 미만이면 충전을 시작하고 {2}%에서 멈춥니다.</value></data>
+  <data name="Tray_SettingsRestoredTitle" xml:space="preserve"><value>설정 복원됨</value></data>
+  <data name="Tray_ServiceNotRunningTitle" xml:space="preserve"><value>서비스가 실행 중이 아님</value></data>
+  <data name="Tray_NoApplyAttempts" xml:space="preserve"><value>이번 실행에서 프로필 적용을 시도한 기록이 없습니다</value></data>
+  <data name="Tray_AutostartFailed" xml:space="preserve"><value>Windows 시작 설정을 변경할 수 없습니다.</value></data>
+  <data name="ServiceClient_Timeout" xml:space="preserve"><value>서비스 응답 시간이 초과되었습니다.</value></data>
+  <data name="ServiceClient_Unavailable" xml:space="preserve"><value>Honor Battery Saver 서비스를 사용할 수 없습니다.</value></data>
+  <data name="App_ServiceStartCheckFailed" xml:space="preserve"><value>서비스를 확인하거나 시작할 수 없습니다: {0}</value></data>
+  <data name="App_StartFailed" xml:space="preserve"><value>Honor Battery Saver를 시작할 수 없습니다.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ElevationCancelled" xml:space="preserve"><value>관리자 권한 요청이 취소되었습니다.</value></data>
+  <data name="Hardware_OpenFailed" xml:space="preserve"><value>Windows에서 하드웨어 검사를 열 수 없습니다. 다시 시도하고 관리자 권한 요청을 승인하세요.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ProcessNotCreated" xml:space="preserve"><value>Windows에서 하드웨어 검사 프로세스를 생성하지 못했습니다.</value></data>
+  <data name="Hardware_InvalidMode" xml:space="preserve"><value>지정한 모드가 잘못되었습니다.</value></data>
+  <data name="Hardware_AdminOnly" xml:space="preserve"><value>하드웨어 검사는 관리자만 사용할 수 있습니다.</value></data>
+  <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>Honor Battery Saver 서비스를 시작할 수 없습니다.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM 레지스트리 키를 사용할 수 없음</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>선택한 모드: {0}&#xA;전송할 OEM 명령 데이터: {1}&#xA;&#xA;명령은 검증된 64바이트 OEM 버퍼에 담아 전송합니다.&#xA;&#xA;변경 전 레지스트리 값:&#xA;{2}&#xA;&#xA;경고: 이 검사를 실행하면 문서화되지 않은 OEM 인터페이스를 통해 배터리 충전 기준값이 실제로 변경됩니다. 호환성은 보장되지 않으며 소프트웨어는 보증 없이 제공됩니다. 계속 진행하면 예기치 않은 동작이나 손상의 위험을 감수하는 데 동의하게 됩니다. 계속하시겠습니까?</value></data>
+  <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Honor Battery Saver 하드웨어 검사</value></data>
+  <data name="Hardware_ResultTitle" xml:space="preserve"><value>하드웨어 검사 결과</value></data>
+  <data name="Reason_ConditionsChanged" xml:space="preserve"><value>조건 변경됨</value></data>
+  <data name="Reason_WifiChanged" xml:space="preserve"><value>Wi-Fi 변경됨</value></data>
+  <data name="Reason_PowerChanged" xml:space="preserve"><value>전원 변경됨</value></data>
+  <data name="Reason_Resumed" xml:space="preserve"><value>절전 모드 해제됨</value></data>
+  <data name="Reason_AppStarted" xml:space="preserve"><value>앱 시작됨</value></data>
+  <data name="Reason_ManualSync" xml:space="preserve"><value>수동 모드 동기화</value></data>
+  <data name="Reason_AutomaticEnabled" xml:space="preserve"><value>자동 모드 활성화됨</value></data>
+  <data name="Reason_ManualSelection" xml:space="preserve"><value>수동 선택</value></data>
+  <data name="Reason_SettingsChanged" xml:space="preserve"><value>설정 변경됨</value></data>
+  <data name="Wifi_NotChecked" xml:space="preserve"><value>Wi-Fi 상태를 아직 확인하지 않았습니다.</value></data>
+  <data name="Decision_WaitingFirstCheck" xml:space="preserve"><value>첫 확인 대기 중</value></data>
+  <data name="Recovery_AlreadyRunning" xml:space="preserve"><value>서비스가 이미 실행 중입니다.</value></data>
+  <data name="Recovery_FinishedStarting" xml:space="preserve"><value>서비스 시작이 완료되었습니다.</value></data>
+  <data name="Recovery_ProcessPipeUnavailable" xml:space="preserve"><value>서비스 프로세스가 실행 중이지만 제어 채널을 사용할 수 없습니다. 응답하지 않는 프로세스를 종료하고 다시 시도하세요.</value></data>
+  <data name="Recovery_ExecutableNotFoundNearby" xml:space="preserve"><value>서비스가 등록되어 있지 않으며, 앱이 설치된 폴더에서 HonorBatterySaver.Service.exe를 찾을 수 없습니다.</value></data>
+  <data name="Recovery_EnableAutostartFailed" xml:space="preserve"><value>서비스 자동 시작을 활성화할 수 없습니다. {0}</value></data>
+  <data name="Recovery_StartFailed" xml:space="preserve"><value>서비스를 시작할 수 없습니다. {0}</value></data>
+  <data name="Recovery_WindowsServiceStarted" xml:space="preserve"><value>Windows 서비스가 활성화되고 시작되었습니다.</value></data>
+  <data name="Recovery_PipeDidNotAppear" xml:space="preserve"><value>서비스가 시작되었지만 제어 채널에 연결할 수 없습니다.</value></data>
+  <data name="Recovery_ExecutableNotFound" xml:space="preserve"><value>서비스가 등록되지 않았고 HonorBatterySaver.Service.exe를 찾지 못했습니다.</value></data>
+  <data name="Recovery_ProcessStartedElevated" xml:space="preserve"><value>서비스 프로세스가 관리자 권한으로 시작되었습니다.</value></data>
+  <data name="Recovery_ProcessPipeDidNotAppear" xml:space="preserve"><value>서비스 프로세스가 시작되었지만 제어 채널에 연결할 수 없습니다.</value></data>
+  <data name="Recovery_AppPathUnknown" xml:space="preserve"><value>앱 경로를 확인할 수 없습니다.</value></data>
+  <data name="Recovery_ProcessNotCreated" xml:space="preserve"><value>Windows에서 서비스 복구 프로세스를 생성하지 못했습니다.</value></data>
+  <data name="Recovery_WindowsStartFailed" xml:space="preserve"><value>Windows에서 서비스를 활성화하거나 시작할 수 없습니다.</value></data>
+  <data name="Recovery_ElevationFailed" xml:space="preserve"><value>관리자 권한을 요청할 수 없습니다: {0}</value></data>
+  <data name="Recovery_ProcessStartFailed" xml:space="preserve"><value>서비스 프로세스를 시작할 수 없습니다: {0}</value></data>
+  <data name="Recovery_ServiceProcessNotCreated" xml:space="preserve"><value>Windows에서 서비스 프로세스를 생성하지 못했습니다.</value></data>
+  <data name="Recovery_ServiceManagerNotStarted" xml:space="preserve"><value>Windows에서 서비스 제어 관리자를 시작하지 않았습니다.</value></data>
+  <data name="Recovery_ErrorCode" xml:space="preserve"><value>오류 코드: {0}.</value></data>
+  <data name="Service_Available" xml:space="preserve"><value>서비스 사용 가능.</value></data>
+  <data name="Service_ModeAlreadyApplied" xml:space="preserve"><value>모드가 이미 적용되어 추가 OEM 명령이 필요하지 않습니다.</value></data>
+  <data name="Service_RegistryKeyMissing" xml:space="preserve"><value>HONOR PC Manager 레지스트리 키를 찾을 수 없습니다.</value></data>
+  <data name="Service_ProbeFailed" xml:space="preserve"><value>장치 검사 실패: {0}.</value></data>
+  <data name="Service_DeviceUnsupported" xml:space="preserve"><value>지원되지 않는 장치: HONOR PC Manager 레지스트리 키를 찾을 수 없습니다.</value></data>
+  <data name="Service_CommandRejected" xml:space="preserve"><value>OEM WMI 공급자가 명령을 거부했습니다.</value></data>
+  <data name="Service_ModeApplied" xml:space="preserve"><value>“{0}” 모드가 적용되었습니다.</value></data>
+  <data name="Service_RegistrySyncFailed" xml:space="preserve"><value>OEM 명령은 적용되었지만 레지스트리를 동기화할 수 없습니다.</value></data>
+  <data name="Service_ApplyFailed" xml:space="preserve"><value>모드를 적용할 수 없습니다: {0}.</value></data>
+  <data name="Wmi_MethodMissing" xml:space="preserve"><value>OEM WMI 메서드가 없거나 시그니처가 호환되지 않습니다.</value></data>
+  <data name="Wmi_InstanceMissing" xml:space="preserve"><value>OEM WMI 공급자 인스턴스를 찾지 못했습니다.</value></data>
+  <data name="Wmi_ActiveInstanceMissing" xml:space="preserve"><value>활성 OEM WMI 공급자 인스턴스를 찾지 못했습니다.</value></data>
+  <data name="Wmi_HwmiInstanceMissing" xml:space="preserve"><value>OEM WMI 공급자 인스턴스 HWMI_0을 찾지 못했거나 하나로 특정할 수 없습니다.</value></data>
+  <data name="Wmi_Available" xml:space="preserve"><value>OEM WMI 사용 가능.</value></data>
+  <data name="Wmi_AccessDenied" xml:space="preserve"><value>OEM WMI 공급자 접근이 거부되었습니다.</value></data>
+  <data name="Wmi_RunServiceAsAdmin" xml:space="preserve"><value>OEM WMI 공급자 접근이 거부되었습니다. 관리자 권한으로 서비스를 실행하세요.</value></data>
+  <data name="Wmi_ClassMissing" xml:space="preserve"><value>OEM WMI 클래스를 찾을 수 없습니다.</value></data>
+  <data name="Wmi_NamespaceUnavailable" xml:space="preserve"><value>OEM WMI 네임스페이스 ROOT\WMI를 사용할 수 없습니다.</value></data>
+  <data name="Wmi_UnavailableError" xml:space="preserve"><value>OEM WMI 사용 불가: {0}.</value></data>
+  <data name="Wmi_ServiceNeedsElevation" xml:space="preserve"><value>OEM WMI 공급자 접근이 거부되었습니다. 서비스를 관리자 권한으로 실행해야 합니다.</value></data>
+  <data name="Wmi_MethodUnavailable" xml:space="preserve"><value>현재 BIOS 또는 PC Manager 버전에서 OEM WMI 메서드를 사용할 수 없습니다.</value></data>
+  <data name="Wmi_CommandFormatRejected" xml:space="preserve"><value>OEM WMI 공급자가 검증된 명령 형식을 거부했습니다.</value></data>
+  <data name="Wmi_CallFailed" xml:space="preserve"><value>OEM WMI 호출 실패: {0}.</value></data>
+</root>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>Akkuschonendes Laden zu Hause, im Büro und unterwegs</value></data>
+  <data name="App_CheckingStatus" xml:space="preserve"><value>Status wird geprüft…</value></data>
+  <data name="Project_Website" xml:space="preserve"><value>Website</value></data>
+  <data name="Project_Issues" xml:space="preserve"><value>Probleme</value></data>
+  <data name="Project_Feedback" xml:space="preserve"><value>Ideen &amp; Feedback</value></data>
+  <data name="Project_OpenFailed" xml:space="preserve"><value>Der Browser konnte nicht geöffnet werden. Öffnen Sie diese Adresse manuell:&#xA;&#xA;{0}</value></data>
+  <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>Wichtiger Haftungsausschluss zur Hardwaresteuerung</value></data>
+  <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver ist ein unabhängiges, inoffizielles Projekt. Es besteht keine Verbindung zu HONOR; das Projekt wird von HONOR nicht unterstützt.&#xA;&#xA;Die Software verwendet eine undokumentierte OEM-WMI-Schnittstelle, um die Ladeschwellen des Akkus zu ändern. Die Kompatibilität ist nicht garantiert. Updates von BIOS, Firmware, Treibern, Windows oder HONOR PC Manager können das Verhalten verändern. Die Nutzung kann zu unerwartetem Ladeverhalten, einer verkürzten Akkulebensdauer, Ausfällen, Datenverlust oder Hardwareschäden führen.&#xA;&#xA;Die Software wird ohne Gewährleistung im vorliegenden Zustand bereitgestellt. Sie sind selbst dafür verantwortlich, die Eignung für Ihr Gerät zu beurteilen, Backups und eine Wiederherstellungsmöglichkeit bereitzuhalten, die Diagnoseergebnisse zu prüfen und den Betrieb zu überwachen.&#xA;&#xA;Wählen Sie „Ja“ nur, wenn Sie diese Risiken verstehen und akzeptieren.</value></data>
+  <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>Inoffizielle Hardwareintegration</value></data>
+  <data name="Disclaimer_ShortBody" xml:space="preserve"><value>Diese App verwendet eine undokumentierte HONOR-Schnittstelle und ist möglicherweise nicht mit jedem Gerät oder Update kompatibel. Die Nutzung erfolgt auf eigene Gefahr; die Software wird ohne Gewährleistung bereitgestellt.</value></data>
+  <data name="Common_Enable" xml:space="preserve"><value>Aktivieren</value></data>
+  <data name="Common_Enabled" xml:space="preserve"><value>Aktiviert</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Speichern</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Abbrechen</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Bearbeiten</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Löschen</value></data>
+  <data name="Common_Available" xml:space="preserve"><value>verfügbar</value></data>
+  <data name="Common_Unavailable" xml:space="preserve"><value>nicht verfügbar</value></data>
+  <data name="Common_UnknownType" xml:space="preserve"><value>unbekannter Typ</value></data>
+  <data name="Settings_Tab" xml:space="preserve"><value>Einstellungen</value></data>
+  <data name="Settings_StartWithWindows" xml:space="preserve"><value>Mit Windows starten</value></data>
+  <data name="Settings_StartWithWindowsDescription" xml:space="preserve"><value>Die App erscheint nach der Anmeldung im Infobereich.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Oberflächensprache</value></data>
+  <data name="Settings_LanguageDescription" xml:space="preserve"><value>Wählen Sie eine Sprache oder übernehmen Sie die Windows-Anzeigesprache.</value></data>
+  <data name="Language_System" xml:space="preserve"><value>Windows-Sprache verwenden</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский (Russian)</value></data>
+  <data name="Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Language_German" xml:space="preserve"><value>Deutsch (German)</value></data>
+  <data name="Language_Portuguese" xml:space="preserve"><value>Português (Portuguese)</value></data>
+  <data name="Language_Korean" xml:space="preserve"><value>한국어 (Korean)</value></data>
+  <data name="Language_Chinese" xml:space="preserve"><value>简体中文 (Simplified Chinese)</value></data>
+  <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>Automatischer Wechsel</value></data>
+  <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>Bei angeschlossenem Netzteil wird das Profil anhand des WLANs ausgewählt. Im Akkubetrieb werden die Hardwareeinstellungen nicht geändert.</value></data>
+  <data name="Settings_WifiRules" xml:space="preserve"><value>WLAN-Regeln</value></data>
+  <data name="Settings_WifiRulesDescription" xml:space="preserve"><value>Die erste passende aktivierte Regel hat Vorrang.</value></data>
+  <data name="Settings_AddRule" xml:space="preserve"><value>＋  Regel hinzufügen</value></data>
+  <data name="Settings_EnabledColumn" xml:space="preserve"><value>Ein</value></data>
+  <data name="Settings_WifiNetworkColumn" xml:space="preserve"><value>WLAN-Netzwerk</value></data>
+  <data name="Settings_ExactSsidMatch" xml:space="preserve"><value>Exakte SSID-Übereinstimmung</value></data>
+  <data name="Settings_ChargingProfileColumn" xml:space="preserve"><value>Ladeprofil</value></data>
+  <data name="Settings_NoRules" xml:space="preserve"><value>Noch keine Regeln</value></data>
+  <data name="Settings_NoRulesDescription" xml:space="preserve"><value>Fügen Sie ein Netzwerk hinzu und wählen Sie ein Ladeprofil</value></data>
+  <data name="Settings_HigherRuleFirst" xml:space="preserve"><value>Weiter oben stehende Regeln werden zuerst geprüft</value></data>
+  <data name="Settings_MoveUp" xml:space="preserve"><value>↑ Nach oben</value></data>
+  <data name="Settings_MoveDown" xml:space="preserve"><value>↓ Nach unten</value></data>
+  <data name="Settings_Saved" xml:space="preserve"><value>Einstellungen gespeichert</value></data>
+  <data name="Settings_SsidEmpty" xml:space="preserve"><value>Die SSID darf nicht leer sein.</value></data>
+  <data name="Settings_SaveFailed" xml:space="preserve"><value>Die Einstellungen konnten nicht gespeichert werden.&#xA;&#xA;{0}</value></data>
+  <data name="Settings_CorruptRecovered" xml:space="preserve"><value>Die Einstellungsdatei war beschädigt. Sichere Standardwerte wurden wiederhergestellt.</value></data>
+  <data name="Diagnostics_Tab" xml:space="preserve"><value>Diagnose</value></data>
+  <data name="Diagnostics_SystemStatus" xml:space="preserve"><value>Systemstatus</value></data>
+  <data name="Diagnostics_WifiAccess" xml:space="preserve"><value>WLAN-Zugriff</value></data>
+  <data name="Diagnostics_Power" xml:space="preserve"><value>Stromversorgung</value></data>
+  <data name="Diagnostics_SelectedMode" xml:space="preserve"><value>Ausgewählter Modus</value></data>
+  <data name="Diagnostics_AppliedMode" xml:space="preserve"><value>Angewendeter Modus</value></data>
+  <data name="Diagnostics_ServiceAndWmi" xml:space="preserve"><value>Dienst und WMI</value></data>
+  <data name="Diagnostics_OemRegistry" xml:space="preserve"><value>OEM-Registry</value></data>
+  <data name="Diagnostics_LastAttempt" xml:space="preserve"><value>Letzter Versuch</value></data>
+  <data name="Diagnostics_ChargingModesTitle" xml:space="preserve"><value>Funktionsweise der Lademodi</value></data>
+  <data name="Diagnostics_ChargingModesDescription" xml:space="preserve"><value>Die erste Zahl gibt an, unter welchem Ladestand der Akku wieder geladen wird. Die zweite gibt an, bei welchem Ladestand das Laden endet.</value></data>
+  <data name="Diagnostics_HomeDescription" xml:space="preserve"><value>Start unter 40 %, Stopp bei 70 %. Maximale Akkulebensdauer.</value></data>
+  <data name="Diagnostics_OfficeDescription" xml:space="preserve"><value>Start unter 70 %, Stopp bei 90 %. Ausgewogenes Verhältnis von Laufzeit und Akkuverschleiß.</value></data>
+  <data name="Diagnostics_TravelDescription" xml:space="preserve"><value>Start unter 95 %, Stopp bei 100 %. Maximale Laufzeit.</value></data>
+  <data name="Diagnostics_OpenSettings" xml:space="preserve"><value>Einstellungen öffnen</value></data>
+  <data name="Diagnostics_WifiRestricted" xml:space="preserve"><value>Windows hat den WLAN-Zugriff eingeschränkt</value></data>
+  <data name="Diagnostics_LocationDescription" xml:space="preserve"><value>Die Standortberechtigung wird nur zum Ermitteln des Netzwerknamens verwendet.</value></data>
+  <data name="Diagnostics_HardwareCheck" xml:space="preserve"><value>Hardwareprüfung</value></data>
+  <data name="Diagnostics_HardwareCheckDescription" xml:space="preserve"><value>Zeigt die OEM-Nutzdaten und fragt vor dem Ändern der Schwellenwerte nach einer Bestätigung.</value></data>
+  <data name="Diagnostics_Run" xml:space="preserve"><value>Ausführen…</value></data>
+  <data name="Diagnostics_UnknownNetwork" xml:space="preserve"><value>Unbekanntes Netzwerk</value></data>
+  <data name="Diagnostics_NetworkName" xml:space="preserve"><value>„{0}“</value></data>
+  <data name="Diagnostics_AcPower" xml:space="preserve"><value>Netzbetrieb</value></data>
+  <data name="Diagnostics_BatteryPower" xml:space="preserve"><value>Akkubetrieb</value></data>
+  <data name="Diagnostics_UnknownPower" xml:space="preserve"><value>Unbekannte Stromquelle</value></data>
+  <data name="Diagnostics_NoSuccessfulApply" xml:space="preserve"><value>In dieser Sitzung wurde kein Profil erfolgreich angewendet</value></data>
+  <data name="Diagnostics_ServiceUnavailable" xml:space="preserve"><value>Dienst nicht verfügbar</value></data>
+  <data name="Diagnostics_ServiceReady" xml:space="preserve"><value>Dienst: verfügbar. OEM-WMI: verfügbar.</value></data>
+  <data name="Diagnostics_ServiceProblem" xml:space="preserve"><value>Dienst: verfügbar. OEM-WMI: nicht verfügbar.&#xA;{0}</value></data>
+  <data name="Diagnostics_RegistryValues" xml:space="preserve"><value>PowerSafeManagerStatus={0} ({1}); PowerSafeManagerMode={2} ({3})</value></data>
+  <data name="Diagnostics_RegistryUnavailable" xml:space="preserve"><value>OEM-Registrierungsschlüssel nicht gefunden oder Dienst nicht verfügbar</value></data>
+  <data name="Diagnostics_HeaderMode" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="Diagnostics_HeaderAc" xml:space="preserve"><value>Netzbetrieb</value></data>
+  <data name="Diagnostics_HeaderBattery" xml:space="preserve"><value>Akku</value></data>
+  <data name="Diagnostics_HeaderNoChange" xml:space="preserve"><value>Akkubetrieb · Profil bleibt unverändert</value></data>
+  <data name="Mode_Home" xml:space="preserve"><value>Zuhause</value></data>
+  <data name="Mode_Office" xml:space="preserve"><value>Büro</value></data>
+  <data name="Mode_Travel" xml:space="preserve"><value>Reise</value></data>
+  <data name="Mode_HomeRange" xml:space="preserve"><value>Zuhause · 40–70 %</value></data>
+  <data name="Mode_OfficeRange" xml:space="preserve"><value>Büro · 70–90 %</value></data>
+  <data name="Mode_TravelRange" xml:space="preserve"><value>Reise · 95–100 %</value></data>
+  <data name="Mode_HomeDetailed" xml:space="preserve"><value>Zuhause · 40–70 % — Laden beginnt unter 40 % und endet bei 70 %</value></data>
+  <data name="Mode_OfficeDetailed" xml:space="preserve"><value>Büro · 70–90 % — Laden beginnt unter 70 % und endet bei 90 %</value></data>
+  <data name="Mode_TravelDetailed" xml:space="preserve"><value>Reise · 95–100 % — Laden beginnt unter 95 % und endet bei 100 %</value></data>
+  <data name="WifiRule_Title" xml:space="preserve"><value>WLAN-Regel</value></data>
+  <data name="WifiRule_AddTitle" xml:space="preserve"><value>Regel hinzufügen</value></data>
+  <data name="WifiRule_EditTitle" xml:space="preserve"><value>Regel bearbeiten</value></data>
+  <data name="WifiRule_Description" xml:space="preserve"><value>Wählen Sie ein Netzwerk aus der Liste oder geben Sie die genaue SSID manuell ein.</value></data>
+  <data name="WifiRule_Network" xml:space="preserve"><value>WLAN-Netzwerk</value></data>
+  <data name="WifiRule_Profile" xml:space="preserve"><value>Ladeprofil</value></data>
+  <data name="WifiRule_AcOnly" xml:space="preserve"><value>Die Regel gilt nur, wenn das Notebook am Stromnetz angeschlossen ist.</value></data>
+  <data name="WifiRule_Save" xml:space="preserve"><value>Regel speichern</value></data>
+  <data name="WifiRule_ListDenied" xml:space="preserve"><value>Liste nicht verfügbar: Windows hat den WLAN-Zugriff verweigert. Sie können die SSID weiterhin manuell eingeben.</value></data>
+  <data name="WifiRule_ListEmpty" xml:space="preserve"><value>Keine Netzwerke gefunden. Geben Sie die SSID manuell ein.</value></data>
+  <data name="WifiRule_ListOrder" xml:space="preserve"><value>Verbundene und verfügbare Netzwerke werden zuerst angezeigt, danach die in Windows gespeicherten Netzwerke.</value></data>
+  <data name="WifiRule_SelectNetwork" xml:space="preserve"><value>Wählen Sie ein Netzwerk oder geben Sie die genaue SSID ein.</value></data>
+  <data name="WifiRule_Connected" xml:space="preserve"><value>Aktuell verbunden</value></data>
+  <data name="WifiRule_AvailableKnown" xml:space="preserve"><value>Verfügbar · gespeichert</value></data>
+  <data name="WifiRule_Available" xml:space="preserve"><value>Jetzt verfügbar</value></data>
+  <data name="WifiRule_Known" xml:space="preserve"><value>In Windows gespeichert</value></data>
+  <data name="Decision_Manual" xml:space="preserve"><value>Manueller Modus ausgewählt</value></data>
+  <data name="Decision_OnBattery" xml:space="preserve"><value>Akkubetrieb — Hardwareprofil wird nicht geändert</value></data>
+  <data name="Decision_UnknownPower" xml:space="preserve"><value>Unbekannte Stromquelle — Hardwareprofil wird nicht geändert</value></data>
+  <data name="Decision_RuleMatched" xml:space="preserve"><value>Passende WLAN-Regel: „{0}“</value></data>
+  <data name="Decision_NoWifi" xml:space="preserve"><value>WLAN ist deaktiviert oder das Netzwerk ist nicht verfügbar</value></data>
+  <data name="Decision_NoRule" xml:space="preserve"><value>Keine Regel für das aktuelle Netzwerk</value></data>
+  <data name="Ipc_EmptyRequest" xml:space="preserve"><value>Leere IPC-Anforderung.</value></data>
+  <data name="Ipc_UnknownOperation" xml:space="preserve"><value>Unbekannter IPC-Vorgang.</value></data>
+  <data name="Ipc_InvalidBatteryMode" xml:space="preserve"><value>Ungültiger Akkumodus.</value></data>
+  <data name="Ipc_ModeParametersOnlyApply" xml:space="preserve"><value>Modusparameter sind nur für ApplyMode zulässig.</value></data>
+  <data name="Ipc_InvalidRequest" xml:space="preserve"><value>Ungültige IPC-Anforderung.</value></data>
+  <data name="Wifi_NoCatalogNetworks" xml:space="preserve"><value>Windows hat keine verfügbaren oder gespeicherten WLAN-Netzwerke zurückgegeben.</value></data>
+  <data name="Wifi_CatalogCount" xml:space="preserve"><value>Gefundene Netzwerke: {0}.</value></data>
+  <data name="Wifi_CatalogFailed" xml:space="preserve"><value>Die WLAN-Netzwerkliste konnte nicht abgerufen werden: {0}.</value></data>
+  <data name="Wifi_NotConnected" xml:space="preserve"><value>Kein verbundenes WLAN-Netzwerk gefunden.</value></data>
+  <data name="Wifi_AccessAllowed" xml:space="preserve"><value>WLAN-Zugriff erlaubt.</value></data>
+  <data name="Wifi_DetectFailed" xml:space="preserve"><value>WLAN konnte nicht erkannt werden: {0}.</value></data>
+  <data name="Wifi_NameAccessDenied" xml:space="preserve"><value>Windows hat den Zugriff auf den WLAN-Netzwerknamen verweigert. Erlauben Sie der App den Standortzugriff.</value></data>
+  <data name="Wifi_DetectWindowsError" xml:space="preserve"><value>WLAN konnte nicht erkannt werden: Windows-Fehler {0}.</value></data>
+  <data name="Wifi_ListAccessDenied" xml:space="preserve"><value>Windows hat den Zugriff auf die WLAN-Netzwerkliste verweigert. Erlauben Sie der App den Standortzugriff.</value></data>
+  <data name="Wifi_ListWindowsError" xml:space="preserve"><value>Die WLAN-Netzwerkliste konnte nicht abgerufen werden: Windows-Fehler {0}.</value></data>
+  <data name="Tray_AutoEnabled" xml:space="preserve"><value>Automatik: ein</value></data>
+  <data name="Tray_StatusWaiting" xml:space="preserve"><value>Aktuell: Warten auf Prüfung</value></data>
+  <data name="Tray_Reapply" xml:space="preserve"><value>Modus jetzt synchronisieren</value></data>
+  <data name="Tray_ReapplyHint" xml:space="preserve"><value>Das ausgewählte Profil erneut anwenden, beispielsweise nach einer Änderung in HONOR PC Manager</value></data>
+  <data name="Tray_ReapplyPlugInHint" xml:space="preserve"><value>Netzteil anschließen: Automatische Profile werden im Akkubetrieb nicht angewendet</value></data>
+  <data name="Tray_Diagnostics" xml:space="preserve"><value>Einstellungen und Diagnose</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Beenden</value></data>
+  <data name="Tray_AutoState" xml:space="preserve"><value>Automatik: {0}</value></data>
+  <data name="Tray_On" xml:space="preserve"><value>ein</value></data>
+  <data name="Tray_Off" xml:space="preserve"><value>aus</value></data>
+  <data name="Tray_NoProfile" xml:space="preserve"><value>kein Profil ausgewählt</value></data>
+  <data name="Tray_Battery" xml:space="preserve"><value>Akku</value></data>
+  <data name="Tray_UnknownPower" xml:space="preserve"><value>unbekannte Stromquelle</value></data>
+  <data name="Tray_UnknownNetwork" xml:space="preserve"><value>unbekanntes Netzwerk</value></data>
+  <data name="Tray_StatusApplied" xml:space="preserve"><value>Aktuell: {0} · bis {1} % · {2} · {3}</value></data>
+  <data name="Tray_StatusPending" xml:space="preserve"><value>Aktuell: {0} ausstehend · {1} · {2}</value></data>
+  <data name="Tray_StatusNoChange" xml:space="preserve"><value>Aktuell: Profil unverändert · {0} · {1}</value></data>
+  <data name="Tray_TooltipError" xml:space="preserve"><value>Honor Battery Saver · Fehler · {0}</value></data>
+  <data name="Tray_TooltipApplied" xml:space="preserve"><value>Honor Battery Saver · {0} · Laden bis {1} %</value></data>
+  <data name="Tray_TooltipPending" xml:space="preserve"><value>Honor Battery Saver · Profil noch nicht angewendet</value></data>
+  <data name="Tray_TooltipBattery" xml:space="preserve"><value>Honor Battery Saver · Akku · Profil unverändert</value></data>
+  <data name="Tray_ApplyFailedTitle" xml:space="preserve"><value>Profil konnte nicht angewendet werden</value></data>
+  <data name="Tray_ProfileChangedTitle" xml:space="preserve"><value>Ladeprofil geändert</value></data>
+  <data name="Tray_ProfileChangedMessage" xml:space="preserve"><value>Modus „{0}“ aktiviert. Laden: unter {1} % → bis {2} %.</value></data>
+  <data name="Tray_SettingsRestoredTitle" xml:space="preserve"><value>Einstellungen wiederhergestellt</value></data>
+  <data name="Tray_ServiceNotRunningTitle" xml:space="preserve"><value>Dienst wird nicht ausgeführt</value></data>
+  <data name="Tray_NoApplyAttempts" xml:space="preserve"><value>In dieser Sitzung wurde noch nicht versucht, ein Profil anzuwenden</value></data>
+  <data name="Tray_AutostartFailed" xml:space="preserve"><value>Die Windows-Autostarteinstellungen konnten nicht geändert werden.</value></data>
+  <data name="ServiceClient_Timeout" xml:space="preserve"><value>Der Dienst hat nicht rechtzeitig geantwortet.</value></data>
+  <data name="ServiceClient_Unavailable" xml:space="preserve"><value>Der Honor Battery Saver-Dienst ist nicht verfügbar.</value></data>
+  <data name="App_ServiceStartCheckFailed" xml:space="preserve"><value>Der Dienst konnte nicht geprüft oder gestartet werden: {0}</value></data>
+  <data name="App_StartFailed" xml:space="preserve"><value>Honor Battery Saver konnte nicht gestartet werden.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ElevationCancelled" xml:space="preserve"><value>Die Anforderung von Administratorrechten wurde abgebrochen.</value></data>
+  <data name="Hardware_OpenFailed" xml:space="preserve"><value>Windows konnte die Hardwareprüfung nicht öffnen. Versuchen Sie es erneut und bestätigen Sie die Anforderung von Administratorrechten.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ProcessNotCreated" xml:space="preserve"><value>Windows hat den Prozess für die Hardwareprüfung nicht erstellt.</value></data>
+  <data name="Hardware_InvalidMode" xml:space="preserve"><value>Der angegebene Modus ist ungültig.</value></data>
+  <data name="Hardware_AdminOnly" xml:space="preserve"><value>Die Hardwareprüfung ist nur für Administratoren verfügbar.</value></data>
+  <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>Der Honor Battery Saver-Dienst konnte nicht gestartet werden.&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM-Registrierungsschlüssel nicht verfügbar</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>Ausgewählter Modus: {0}&#xA;Exakte OEM-Nutzdaten: {1}&#xA;&#xA;Der Befehl wird im geprüften 64-Byte-OEM-Puffer gesendet.&#xA;&#xA;Vorherige Registrierungswerte:&#xA;{2}&#xA;&#xA;Warnung: Diese Prüfung ändert die Ladeschwellen des Akkus tatsächlich über eine undokumentierte OEM-Schnittstelle. Die Kompatibilität ist nicht garantiert, die Software wird ohne Gewährleistung bereitgestellt und Sie akzeptieren das Risiko unerwarteten Verhaltens oder von Schäden. Fortfahren?</value></data>
+  <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Honor Battery Saver-Hardwareprüfung</value></data>
+  <data name="Hardware_ResultTitle" xml:space="preserve"><value>Ergebnis der Hardwareprüfung</value></data>
+  <data name="Reason_ConditionsChanged" xml:space="preserve"><value>Bedingungen geändert</value></data>
+  <data name="Reason_WifiChanged" xml:space="preserve"><value>WLAN geändert</value></data>
+  <data name="Reason_PowerChanged" xml:space="preserve"><value>Stromquelle geändert</value></data>
+  <data name="Reason_Resumed" xml:space="preserve"><value>Aus dem Energiesparmodus reaktiviert</value></data>
+  <data name="Reason_AppStarted" xml:space="preserve"><value>App gestartet</value></data>
+  <data name="Reason_ManualSync" xml:space="preserve"><value>Manuelle Modussynchronisierung</value></data>
+  <data name="Reason_AutomaticEnabled" xml:space="preserve"><value>Automatischer Modus aktiviert</value></data>
+  <data name="Reason_ManualSelection" xml:space="preserve"><value>Manuelle Auswahl</value></data>
+  <data name="Reason_SettingsChanged" xml:space="preserve"><value>Einstellungen geändert</value></data>
+  <data name="Wifi_NotChecked" xml:space="preserve"><value>Der WLAN-Status wurde noch nicht geprüft.</value></data>
+  <data name="Decision_WaitingFirstCheck" xml:space="preserve"><value>Warten auf die erste Prüfung</value></data>
+  <data name="Recovery_AlreadyRunning" xml:space="preserve"><value>Der Dienst wird bereits ausgeführt.</value></data>
+  <data name="Recovery_FinishedStarting" xml:space="preserve"><value>Der Dienst wurde vollständig gestartet.</value></data>
+  <data name="Recovery_ProcessPipeUnavailable" xml:space="preserve"><value>Der Dienstprozess läuft, aber sein Steuerkanal ist nicht verfügbar. Beenden Sie den nicht reagierenden Prozess und versuchen Sie es erneut.</value></data>
+  <data name="Recovery_ExecutableNotFoundNearby" xml:space="preserve"><value>Der Dienst ist nicht registriert. HonorBatterySaver.Service.exe wurde auch im App-Ordner nicht gefunden.</value></data>
+  <data name="Recovery_EnableAutostartFailed" xml:space="preserve"><value>Der automatische Dienststart konnte nicht aktiviert werden. {0}</value></data>
+  <data name="Recovery_StartFailed" xml:space="preserve"><value>Der Dienst konnte nicht gestartet werden. {0}</value></data>
+  <data name="Recovery_WindowsServiceStarted" xml:space="preserve"><value>Der Windows-Dienst wurde aktiviert und gestartet.</value></data>
+  <data name="Recovery_PipeDidNotAppear" xml:space="preserve"><value>Der Dienst wurde gestartet, aber sein Steuerkanal ist nicht verfügbar.</value></data>
+  <data name="Recovery_ExecutableNotFound" xml:space="preserve"><value>Der Dienst ist nicht registriert und HonorBatterySaver.Service.exe wurde nicht gefunden.</value></data>
+  <data name="Recovery_ProcessStartedElevated" xml:space="preserve"><value>Der Dienstprozess wurde mit Administratorrechten gestartet.</value></data>
+  <data name="Recovery_ProcessPipeDidNotAppear" xml:space="preserve"><value>Der Dienstprozess wurde gestartet, aber sein Steuerkanal ist nicht verfügbar.</value></data>
+  <data name="Recovery_AppPathUnknown" xml:space="preserve"><value>Der App-Pfad konnte nicht ermittelt werden.</value></data>
+  <data name="Recovery_ProcessNotCreated" xml:space="preserve"><value>Windows hat den Dienstwiederherstellungsprozess nicht erstellt.</value></data>
+  <data name="Recovery_WindowsStartFailed" xml:space="preserve"><value>Windows konnte den Dienst nicht aktivieren oder starten.</value></data>
+  <data name="Recovery_ElevationFailed" xml:space="preserve"><value>Administratorrechte konnten nicht angefordert werden: {0}</value></data>
+  <data name="Recovery_ProcessStartFailed" xml:space="preserve"><value>Der Dienstprozess konnte nicht gestartet werden: {0}</value></data>
+  <data name="Recovery_ServiceProcessNotCreated" xml:space="preserve"><value>Windows hat den Dienstprozess nicht erstellt.</value></data>
+  <data name="Recovery_ServiceManagerNotStarted" xml:space="preserve"><value>Windows hat den Dienststeuerungs-Manager nicht gestartet.</value></data>
+  <data name="Recovery_ErrorCode" xml:space="preserve"><value>Fehlercode: {0}.</value></data>
+  <data name="Service_Available" xml:space="preserve"><value>Dienst verfügbar.</value></data>
+  <data name="Service_ModeAlreadyApplied" xml:space="preserve"><value>Der Modus wurde bereits angewendet; ein weiterer OEM-Befehl ist nicht erforderlich.</value></data>
+  <data name="Service_RegistryKeyMissing" xml:space="preserve"><value>HONOR PC Manager-Registrierungsschlüssel nicht gefunden.</value></data>
+  <data name="Service_ProbeFailed" xml:space="preserve"><value>Geräteprüfung fehlgeschlagen: {0}.</value></data>
+  <data name="Service_DeviceUnsupported" xml:space="preserve"><value>Gerät nicht unterstützt: HONOR PC Manager-Registrierungsschlüssel nicht gefunden.</value></data>
+  <data name="Service_CommandRejected" xml:space="preserve"><value>Der OEM-WMI-Anbieter hat den Befehl abgelehnt.</value></data>
+  <data name="Service_ModeApplied" xml:space="preserve"><value>Modus „{0}“ angewendet.</value></data>
+  <data name="Service_RegistrySyncFailed" xml:space="preserve"><value>Der OEM-Befehl wurde ausgeführt, aber die Registry konnte nicht synchronisiert werden.</value></data>
+  <data name="Service_ApplyFailed" xml:space="preserve"><value>Der Modus konnte nicht angewendet werden: {0}.</value></data>
+  <data name="Wmi_MethodMissing" xml:space="preserve"><value>Die OEM-WMI-Methode fehlt oder hat eine inkompatible Signatur.</value></data>
+  <data name="Wmi_InstanceMissing" xml:space="preserve"><value>Keine Instanz des OEM-WMI-Anbieters gefunden.</value></data>
+  <data name="Wmi_ActiveInstanceMissing" xml:space="preserve"><value>Keine aktive Instanz des OEM-WMI-Anbieters gefunden.</value></data>
+  <data name="Wmi_HwmiInstanceMissing" xml:space="preserve"><value>Die Instanz HWMI_0 des OEM-WMI-Anbieters wurde nicht gefunden oder war nicht eindeutig.</value></data>
+  <data name="Wmi_Available" xml:space="preserve"><value>OEM-WMI verfügbar.</value></data>
+  <data name="Wmi_AccessDenied" xml:space="preserve"><value>Der Zugriff auf den OEM-WMI-Anbieter wurde verweigert.</value></data>
+  <data name="Wmi_RunServiceAsAdmin" xml:space="preserve"><value>Der Zugriff auf den OEM-WMI-Anbieter wurde verweigert. Führen Sie den Dienst mit Administratorrechten aus.</value></data>
+  <data name="Wmi_ClassMissing" xml:space="preserve"><value>OEM-WMI-Klasse nicht gefunden.</value></data>
+  <data name="Wmi_NamespaceUnavailable" xml:space="preserve"><value>Der OEM-WMI-Namespace ROOT\WMI ist nicht verfügbar.</value></data>
+  <data name="Wmi_UnavailableError" xml:space="preserve"><value>OEM-WMI nicht verfügbar: {0}.</value></data>
+  <data name="Wmi_ServiceNeedsElevation" xml:space="preserve"><value>Der Zugriff auf den OEM-WMI-Anbieter wurde verweigert. Der Dienst muss mit erhöhten Rechten ausgeführt werden.</value></data>
+  <data name="Wmi_MethodUnavailable" xml:space="preserve"><value>Die OEM-WMI-Methode ist in der aktuellen BIOS- oder PC-Manager-Version nicht verfügbar.</value></data>
+  <data name="Wmi_CommandFormatRejected" xml:space="preserve"><value>Der OEM-WMI-Anbieter hat das geprüfte Befehlsformat abgelehnt.</value></data>
+  <data name="Wmi_CallFailed" xml:space="preserve"><value>Der OEM-WMI-Aufruf ist mit {0} fehlgeschlagen.</value></data>
+</root>

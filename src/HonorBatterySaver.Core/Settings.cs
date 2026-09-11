@@ -7,7 +7,11 @@ public enum UiLanguage
 {
     System,
     Russian,
-    English
+    English,
+    German,
+    Portuguese,
+    Korean,
+    Chinese
 }
 
 public sealed class NetworkRule

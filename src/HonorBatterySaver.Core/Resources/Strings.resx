@@ -30,8 +30,12 @@
   <data name="Settings_Language" xml:space="preserve"><value>Interface language</value></data>
   <data name="Settings_LanguageDescription" xml:space="preserve"><value>Choose a language or let the app follow the Windows display language.</value></data>
   <data name="Language_System" xml:space="preserve"><value>Use Windows language</value></data>
-  <data name="Language_Russian" xml:space="preserve"><value>Russian</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский (Russian)</value></data>
   <data name="Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Language_German" xml:space="preserve"><value>Deutsch (German)</value></data>
+  <data name="Language_Portuguese" xml:space="preserve"><value>Português (Portuguese)</value></data>
+  <data name="Language_Korean" xml:space="preserve"><value>한국어 (Korean)</value></data>
+  <data name="Language_Chinese" xml:space="preserve"><value>简体中文 (Simplified Chinese)</value></data>
   <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>Automatic switching</value></data>
   <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>When the charger is connected, the profile is selected by Wi-Fi. Hardware settings are not changed while on battery power.</value></data>
   <data name="Settings_WifiRules" xml:space="preserve"><value>Wi-Fi rules</value></data>

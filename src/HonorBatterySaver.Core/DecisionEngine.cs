@@ -63,6 +63,12 @@ public sealed class ApplyCommandGate
     public bool ShouldApply(BatteryMode desiredMode, bool force) =>
         force || _lastSuccessfulMode != desiredMode;
 
+    public BatteryMode? ResolveDisplayedMode(BatteryMode? desiredMode) =>
+        desiredMode ?? _lastSuccessfulMode;
+
+    public bool IsPending(BatteryMode? desiredMode) =>
+        desiredMode is BatteryMode mode && _lastSuccessfulMode != mode;
+
     public void RecordSuccess(BatteryMode mode) => _lastSuccessfulMode = mode;
 
     public void Reset() => _lastSuccessfulMode = null;

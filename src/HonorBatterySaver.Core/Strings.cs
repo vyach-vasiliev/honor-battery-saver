@@ -30,10 +30,32 @@ public static class Strings
 
     public static CultureInfo ResolveCulture(string? cultureName)
     {
-        if (!string.IsNullOrWhiteSpace(cultureName) &&
-            cultureName.StartsWith("ru", StringComparison.OrdinalIgnoreCase))
+        if (!string.IsNullOrWhiteSpace(cultureName))
         {
-            return CultureInfo.GetCultureInfo("ru");
+            if (cultureName.StartsWith("ru", StringComparison.OrdinalIgnoreCase))
+            {
+                return CultureInfo.GetCultureInfo("ru");
+            }
+
+            if (cultureName.StartsWith("de", StringComparison.OrdinalIgnoreCase))
+            {
+                return CultureInfo.GetCultureInfo("de");
+            }
+
+            if (cultureName.StartsWith("pt", StringComparison.OrdinalIgnoreCase))
+            {
+                return CultureInfo.GetCultureInfo("pt");
+            }
+
+            if (cultureName.StartsWith("ko", StringComparison.OrdinalIgnoreCase))
+            {
+                return CultureInfo.GetCultureInfo("ko");
+            }
+
+            if (cultureName.StartsWith("zh", StringComparison.OrdinalIgnoreCase))
+            {
+                return CultureInfo.GetCultureInfo("zh-Hans");
+            }
         }
 
         return CultureInfo.GetCultureInfo("en-US");
@@ -45,6 +67,10 @@ public static class Strings
         {
             UiLanguage.Russian => CultureInfo.GetCultureInfo("ru"),
             UiLanguage.English => CultureInfo.GetCultureInfo("en-US"),
+            UiLanguage.German => CultureInfo.GetCultureInfo("de"),
+            UiLanguage.Portuguese => CultureInfo.GetCultureInfo("pt"),
+            UiLanguage.Korean => CultureInfo.GetCultureInfo("ko"),
+            UiLanguage.Chinese => CultureInfo.GetCultureInfo("zh-Hans"),
             _ => SystemCulture
         };
 

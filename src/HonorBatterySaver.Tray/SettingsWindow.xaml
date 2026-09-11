@@ -197,7 +197,7 @@
                                     <TextBlock Margin="0,4,0,0" Style="{StaticResource BodyMuted}"
                                                Text="{i18n:Localized Settings_LanguageDescription}" />
                                 </StackPanel>
-                                <ComboBox x:Name="LanguageComboBox" Grid.Column="1" Width="210" Margin="20,0,0,0"
+                                <ComboBox x:Name="LanguageComboBox" Grid.Column="1" Width="260" Margin="20,0,0,0"
                                           VerticalAlignment="Center" DisplayMemberPath="Name" SelectedValuePath="Language" />
                             </Grid>
                         </Border>

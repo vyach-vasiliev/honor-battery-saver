@@ -43,4 +43,16 @@ public sealed class ProfileAndIpcTests
         Assert.True(gate.ShouldApply(BatteryMode.Home, true));
         Assert.True(gate.ShouldApply(BatteryMode.Office, false));
     }
+
+    [Fact]
+    public void TrayPresentationPrefersTheCurrentlyDesiredMode()
+    {
+        var gate = new ApplyCommandGate();
+        gate.RecordSuccess(BatteryMode.Home);
+
+        Assert.Equal(BatteryMode.Office, gate.ResolveDisplayedMode(BatteryMode.Office));
+        Assert.True(gate.IsPending(BatteryMode.Office));
+        Assert.Equal(BatteryMode.Home, gate.ResolveDisplayedMode(null));
+        Assert.False(gate.IsPending(null));
+    }
 }

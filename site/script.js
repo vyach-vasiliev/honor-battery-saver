@@ -1,7 +1,7 @@
 const profiles = {
-  home: { title: { ru: "Дом", en: "Home" }, network: "HOME_5G", start: 40, end: 70 },
-  office: { title: { ru: "Офис", en: "Office" }, network: "STUDIO_WIFI", start: 70, end: 90 },
-  travel: { title: { ru: "Поездка", en: "Travel" }, network: "AIRPORT_FREE", start: 95, end: 100 }
+  home: { title: { ru: "Дом", en: "Home", de: "Zuhause", pt: "Casa", ko: "집", zh: "居家" }, network: "HOME_5G", start: 40, end: 70 },
+  office: { title: { ru: "Офис", en: "Office", de: "Büro", pt: "Escritório", ko: "사무실", zh: "办公" }, network: "STUDIO_WIFI", start: 70, end: 90 },
+  travel: { title: { ru: "Поездка", en: "Travel", de: "Reise", pt: "Viagem", ko: "여행", zh: "出行" }, network: "AIRPORT_FREE", start: 95, end: 100 }
 };
 
 const languageContent = {
@@ -9,7 +9,7 @@ const languageContent = {
     title: "Honor Battery Saver — помогите HONOR сохранить батарею",
     description: "Сокращайте ненужное время на 100%: Honor Battery Saver автоматически выбирает лимиты 70%, 90% или 100% для ноутбука HONOR. Открытый код, без телеметрии.",
     ogDescription: "Бережная зарядка для ноутбуков HONOR с авто-переключением профилей.",
-    languageLabel: "Switch to English",
+    languageLabel: "Язык интерфейса",
     navigationLabel: "Основная навигация",
     visualLabel: "Демонстрация переключения профилей зарядки",
     tabsLabel: "Выберите профиль для демонстрации",
@@ -21,18 +21,67 @@ const languageContent = {
     title: "Honor Battery Saver — help your HONOR battery last longer",
     description: "Reduce unnecessary time at 100% with automatic 70%, 90%, and 100% charging profiles for compatible HONOR laptops. Open source, with no telemetry.",
     ogDescription: "Gentle charging for HONOR laptops with automatic profile switching.",
-    languageLabel: "Переключить на русский",
+    languageLabel: "Interface language",
     navigationLabel: "Main navigation",
     visualLabel: "Charging profile switching demo",
     tabsLabel: "Choose a profile to preview",
     trustLabel: "Key benefits",
     comparisonLabel: "Typical charging compared with battery-friendly charging",
     brandLabel: "Honor Battery Saver — home"
+  },
+  de: {
+    title: "Honor Battery Saver — verlängern Sie die Lebensdauer Ihres HONOR-Akkus",
+    description: "Vermeiden Sie unnötig lange volle Akkuladungen: mit automatischen Ladegrenzen von 70 %, 90 % und 100 % für kompatible HONOR-Notebooks. Open Source, ohne Telemetrie.",
+    ogDescription: "Akkuschonendes Laden für HONOR-Notebooks mit automatischem Profilwechsel.",
+    languageLabel: "Oberflächensprache",
+    navigationLabel: "Hauptnavigation",
+    visualLabel: "Demo zum Wechseln des Ladeprofils",
+    tabsLabel: "Profil für die Vorschau auswählen",
+    trustLabel: "Wichtigste Vorteile",
+    comparisonLabel: "Normales und akkuschonendes Laden im Vergleich",
+    brandLabel: "Honor Battery Saver — Startseite"
+  },
+  pt: {
+    title: "Honor Battery Saver — ajude a bateria do seu HONOR a durar mais",
+    description: "Reduza o tempo que a bateria passa em 100% com perfis automáticos de carregamento de 70%, 90% e 100% para notebooks HONOR compatíveis. Código aberto e sem telemetria.",
+    ogDescription: "Preserve a bateria do seu notebook HONOR com a troca automática de perfis de carregamento.",
+    languageLabel: "Idioma da interface",
+    navigationLabel: "Navegação principal",
+    visualLabel: "Demonstração da troca de perfis de carregamento",
+    tabsLabel: "Escolha um perfil para visualizar",
+    trustLabel: "Principais benefícios",
+    comparisonLabel: "Comparação entre carregamento comum e carregamento que preserva a bateria",
+    brandLabel: "Honor Battery Saver — início"
+  },
+  ko: {
+    title: "Honor Battery Saver — HONOR 배터리 수명을 더 길게",
+    description: "호환 HONOR 노트북을 위한 70%, 90%, 100% 자동 충전 프로필로 불필요하게 완충 상태를 유지하는 시간을 줄이세요. 오픈 소스이며 원격 측정 데이터를 수집하지 않습니다.",
+    ogDescription: "충전 프로필을 자동으로 전환해 HONOR 노트북의 배터리 부담을 줄여 보세요.",
+    languageLabel: "인터페이스 언어",
+    navigationLabel: "기본 탐색",
+    visualLabel: "충전 프로필 전환 데모",
+    tabsLabel: "미리 볼 프로필 선택",
+    trustLabel: "주요 이점",
+    comparisonLabel: "일반 충전과 배터리 보호 충전 비교",
+    brandLabel: "Honor Battery Saver — 홈"
+  },
+  zh: {
+    title: "Honor Battery Saver — 让您的 HONOR 电池更耐用",
+    description: "为兼容的 HONOR 笔记本自动切换 70%、90% 和 100% 充电上限，减少电池长时间处于满电状态的情况。开源，不收集遥测数据。",
+    ogDescription: "自动切换充电方案，为 HONOR 笔记本电池提供日常养护。",
+    languageLabel: "界面语言",
+    navigationLabel: "主导航",
+    visualLabel: "充电方案切换演示",
+    tabsLabel: "选择要预览的方案",
+    trustLabel: "主要优势",
+    comparisonLabel: "普通充电与电池养护充电对比",
+    brandLabel: "Honor Battery Saver — 首页"
   }
 };
 
 function detectInitialLanguage() {
-  return document.documentElement.lang.toLowerCase().startsWith("en") ? "en" : "ru";
+  const pageLanguage = document.documentElement.lang.toLowerCase();
+  return ["ru", "de", "pt", "ko", "zh"].find((code) => pageLanguage.startsWith(code)) || "en";
 }
 
 let language = detectInitialLanguage();
@@ -46,10 +95,54 @@ const autoplayPauseReasons = new Set();
 
 const header = document.querySelector(".site-header");
 const languageToggle = document.querySelector("[data-language-toggle]");
+const languages = [
+  ["en", "English"], ["ru", "Русский"], ["de", "Deutsch"],
+  ["pt", "Português"], ["ko", "한국어"], ["zh", "简体中文"]
+];
+const languagePicker = document.createElement("div");
+languagePicker.className = "language-picker";
+
+const languageButton = document.createElement("button");
+languageButton.className = "language-toggle";
+languageButton.type = "button";
+languageButton.setAttribute("aria-haspopup", "listbox");
+languageButton.setAttribute("aria-expanded", "false");
+languageButton.setAttribute("aria-controls", "language-menu");
+
+const languageButtonLabel = document.createElement("span");
+languageButtonLabel.className = "language-current";
+const languageChevron = document.createElement("span");
+languageChevron.className = "language-chevron";
+languageChevron.setAttribute("aria-hidden", "true");
+languageButton.append(languageButtonLabel, languageChevron);
+
+const languageMenu = document.createElement("div");
+languageMenu.className = "language-menu";
+languageMenu.id = "language-menu";
+languageMenu.role = "listbox";
+languageMenu.tabIndex = -1;
+
+const languageOptions = languages.map(([value, label]) => {
+  const option = document.createElement("button");
+  option.className = "language-option";
+  option.type = "button";
+  option.role = "option";
+  option.dataset.language = value;
+  option.textContent = label;
+  option.tabIndex = -1;
+  languageMenu.append(option);
+  return option;
+});
+
+languagePicker.append(languageButton, languageMenu);
+languageToggle.replaceWith(languagePicker);
 const profileButtons = [...document.querySelectorAll("[data-profile]")];
 const profileSwitcher = document.querySelector(".profile-switcher");
 const metaDescription = document.querySelector('meta[name="description"]');
 const ogDescription = document.querySelector('meta[property="og:description"]');
+const ogTitle = document.querySelector('meta[property="og:title"]');
+const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+const twitterDescription = document.querySelector('meta[name="twitter:description"]');
 const profileTitle = document.querySelector("[data-profile-title]");
 const profileNetwork = document.querySelector("[data-profile-network]");
 const profileLimit = document.querySelector("[data-profile-limit]");
@@ -133,15 +226,26 @@ function setLanguage(nextLanguage) {
   document.title = content.title;
   metaDescription.content = content.description;
   ogDescription.content = content.ogDescription;
+  ogTitle.content = content.title;
+  twitterTitle.content = content.title;
+  twitterDescription.content = content.ogDescription;
 
-  document.querySelectorAll("[data-ru][data-en]").forEach((element) => {
-    element.textContent = element.dataset[language];
+  document.querySelectorAll("[data-en]").forEach((element) => {
+    const translated = language === "ru"
+      ? element.dataset.ru
+      : language === "en"
+        ? element.dataset.en
+        : globalThis.siteTranslations?.[language]?.[element.dataset.en];
+    if (translated) element.textContent = translated;
   });
 
-  languageToggle.innerHTML = language === "en"
-    ? '<span class="lang-active">EN</span><span aria-hidden="true">/</span><span>RU</span>'
-    : '<span>EN</span><span aria-hidden="true">/</span><span class="lang-active">RU</span>';
-  languageToggle.setAttribute("aria-label", content.languageLabel);
+  languageButtonLabel.textContent = languages.find(([code]) => code === language)[1];
+  languageButton.setAttribute("aria-label", content.languageLabel);
+  languageMenu.setAttribute("aria-label", content.languageLabel);
+  languageOptions.forEach((option) => {
+    const selected = option.dataset.language === language;
+    option.setAttribute("aria-selected", String(selected));
+  });
   document.querySelector(".nav").setAttribute("aria-label", content.navigationLabel);
   document.querySelector(".product-visual").setAttribute("aria-label", content.visualLabel);
   document.querySelector(".profile-switcher").setAttribute("aria-label", content.tabsLabel);
@@ -152,8 +256,60 @@ function setLanguage(nextLanguage) {
   renderProfile(activeProfile);
 }
 
-languageToggle.addEventListener("click", () => {
-  window.location.href = language === "ru" ? "/en/" : "/ru/";
+function setLanguageMenuOpen(open, focusSelected = false) {
+  languagePicker.classList.toggle("open", open);
+  languageButton.setAttribute("aria-expanded", String(open));
+  if (open && focusSelected) {
+    languageOptions.find((option) => option.dataset.language === language)?.focus();
+  }
+}
+
+languageButton.addEventListener("click", () => {
+  setLanguageMenuOpen(!languagePicker.classList.contains("open"), true);
+});
+
+languageButton.addEventListener("keydown", (event) => {
+  if (!["ArrowDown", "ArrowUp"].includes(event.key)) return;
+  event.preventDefault();
+  setLanguageMenuOpen(true, true);
+});
+
+languageOptions.forEach((option, index) => {
+  option.addEventListener("click", () => {
+    setLanguageMenuOpen(false);
+    if (option.dataset.language === language) {
+      languageButton.focus();
+      return;
+    }
+    window.location.href = `/${option.dataset.language}/`;
+  });
+  option.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      setLanguageMenuOpen(false);
+      languageButton.focus();
+      return;
+    }
+    if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
+    event.preventDefault();
+    let nextIndex = index;
+    if (event.key === "ArrowDown") nextIndex = (index + 1) % languageOptions.length;
+    if (event.key === "ArrowUp") nextIndex = (index - 1 + languageOptions.length) % languageOptions.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = languageOptions.length - 1;
+    languageOptions[nextIndex].focus();
+  });
+});
+
+document.addEventListener("pointerdown", (event) => {
+  if (!languagePicker.contains(event.target)) setLanguageMenuOpen(false);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && languagePicker.classList.contains("open")) {
+    setLanguageMenuOpen(false);
+    languageButton.focus();
+  }
 });
 
 profileButtons.forEach((button, index) => {

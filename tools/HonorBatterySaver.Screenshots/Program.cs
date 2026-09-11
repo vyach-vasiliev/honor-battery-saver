@@ -31,7 +31,15 @@ internal static class Program
         app.Resources = ReadApplicationResources(projectRoot);
         ApplyDarkPalette(app);
 
-        foreach (var language in new[] { UiLanguage.English, UiLanguage.Russian })
+        foreach (var language in new[]
+                 {
+                     UiLanguage.English,
+                     UiLanguage.Russian,
+                     UiLanguage.German,
+                     UiLanguage.Portuguese,
+                     UiLanguage.Korean,
+                     UiLanguage.Chinese
+                 })
         foreach (var diagnostics in new[] { false, true })
         {
             Strings.ApplyUiLanguage(language);
@@ -51,7 +59,15 @@ internal static class Program
             Dispatcher.CurrentDispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
             root.UpdateLayout();
 
-            var locale = language == UiLanguage.Russian ? "ru" : "en";
+            var locale = language switch
+            {
+                UiLanguage.Russian => "ru",
+                UiLanguage.German => "de",
+                UiLanguage.Portuguese => "pt",
+                UiLanguage.Korean => "ko",
+                UiLanguage.Chinese => "zh",
+                _ => "en"
+            };
             if (Strings.CurrentCulture.TwoLetterISOLanguageName != locale)
                 throw new InvalidOperationException("Unexpected screenshot locale.");
             if (((DataGrid)window.FindName("RulesGrid")).Items.Count != 3 ||

@@ -384,7 +384,9 @@ public sealed class TrayApplicationController : IDisposable
             return;
         }
 
-        var displayedMode = _commandGate.LastSuccessfulMode ?? _decision.Mode;
+        var desiredMode = _decision.Mode;
+        var displayedMode = _commandGate.ResolveDisplayedMode(desiredMode);
+        var isPending = _commandGate.IsPending(desiredMode);
         var displayedProfile = displayedMode is BatteryMode mode ? BatteryProfiles.Get(mode) : null;
         var modeName = displayedMode is BatteryMode localizedMode
             ? Strings.GetModeName(localizedMode)
@@ -399,10 +401,10 @@ public sealed class TrayApplicationController : IDisposable
         _automaticItem.Text = Strings.Format("Tray_AutoState",
             Strings.Get(_settings.AutomaticMode ? "Tray_On" : "Tray_Off"));
         _automaticItem.Checked = _settings.AutomaticMode;
-        _statusItem.Text = _commandGate.LastSuccessfulMode is BatteryMode
-            ? Strings.Format("Tray_StatusApplied", modeName, displayedProfile!.StopChargePercent, powerName, ssid)
-            : _decision.Mode is BatteryMode
-                ? Strings.Format("Tray_StatusPending", modeName, powerName, ssid)
+        _statusItem.Text = isPending
+            ? Strings.Format("Tray_StatusPending", modeName, powerName, ssid)
+            : _commandGate.LastSuccessfulMode is BatteryMode
+                ? Strings.Format("Tray_StatusApplied", modeName, displayedProfile!.StopChargePercent, powerName, ssid)
                 : Strings.Format("Tray_StatusNoChange", powerName, ssid);
         var unsupported = _lastResponse?.ApplyResult?.Outcome == ApplyOutcome.Unsupported;
         foreach (var pair in _modeItems)
@@ -422,17 +424,17 @@ public sealed class TrayApplicationController : IDisposable
 
         var hasError = _lastResponse is { Success: false } || _lastResponse?.ApplyResult?.Outcome is
             ApplyOutcome.Failed or ApplyOutcome.PartialFailure or ApplyOutcome.Unsupported;
-        _notifyIcon.Icon = _commandGate.LastSuccessfulMode is BatteryMode activeMode
+        _notifyIcon.Icon = displayedMode is BatteryMode activeMode
             ? GetModeIcon(activeMode, hasError)
             : hasError
                 ? SystemIcons.Error
                 : _applicationIcon ?? SystemIcons.Application;
         var tooltip = hasError
             ? Strings.Format("Tray_TooltipError", modeName)
-            : _commandGate.LastSuccessfulMode is BatteryMode
-                ? Strings.Format("Tray_TooltipApplied", modeName, displayedProfile!.StopChargePercent)
-                : _decision.Mode is BatteryMode
-                    ? Strings.Get("Tray_TooltipPending")
+            : isPending
+                ? Strings.Get("Tray_TooltipPending")
+                : _commandGate.LastSuccessfulMode is BatteryMode
+                    ? Strings.Format("Tray_TooltipApplied", modeName, displayedProfile!.StopChargePercent)
                     : Strings.Get("Tray_TooltipBattery");
         _notifyIcon.Text = tooltip.Length <= 63 ? tooltip : tooltip[..63];
     }

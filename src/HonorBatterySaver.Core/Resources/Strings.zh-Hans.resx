@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>Honor Battery Saver</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>居家、办公、出行，充电也能呵护电池</value></data>
+  <data name="App_CheckingStatus" xml:space="preserve"><value>正在检查状态…</value></data>
+  <data name="Project_Website" xml:space="preserve"><value>网站</value></data>
+  <data name="Project_Issues" xml:space="preserve"><value>问题</value></data>
+  <data name="Project_Feedback" xml:space="preserve"><value>建议与反馈</value></data>
+  <data name="Project_OpenFailed" xml:space="preserve"><value>无法打开浏览器。请手动打开此地址：&#xA;&#xA;{0}</value></data>
+  <data name="Disclaimer_FirstRunTitle" xml:space="preserve"><value>重要硬件控制免责声明</value></data>
+  <data name="Disclaimer_FirstRunBody" xml:space="preserve"><value>Honor Battery Saver 是一个独立的非官方项目，与 HONOR 无关联，也未获得其认可。&#xA;&#xA;本软件使用未公开的 OEM WMI 接口来更改电池充电阈值。不保证兼容性，BIOS、固件、驱动程序、Windows 或 HONOR PC Manager 更新可能改变其行为。使用本软件可能导致异常充电行为、电池寿命缩短、设备不可用、数据丢失或硬件损坏。&#xA;&#xA;本软件按“原样”提供，不附带任何保证。您应自行判断它是否适合您的设备，保留备份和恢复方式，检查诊断结果并持续监控运行情况。&#xA;&#xA;只有在理解并接受这些风险后，才请选择“是”。</value></data>
+  <data name="Disclaimer_ShortTitle" xml:space="preserve"><value>非官方硬件集成</value></data>
+  <data name="Disclaimer_ShortBody" xml:space="preserve"><value>此应用使用未公开的 HONOR 接口，可能无法兼容所有设备或更新。使用风险由您自行承担；软件不附带任何保证。</value></data>
+  <data name="Common_Enable" xml:space="preserve"><value>启用</value></data>
+  <data name="Common_Enabled" xml:space="preserve"><value>已启用</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>保存</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>编辑</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>删除</value></data>
+  <data name="Common_Available" xml:space="preserve"><value>可用</value></data>
+  <data name="Common_Unavailable" xml:space="preserve"><value>不可用</value></data>
+  <data name="Common_UnknownType" xml:space="preserve"><value>未知类型</value></data>
+  <data name="Settings_Tab" xml:space="preserve"><value>设置</value></data>
+  <data name="Settings_StartWithWindows" xml:space="preserve"><value>随 Windows 启动</value></data>
+  <data name="Settings_StartWithWindowsDescription" xml:space="preserve"><value>登录后，应用将显示在系统托盘中。</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>界面语言</value></data>
+  <data name="Settings_LanguageDescription" xml:space="preserve"><value>选择界面语言，或跟随 Windows 显示语言。</value></data>
+  <data name="Language_System" xml:space="preserve"><value>使用 Windows 语言</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский (Russian)</value></data>
+  <data name="Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Language_German" xml:space="preserve"><value>Deutsch (German)</value></data>
+  <data name="Language_Portuguese" xml:space="preserve"><value>Português (Portuguese)</value></data>
+  <data name="Language_Korean" xml:space="preserve"><value>한국어 (Korean)</value></data>
+  <data name="Language_Chinese" xml:space="preserve"><value>简体中文 (Simplified Chinese)</value></data>
+  <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>自动切换</value></data>
+  <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>连接充电器时，根据 Wi-Fi 选择方案。使用电池供电时不会更改硬件设置。</value></data>
+  <data name="Settings_WifiRules" xml:space="preserve"><value>Wi-Fi 规则</value></data>
+  <data name="Settings_WifiRulesDescription" xml:space="preserve"><value>按列表顺序匹配，优先使用第一条符合条件的已启用规则。</value></data>
+  <data name="Settings_AddRule" xml:space="preserve"><value>＋  添加规则</value></data>
+  <data name="Settings_EnabledColumn" xml:space="preserve"><value>开启</value></data>
+  <data name="Settings_WifiNetworkColumn" xml:space="preserve"><value>Wi-Fi 网络</value></data>
+  <data name="Settings_ExactSsidMatch" xml:space="preserve"><value>精确匹配 SSID</value></data>
+  <data name="Settings_ChargingProfileColumn" xml:space="preserve"><value>充电方案</value></data>
+  <data name="Settings_NoRules" xml:space="preserve"><value>尚无规则</value></data>
+  <data name="Settings_NoRulesDescription" xml:space="preserve"><value>添加网络并选择充电方案</value></data>
+  <data name="Settings_HigherRuleFirst" xml:space="preserve"><value>按从上到下的顺序检查规则</value></data>
+  <data name="Settings_MoveUp" xml:space="preserve"><value>↑ 上移</value></data>
+  <data name="Settings_MoveDown" xml:space="preserve"><value>↓ 下移</value></data>
+  <data name="Settings_Saved" xml:space="preserve"><value>设置已保存</value></data>
+  <data name="Settings_SsidEmpty" xml:space="preserve"><value>SSID 不能为空。</value></data>
+  <data name="Settings_SaveFailed" xml:space="preserve"><value>无法保存设置。&#xA;&#xA;{0}</value></data>
+  <data name="Settings_CorruptRecovered" xml:space="preserve"><value>设置文件已损坏，已恢复为安全的默认设置。</value></data>
+  <data name="Diagnostics_Tab" xml:space="preserve"><value>诊断</value></data>
+  <data name="Diagnostics_SystemStatus" xml:space="preserve"><value>系统状态</value></data>
+  <data name="Diagnostics_WifiAccess" xml:space="preserve"><value>Wi-Fi 访问权限</value></data>
+  <data name="Diagnostics_Power" xml:space="preserve"><value>电源</value></data>
+  <data name="Diagnostics_SelectedMode" xml:space="preserve"><value>已选模式</value></data>
+  <data name="Diagnostics_AppliedMode" xml:space="preserve"><value>已应用模式</value></data>
+  <data name="Diagnostics_ServiceAndWmi" xml:space="preserve"><value>服务与 WMI</value></data>
+  <data name="Diagnostics_OemRegistry" xml:space="preserve"><value>OEM 注册表</value></data>
+  <data name="Diagnostics_LastAttempt" xml:space="preserve"><value>上次尝试</value></data>
+  <data name="Diagnostics_ChargingModesTitle" xml:space="preserve"><value>充电模式说明</value></data>
+  <data name="Diagnostics_ChargingModesDescription" xml:space="preserve"><value>第一个数字表示低于该电量时恢复充电，第二个数字表示达到该电量时停止充电。</value></data>
+  <data name="Diagnostics_HomeDescription" xml:space="preserve"><value>电量低于 40% 时开始充电，达到 70% 时停止。优先延长电池寿命。</value></data>
+  <data name="Diagnostics_OfficeDescription" xml:space="preserve"><value>电量低于 70% 时开始充电，达到 90% 时停止。兼顾续航与电池寿命。</value></data>
+  <data name="Diagnostics_TravelDescription" xml:space="preserve"><value>电量低于 95% 时开始充电，达到 100% 时停止。优先满足续航需求。</value></data>
+  <data name="Diagnostics_OpenSettings" xml:space="preserve"><value>打开设置</value></data>
+  <data name="Diagnostics_WifiRestricted" xml:space="preserve"><value>Windows 限制了 Wi-Fi 访问</value></data>
+  <data name="Diagnostics_LocationDescription" xml:space="preserve"><value>位置权限仅用于读取 Wi-Fi 网络名称。</value></data>
+  <data name="Diagnostics_HardwareCheck" xml:space="preserve"><value>硬件检查</value></data>
+  <data name="Diagnostics_HardwareCheckDescription" xml:space="preserve"><value>显示将要发送的 OEM 命令数据，并在更改充电阈值前请您确认。</value></data>
+  <data name="Diagnostics_Run" xml:space="preserve"><value>运行…</value></data>
+  <data name="Diagnostics_UnknownNetwork" xml:space="preserve"><value>未知网络</value></data>
+  <data name="Diagnostics_NetworkName" xml:space="preserve"><value>“{0}”</value></data>
+  <data name="Diagnostics_AcPower" xml:space="preserve"><value>已接通电源（交流电）</value></data>
+  <data name="Diagnostics_BatteryPower" xml:space="preserve"><value>使用电池供电</value></data>
+  <data name="Diagnostics_UnknownPower" xml:space="preserve"><value>无法确定供电方式</value></data>
+  <data name="Diagnostics_NoSuccessfulApply" xml:space="preserve"><value>本次运行中尚未成功应用充电方案</value></data>
+  <data name="Diagnostics_ServiceUnavailable" xml:space="preserve"><value>服务不可用</value></data>
+  <data name="Diagnostics_ServiceReady" xml:space="preserve"><value>服务：可用。OEM WMI：可用。</value></data>
+  <data name="Diagnostics_ServiceProblem" xml:space="preserve"><value>服务：可用。OEM WMI：不可用。&#xA;{0}</value></data>
+  <data name="Diagnostics_RegistryValues" xml:space="preserve"><value>PowerSafeManagerStatus={0} ({1}); PowerSafeManagerMode={2} ({3})</value></data>
+  <data name="Diagnostics_RegistryUnavailable" xml:space="preserve"><value>未找到 OEM 注册表项或服务不可用</value></data>
+  <data name="Diagnostics_HeaderMode" xml:space="preserve"><value>{0} · {1}</value></data>
+  <data name="Diagnostics_HeaderAc" xml:space="preserve"><value>已接通电源</value></data>
+  <data name="Diagnostics_HeaderBattery" xml:space="preserve"><value>电池</value></data>
+  <data name="Diagnostics_HeaderNoChange" xml:space="preserve"><value>电池供电 · 保持当前方案</value></data>
+  <data name="Mode_Home" xml:space="preserve"><value>居家</value></data>
+  <data name="Mode_Office" xml:space="preserve"><value>办公</value></data>
+  <data name="Mode_Travel" xml:space="preserve"><value>出行</value></data>
+  <data name="Mode_HomeRange" xml:space="preserve"><value>居家 · 40–70%</value></data>
+  <data name="Mode_OfficeRange" xml:space="preserve"><value>办公 · 70–90%</value></data>
+  <data name="Mode_TravelRange" xml:space="preserve"><value>出行 · 95–100%</value></data>
+  <data name="Mode_HomeDetailed" xml:space="preserve"><value>居家 · 40–70% — 低于 40% 时恢复充电，达到 70% 时停止</value></data>
+  <data name="Mode_OfficeDetailed" xml:space="preserve"><value>办公 · 70–90% — 低于 70% 时恢复充电，达到 90% 时停止</value></data>
+  <data name="Mode_TravelDetailed" xml:space="preserve"><value>出行 · 95–100% — 低于 95% 时恢复充电，达到 100% 时停止</value></data>
+  <data name="WifiRule_Title" xml:space="preserve"><value>Wi-Fi 规则</value></data>
+  <data name="WifiRule_AddTitle" xml:space="preserve"><value>添加规则</value></data>
+  <data name="WifiRule_EditTitle" xml:space="preserve"><value>编辑规则</value></data>
+  <data name="WifiRule_Description" xml:space="preserve"><value>从列表中选择网络，或手动输入准确的 SSID。</value></data>
+  <data name="WifiRule_Network" xml:space="preserve"><value>Wi-Fi 网络</value></data>
+  <data name="WifiRule_Profile" xml:space="preserve"><value>充电方案</value></data>
+  <data name="WifiRule_AcOnly" xml:space="preserve"><value>此规则仅在笔记本电脑接通电源时生效。</value></data>
+  <data name="WifiRule_Save" xml:space="preserve"><value>保存规则</value></data>
+  <data name="WifiRule_ListDenied" xml:space="preserve"><value>列表不可用：Windows 拒绝了 Wi-Fi 访问。您仍可手动输入 SSID。</value></data>
+  <data name="WifiRule_ListEmpty" xml:space="preserve"><value>未找到网络。请手动输入 SSID。</value></data>
+  <data name="WifiRule_ListOrder" xml:space="preserve"><value>先显示已连接和可用的网络，再显示 Windows 中保存的网络。</value></data>
+  <data name="WifiRule_SelectNetwork" xml:space="preserve"><value>选择网络或输入准确的 SSID。</value></data>
+  <data name="WifiRule_Connected" xml:space="preserve"><value>当前已连接</value></data>
+  <data name="WifiRule_AvailableKnown" xml:space="preserve"><value>可用 · 已保存</value></data>
+  <data name="WifiRule_Available" xml:space="preserve"><value>当前可用</value></data>
+  <data name="WifiRule_Known" xml:space="preserve"><value>已保存在 Windows 中</value></data>
+  <data name="Decision_Manual" xml:space="preserve"><value>已选择手动模式</value></data>
+  <data name="Decision_OnBattery" xml:space="preserve"><value>使用电池供电 — 不更改硬件方案</value></data>
+  <data name="Decision_UnknownPower" xml:space="preserve"><value>电源状态未知 — 不更改硬件方案</value></data>
+  <data name="Decision_RuleMatched" xml:space="preserve"><value>已匹配 Wi-Fi 规则“{0}”</value></data>
+  <data name="Decision_NoWifi" xml:space="preserve"><value>Wi-Fi 已关闭或网络不可用</value></data>
+  <data name="Decision_NoRule" xml:space="preserve"><value>当前网络没有对应规则</value></data>
+  <data name="Ipc_EmptyRequest" xml:space="preserve"><value>IPC 请求为空。</value></data>
+  <data name="Ipc_UnknownOperation" xml:space="preserve"><value>未知 IPC 操作。</value></data>
+  <data name="Ipc_InvalidBatteryMode" xml:space="preserve"><value>电池模式无效。</value></data>
+  <data name="Ipc_ModeParametersOnlyApply" xml:space="preserve"><value>模式参数仅允许用于 ApplyMode。</value></data>
+  <data name="Ipc_InvalidRequest" xml:space="preserve"><value>IPC 请求无效。</value></data>
+  <data name="Wifi_NoCatalogNetworks" xml:space="preserve"><value>Windows 未返回可用或已保存的 Wi-Fi 网络。</value></data>
+  <data name="Wifi_CatalogCount" xml:space="preserve"><value>找到 {0} 个网络。</value></data>
+  <data name="Wifi_CatalogFailed" xml:space="preserve"><value>无法获取 Wi-Fi 网络列表：{0}。</value></data>
+  <data name="Wifi_NotConnected" xml:space="preserve"><value>未找到已连接的 Wi-Fi 网络。</value></data>
+  <data name="Wifi_AccessAllowed" xml:space="preserve"><value>已允许 Wi-Fi 访问。</value></data>
+  <data name="Wifi_DetectFailed" xml:space="preserve"><value>无法检测 Wi-Fi：{0}。</value></data>
+  <data name="Wifi_NameAccessDenied" xml:space="preserve"><value>Windows 拒绝访问 Wi-Fi 网络名称。请允许应用访问位置。</value></data>
+  <data name="Wifi_DetectWindowsError" xml:space="preserve"><value>无法检测 Wi-Fi：Windows 错误 {0}。</value></data>
+  <data name="Wifi_ListAccessDenied" xml:space="preserve"><value>Windows 拒绝访问 Wi-Fi 网络列表。请允许应用访问位置。</value></data>
+  <data name="Wifi_ListWindowsError" xml:space="preserve"><value>无法获取 Wi-Fi 网络列表：Windows 错误 {0}。</value></data>
+  <data name="Tray_AutoEnabled" xml:space="preserve"><value>自动：开启</value></data>
+  <data name="Tray_StatusWaiting" xml:space="preserve"><value>当前：等待中</value></data>
+  <data name="Tray_Reapply" xml:space="preserve"><value>立即同步模式</value></data>
+  <data name="Tray_ReapplyHint" xml:space="preserve"><value>重新应用所选方案，例如在 HONOR PC Manager 中更改设置后</value></data>
+  <data name="Tray_ReapplyPlugInHint" xml:space="preserve"><value>请连接充电器：使用电池供电时不会自动应用充电方案</value></data>
+  <data name="Tray_Diagnostics" xml:space="preserve"><value>设置和诊断</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>退出</value></data>
+  <data name="Tray_AutoState" xml:space="preserve"><value>自动：{0}</value></data>
+  <data name="Tray_On" xml:space="preserve"><value>开启</value></data>
+  <data name="Tray_Off" xml:space="preserve"><value>关闭</value></data>
+  <data name="Tray_NoProfile" xml:space="preserve"><value>未选择方案</value></data>
+  <data name="Tray_Battery" xml:space="preserve"><value>电池供电</value></data>
+  <data name="Tray_UnknownPower" xml:space="preserve"><value>供电方式未知</value></data>
+  <data name="Tray_UnknownNetwork" xml:space="preserve"><value>未知网络</value></data>
+  <data name="Tray_StatusApplied" xml:space="preserve"><value>当前：{0} · 充至 {1}% · {2} · {3}</value></data>
+  <data name="Tray_StatusPending" xml:space="preserve"><value>当前：等待应用 {0} · {1} · {2}</value></data>
+  <data name="Tray_StatusNoChange" xml:space="preserve"><value>当前：方案未更改 · {0} · {1}</value></data>
+  <data name="Tray_TooltipError" xml:space="preserve"><value>Honor Battery Saver · 错误 · {0}</value></data>
+  <data name="Tray_TooltipApplied" xml:space="preserve"><value>Honor Battery Saver · {0} · 充至 {1}%</value></data>
+  <data name="Tray_TooltipPending" xml:space="preserve"><value>Honor Battery Saver · 等待应用</value></data>
+  <data name="Tray_TooltipBattery" xml:space="preserve"><value>Honor Battery Saver · 电池 · 方案未更改</value></data>
+  <data name="Tray_ApplyFailedTitle" xml:space="preserve"><value>无法应用方案</value></data>
+  <data name="Tray_ProfileChangedTitle" xml:space="preserve"><value>充电方案已更改</value></data>
+  <data name="Tray_ProfileChangedMessage" xml:space="preserve"><value>已启用“{0}”模式。电量低于 {1}% 时开始充电，达到 {2}% 时停止。</value></data>
+  <data name="Tray_SettingsRestoredTitle" xml:space="preserve"><value>设置已恢复</value></data>
+  <data name="Tray_ServiceNotRunningTitle" xml:space="preserve"><value>服务未运行</value></data>
+  <data name="Tray_NoApplyAttempts" xml:space="preserve"><value>本次运行中尚未尝试应用充电方案</value></data>
+  <data name="Tray_AutostartFailed" xml:space="preserve"><value>无法更改 Windows 启动设置。</value></data>
+  <data name="ServiceClient_Timeout" xml:space="preserve"><value>服务未及时响应。</value></data>
+  <data name="ServiceClient_Unavailable" xml:space="preserve"><value>Honor Battery Saver 服务不可用。</value></data>
+  <data name="App_ServiceStartCheckFailed" xml:space="preserve"><value>无法检查或启动服务：{0}</value></data>
+  <data name="App_StartFailed" xml:space="preserve"><value>无法启动 Honor Battery Saver。&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ElevationCancelled" xml:space="preserve"><value>管理员权限请求已取消。</value></data>
+  <data name="Hardware_OpenFailed" xml:space="preserve"><value>Windows 无法打开硬件检查。请重试并批准管理员权限请求。&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_ProcessNotCreated" xml:space="preserve"><value>Windows 未创建硬件检查进程。</value></data>
+  <data name="Hardware_InvalidMode" xml:space="preserve"><value>指定的模式无效。</value></data>
+  <data name="Hardware_AdminOnly" xml:space="preserve"><value>只有管理员才能运行硬件检查。</value></data>
+  <data name="Hardware_ServiceStartFailed" xml:space="preserve"><value>无法启动 Honor Battery Saver 服务。&#xA;&#xA;{0}</value></data>
+  <data name="Hardware_RegistryUnavailable" xml:space="preserve"><value>OEM 注册表项不可用</value></data>
+  <data name="Hardware_Confirmation" xml:space="preserve"><value>所选模式：{0}&#xA;将要发送的 OEM 命令数据：{1}&#xA;&#xA;命令将通过已验证的 64 字节 OEM 缓冲区发送。&#xA;&#xA;更改前的注册表值：&#xA;{2}&#xA;&#xA;警告：运行此检查会通过未公开的 OEM 接口实际更改电池充电阈值。本软件不保证兼容性，也不提供任何担保。继续操作即表示您愿意承担异常运行或损坏的风险。是否继续？</value></data>
+  <data name="Hardware_ConfirmationTitle" xml:space="preserve"><value>Honor Battery Saver 硬件检查</value></data>
+  <data name="Hardware_ResultTitle" xml:space="preserve"><value>硬件检查结果</value></data>
+  <data name="Reason_ConditionsChanged" xml:space="preserve"><value>条件已更改</value></data>
+  <data name="Reason_WifiChanged" xml:space="preserve"><value>Wi-Fi 已更改</value></data>
+  <data name="Reason_PowerChanged" xml:space="preserve"><value>电源已更改</value></data>
+  <data name="Reason_Resumed" xml:space="preserve"><value>已从睡眠状态恢复</value></data>
+  <data name="Reason_AppStarted" xml:space="preserve"><value>应用已启动</value></data>
+  <data name="Reason_ManualSync" xml:space="preserve"><value>手动同步模式</value></data>
+  <data name="Reason_AutomaticEnabled" xml:space="preserve"><value>已启用自动模式</value></data>
+  <data name="Reason_ManualSelection" xml:space="preserve"><value>手动选择</value></data>
+  <data name="Reason_SettingsChanged" xml:space="preserve"><value>设置已更改</value></data>
+  <data name="Wifi_NotChecked" xml:space="preserve"><value>尚未检查 Wi-Fi 状态。</value></data>
+  <data name="Decision_WaitingFirstCheck" xml:space="preserve"><value>等待首次检查</value></data>
+  <data name="Recovery_AlreadyRunning" xml:space="preserve"><value>服务已在运行。</value></data>
+  <data name="Recovery_FinishedStarting" xml:space="preserve"><value>服务已完成启动。</value></data>
+  <data name="Recovery_ProcessPipeUnavailable" xml:space="preserve"><value>服务进程正在运行，但其控制通道不可用。请结束无响应的进程后重试。</value></data>
+  <data name="Recovery_ExecutableNotFoundNearby" xml:space="preserve"><value>服务尚未注册，且在应用所在目录中未找到 HonorBatterySaver.Service.exe。</value></data>
+  <data name="Recovery_EnableAutostartFailed" xml:space="preserve"><value>无法启用服务自动启动。{0}</value></data>
+  <data name="Recovery_StartFailed" xml:space="preserve"><value>无法启动服务。{0}</value></data>
+  <data name="Recovery_WindowsServiceStarted" xml:space="preserve"><value>Windows 服务已启用并启动。</value></data>
+  <data name="Recovery_PipeDidNotAppear" xml:space="preserve"><value>服务已启动，但控制通道尚不可用。</value></data>
+  <data name="Recovery_ExecutableNotFound" xml:space="preserve"><value>服务未注册，并且未找到 HonorBatterySaver.Service.exe。</value></data>
+  <data name="Recovery_ProcessStartedElevated" xml:space="preserve"><value>服务进程已使用管理员权限启动。</value></data>
+  <data name="Recovery_ProcessPipeDidNotAppear" xml:space="preserve"><value>服务进程已启动，但控制通道尚不可用。</value></data>
+  <data name="Recovery_AppPathUnknown" xml:space="preserve"><value>无法确定应用路径。</value></data>
+  <data name="Recovery_ProcessNotCreated" xml:space="preserve"><value>Windows 未创建服务恢复进程。</value></data>
+  <data name="Recovery_WindowsStartFailed" xml:space="preserve"><value>Windows 无法启用或启动服务。</value></data>
+  <data name="Recovery_ElevationFailed" xml:space="preserve"><value>无法请求管理员权限：{0}</value></data>
+  <data name="Recovery_ProcessStartFailed" xml:space="preserve"><value>无法启动服务进程：{0}</value></data>
+  <data name="Recovery_ServiceProcessNotCreated" xml:space="preserve"><value>Windows 未创建服务进程。</value></data>
+  <data name="Recovery_ServiceManagerNotStarted" xml:space="preserve"><value>Windows 未启动服务控制管理器。</value></data>
+  <data name="Recovery_ErrorCode" xml:space="preserve"><value>错误代码：{0}。</value></data>
+  <data name="Service_Available" xml:space="preserve"><value>服务可用。</value></data>
+  <data name="Service_ModeAlreadyApplied" xml:space="preserve"><value>该模式已应用，无需再次发送 OEM 命令。</value></data>
+  <data name="Service_RegistryKeyMissing" xml:space="preserve"><value>未找到 HONOR PC Manager 注册表项。</value></data>
+  <data name="Service_ProbeFailed" xml:space="preserve"><value>设备检查失败：{0}。</value></data>
+  <data name="Service_DeviceUnsupported" xml:space="preserve"><value>设备不受支持：未找到 HONOR PC Manager 注册表项。</value></data>
+  <data name="Service_CommandRejected" xml:space="preserve"><value>OEM WMI 提供程序拒绝了命令。</value></data>
+  <data name="Service_ModeApplied" xml:space="preserve"><value>已应用“{0}”模式。</value></data>
+  <data name="Service_RegistrySyncFailed" xml:space="preserve"><value>OEM 命令已应用，但无法同步注册表。</value></data>
+  <data name="Service_ApplyFailed" xml:space="preserve"><value>无法应用模式：{0}。</value></data>
+  <data name="Wmi_MethodMissing" xml:space="preserve"><value>OEM WMI 方法缺失或签名不兼容。</value></data>
+  <data name="Wmi_InstanceMissing" xml:space="preserve"><value>未找到 OEM WMI 提供程序实例。</value></data>
+  <data name="Wmi_ActiveInstanceMissing" xml:space="preserve"><value>未找到活动的 OEM WMI 提供程序实例。</value></data>
+  <data name="Wmi_HwmiInstanceMissing" xml:space="preserve"><value>未找到 OEM WMI 提供程序实例 HWMI_0，或实例不唯一。</value></data>
+  <data name="Wmi_Available" xml:space="preserve"><value>OEM WMI 可用。</value></data>
+  <data name="Wmi_AccessDenied" xml:space="preserve"><value>访问 OEM WMI 提供程序被拒绝。</value></data>
+  <data name="Wmi_RunServiceAsAdmin" xml:space="preserve"><value>访问 OEM WMI 提供程序被拒绝。请使用管理员权限运行服务。</value></data>
+  <data name="Wmi_ClassMissing" xml:space="preserve"><value>未找到 OEM WMI 类。</value></data>
+  <data name="Wmi_NamespaceUnavailable" xml:space="preserve"><value>OEM WMI 命名空间 ROOT\WMI 不可用。</value></data>
+  <data name="Wmi_UnavailableError" xml:space="preserve"><value>OEM WMI 不可用：{0}。</value></data>
+  <data name="Wmi_ServiceNeedsElevation" xml:space="preserve"><value>访问 OEM WMI 提供程序被拒绝。请以管理员权限运行服务。</value></data>
+  <data name="Wmi_MethodUnavailable" xml:space="preserve"><value>当前 BIOS 或 PC Manager 版本中没有此 OEM WMI 方法。</value></data>
+  <data name="Wmi_CommandFormatRejected" xml:space="preserve"><value>OEM WMI 提供程序拒绝了已验证的命令格式。</value></data>
+  <data name="Wmi_CallFailed" xml:space="preserve"><value>OEM WMI 调用失败：{0}。</value></data>
+</root>

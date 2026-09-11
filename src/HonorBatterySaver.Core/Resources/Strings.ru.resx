@@ -30,8 +30,12 @@
   <data name="Settings_Language" xml:space="preserve"><value>Язык интерфейса</value></data>
   <data name="Settings_LanguageDescription" xml:space="preserve"><value>Выберите язык вручную или используйте язык интерфейса Windows.</value></data>
   <data name="Language_System" xml:space="preserve"><value>Как в Windows</value></data>
-  <data name="Language_Russian" xml:space="preserve"><value>Русский</value></data>
-  <data name="Language_English" xml:space="preserve"><value>Английский</value></data>
+  <data name="Language_Russian" xml:space="preserve"><value>Русский (Russian)</value></data>
+  <data name="Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Language_German" xml:space="preserve"><value>Deutsch (German)</value></data>
+  <data name="Language_Portuguese" xml:space="preserve"><value>Português (Portuguese)</value></data>
+  <data name="Language_Korean" xml:space="preserve"><value>한국어 (Korean)</value></data>
+  <data name="Language_Chinese" xml:space="preserve"><value>简体中文 (Simplified Chinese)</value></data>
   <data name="Settings_AutomaticSwitching" xml:space="preserve"><value>Автоматическое переключение</value></data>
   <data name="Settings_AutomaticSwitchingDescription" xml:space="preserve"><value>При подключённой зарядке профиль выбирается по Wi-Fi. На батарее аппаратные настройки не меняются.</value></data>
   <data name="Settings_WifiRules" xml:space="preserve"><value>Правила Wi-Fi</value></data>

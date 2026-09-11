@@ -58,9 +58,19 @@ button { font: inherit; }
 .nav a, .github-link { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 140ms ease-out; }
 .nav a:hover, .github-link:hover { color: var(--text); }
 .header-actions { display: flex; align-items: center; gap: 16px; }
-.language-toggle { display: inline-flex; min-width: 54px; min-height: 44px; align-items: center; justify-content: center; gap: 4px; border: 0; background: transparent; color: var(--muted-2); cursor: pointer; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-decoration: none; transition: color 140ms ease-out; }
-.language-toggle:hover { color: var(--muted); }
-.language-toggle .lang-active { color: var(--text); }
+.language-picker { position: relative; }
+.language-toggle { position: relative; display: inline-flex; min-height: 44px; align-items: center; gap: 8px; padding: 3px 0 1px; border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 14px; font-weight: 650; line-height: 1; text-decoration: none; transition: color 140ms ease-out; }
+.language-toggle::after { content: ""; position: absolute; right: 0; bottom: 8px; left: 0; height: 1px; background: currentColor; opacity: .55; transition: opacity 140ms ease-out, background-color 140ms ease-out; }
+.language-toggle:hover, .language-toggle[aria-expanded="true"] { color: var(--text); }
+.language-toggle:hover::after, .language-toggle[aria-expanded="true"]::after { background: var(--mint); opacity: 1; }
+.language-chevron { width: 7px; height: 7px; margin: -3px 2px 0 0; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform 160ms ease-out; }
+.language-picker.open .language-chevron { margin-top: 3px; transform: rotate(225deg); }
+.language-menu { position: absolute; top: calc(100% + 7px); right: -10px; width: 176px; padding: 6px; border: 1px solid var(--line-strong); border-radius: 14px; background: rgba(21, 25, 37, .96); box-shadow: 0 18px 50px rgba(0, 0, 0, .38), inset 0 1px 0 rgba(255, 255, 255, .04); backdrop-filter: blur(18px); opacity: 0; visibility: hidden; transform: translateY(-6px) scale(.98); transform-origin: top right; pointer-events: none; transition: opacity 140ms ease-out, transform 140ms ease-out, visibility 140ms; }
+.language-picker.open .language-menu { opacity: 1; visibility: visible; transform: translateY(0) scale(1); pointer-events: auto; }
+.language-option { position: relative; width: 100%; min-height: 38px; padding: 7px 34px 7px 11px; border: 0; border-radius: 9px; background: transparent; color: var(--muted); cursor: pointer; font-size: 14px; font-weight: 600; line-height: 1.45; text-align: left; transition: background-color 120ms ease-out, color 120ms ease-out; }
+.language-option:hover, .language-option:focus-visible { background: rgba(255, 255, 255, .065); color: var(--text); outline: none; }
+.language-option[aria-selected="true"] { background: rgba(104, 121, 242, .13); color: var(--text); }
+.language-option[aria-selected="true"]::after { content: "✓"; position: absolute; top: 50%; right: 12px; color: var(--mint); font-size: 13px; transform: translateY(-52%); }
 .github-link { display: inline-flex; min-height: 44px; align-items: center; gap: 7px; }
 .github-link .icon { width: 19px; height: 19px; font-size: 19px; }
 

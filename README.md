@@ -6,7 +6,7 @@
 
 [![Windows 11](https://img.shields.io/badge/Windows_11-x64-4B68E8?style=flat-square&logo=windows11&logoColor=white)](#requirements)
 [![.NET 10](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet&logoColor=white)](#requirements)
-[![UI languages](https://img.shields.io/badge/UI-English_%C2%B7_Russian-79E6B2?style=flat-square&labelColor=182033)](#language-and-themes)
+[![UI languages](https://img.shields.io/badge/UI-6_languages-79E6B2?style=flat-square&labelColor=182033)](#language-and-themes)
 [![Telemetry](https://img.shields.io/badge/telemetry-none-79E6B2?style=flat-square&labelColor=182033)](#privacy-and-safety)
 
 **A small Windows tray app that applies HONOR's battery-protection profile for the place where you are — without continuously fighting PC Manager.**
@@ -70,7 +70,7 @@ Wi-Fi SSID + AC/DC state
 - Automatic service recovery when the registered service is stopped or disabled.
 - Hardware, WMI, registry, Wi-Fi permission, power-source, and last-attempt diagnostics.
 - Windows light/dark theme support without restarting the settings window.
-- English, Russian, or Windows-language UI selection without restarting the app.
+- English, Russian, German, Portuguese, Korean, Simplified Chinese, or Windows-language UI selection without restarting the app.
 - Single-instance behavior, startup integration, and rotating service logs.
 - No cloud account, network telemetry, or stored Wi-Fi scan history.
 
@@ -138,7 +138,7 @@ If Windows denies SSID access, open **Diagnostics → Open settings**. Location 
 
 ### Language and themes
 
-Choose **English**, **Russian**, or **Use Windows language**. The setting updates the window, tray menu, notifications, diagnostics, and service responses without restart. Unsupported Windows display languages fall back to English (`en-US`). Light and dark themes follow Windows.
+Choose **English**, **Russian**, **German**, **Portuguese**, **Korean**, **Simplified Chinese**, or **Use Windows language**. The setting updates the window, tray menu, notifications, diagnostics, and service responses without restart. Unsupported Windows display languages fall back to English (`en-US`). Light and dark themes follow Windows.
 
 ## Architecture
 
@@ -189,7 +189,7 @@ The service log rotates at 1 MB and keeps up to three archives.
 5. Sleep and resume result in one forced reevaluation.
 6. Manual selection disables automatic mode and survives restart.
 7. Denied location permission does not crash the application.
-8. Russian, English, and Windows-language modes persist and update every UI surface without restart.
+8. All six languages and the Windows-language mode persist and update every UI surface without restart.
 9. A stopped service and an unsupported device are displayed as errors.
 10. Hardware results are verified against the WMI response, registry, and HONOR PC Manager.
 
@@ -197,7 +197,7 @@ The service log rotates at 1 MB and keeps up to three archives.
 
 ## Website screenshots
 
-The website shows the actual Settings and Diagnostics views in dark mode, in English and Russian. Network names and diagnostic statuses are demo data, not hardware test results. To regenerate all four PNGs on Windows:
+The website shows the actual Settings and Diagnostics views in dark mode in all six supported languages. Network names and diagnostic statuses are demo data, not hardware test results. To regenerate all twelve PNGs on Windows:
 
 ```powershell
 dotnet run --project tools/HonorBatterySaver.Screenshots -c Release
